@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
 * {
     font-family: 'Poppins', sans-serif;
 }
@@ -5,3 +6,15 @@
 .bg-main {
     background-color: #138483;
 }
+
+.bg-main-2 {
+    background-color: #59BAB8;
+}
+
+input[type="text"],
+input[type="password"] {
+    background-color: #59BAB8;
+}
+
+<style>@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+</style>
