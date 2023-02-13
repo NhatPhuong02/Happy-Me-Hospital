@@ -12,6 +12,11 @@
 }
 
 input[type="text"],
-input[type="password"] {
+input[type="password"],
+input [type="checkbox"] {
+    background-color: #59BAB8;
+}
+
+.bg-main-gray {
     background-color: #59BAB8;
 }
