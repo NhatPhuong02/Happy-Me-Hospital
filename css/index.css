@@ -17,6 +17,10 @@ input [type="checkbox"] {
     background-color: #59BAB8;
 }
 
-.bg-main-gray {
+.bg-main-gray{
     background-color: #59BAB8;
 }
+.fas {
+    color: #138483;
+}
+
