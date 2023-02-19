@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <?php session_start(); include('admin/conn_db.php'); include('admin/signup.php');?>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -56,18 +57,21 @@
                 <div class="row p-1 ps-3">
                     <div class="text-white h3">Create an account</div>
                 </div>
+
+                 <!-- PHP form -------------------------------------------------->
+                <form id="signup-form" action="admin/signup.php" method="POST">
                 <div class="row p-3 ">
-                    <div class="col-4 input-group-lg"><input type="text" class="form-control" placeholder="First name" aria-label="First name" id="firstname"></div>
-                    <div class="col-8 input-group-lg"><input type="text" class="form-control" placeholder="Last name" aria-label="Last name" id="lastname"></div>
+                    <div class="col-4 input-group-lg"><input type="text" class="form-control" placeholder="First name" aria-label="First name" id="firstname" name="firstname" required></div>
+                    <div class="col-8 input-group-lg"><input type="text" class="form-control" placeholder="Last name" aria-label="Last name" id="lastname" name="lastname" required></div>
                 </div>
                 <div class="row p-3">
                     <div class="col-12 input-group-lg">
-                        <input type="text" class="form-control" placeholder="Email" aria-label="Email" id="email">
+                        <input type="text" class="form-control" placeholder="Email" aria-label="Email" id="email" name="email" required>
                     </div>
                 </div>
                 <div class="row p-3 ">
                     <div class="input-group mb-3 input-group-lg ">
-                        <input type="password" placeholder="Password" class="form-control" aria-label="Text input with checkbox" id="password">
+                        <input type="password" placeholder="Password" class="form-control" aria-label="Text input with checkbox" id="password" name="password" required>
                         <div class="input-group-text" style="background-color:#59BAB8">
                             <i class="fas fa-eye" onclick="myFunction()"></i>
                         </div>
@@ -75,10 +79,13 @@
                 </div>
                 <div class="row justify-content-center p-1">
                     <div class="col col-6 text-center">
-                        <button class="btn btn-dark btn-lg" onclick="signup()" >Create Account
+                        <button class="btn btn-dark btn-lg" type="submit" form="signup-form" name="submit">Create Account
                     </button>
                     </div>
                 </div>
+                </form>
+                <!-- end the PHP form -->
+
                 <div class="row justify-content-center p-1">
                     <div class="text-sm-dark text-center"> Already A Menber?
                         <a href="signIn.html" class="text-white" style="text-decoration: none;">Login</a>
