@@ -5,7 +5,7 @@
 
   // Check if the user is already logged in
   if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] == true) {
-    header("Location: welcome_page.html");
+    header("Location: ../index.html");
     exit();
   }
 
