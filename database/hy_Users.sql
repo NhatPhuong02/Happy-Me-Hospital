@@ -1,6 +1,6 @@
 -- at mysql server
 
-IF OBJECT_ID('Users', 'U') IS NULL
+-- IF OBJECT_ID('Users', 'U') IS NULL
 BEGIN
 CREATE TABLE Users (
     id INT IDENTITY(1,1) PRIMARY key ,
@@ -22,3 +22,5 @@ CREATE TABLE `hy_Users` (
     `password` VARCHAR(255) NOT NULL,
     `role` ENUM('patient', 'therapist', 'admin') NULL
 );
+
+
