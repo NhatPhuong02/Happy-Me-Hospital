@@ -1,9 +1,14 @@
 function myFunction() {
+    var y = document.getElementById("eyes_password");
     var x = document.getElementById("password");
     if (x.type === "password") {
         x.type = "text";
+        y.classList.remove("fa-eye")
+        y.classList.add("fa-eye-slash")
     } else {
         x.type = "password";
+        y.classList.remove("fa-eye-slash")
+        y.classList.add("fa-eye")
     }
 }
 
@@ -41,6 +46,6 @@ function create() {
         alert("Errol value email!!")
     else if (password.value == "")
         alert("Errol value password!! ")
-    else 
-        alert ("Welcome " + email.value + " back")
+    else
+        alert("Welcome " + email.value + " back")
 }
