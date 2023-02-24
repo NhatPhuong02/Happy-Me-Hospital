@@ -4,6 +4,7 @@
    <?php
         include("head.php")
    ?>
+   <title>Welcome Happy Me</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-white">
