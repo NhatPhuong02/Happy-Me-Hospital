@@ -5,7 +5,7 @@
 
   // Check if the user is already logged in
   if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] == true) {
-    header("Location: ../index.html");
+  header("Location: admin_index.php");
     exit();
   }
 
