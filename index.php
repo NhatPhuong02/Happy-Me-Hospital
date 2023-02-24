@@ -21,13 +21,11 @@
                 </div>
                 <div class="col col-sm-1 me-sm-5 ms-md-1 mt-3">
                     <p class="col_Active_Docter-count fs-2 mb-0 ">100+</p>
-                    <p class="col_Active_Docter-text " style="font-size:10px;color:rgba(196, 196, 196, 1) ">Active
-                        <br> Docter</p>
+                    <p class="col_Active_Docter-text " style="font-size:10px;color:rgba(196, 196, 196, 1) ">Active<br> Docter</p>
                 </div>
                 <div class="col col-sm-1 me-sm-5 ms-md-2 mt-3">
                     <p class="col_Active_Docter-count fs-2 mb-0 ">3k+</p>
-                    <p class="col_Active_Docter-text " style="font-size:10px;color:rgba(196, 196, 196, 1) ">Happy
-                        <br>User</p>
+                    <p class="col_Active_Docter-text " style="font-size:10px;color:rgba(196, 196, 196, 1) ">Happy<br>User</p>
                 </div>
                 <div class="col col-sm-1 me-sm-5 ms-md-2 mt-3">
                     <p class="col_Active_Docter-count fs-2 mb-0 ">200+</p>
