@@ -14,13 +14,13 @@ END
 
 -- at myphpadmin
 
-CREATE TABLE `hy_Users` (
-    `id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    `firstName` VARCHAR(255) NOT NULL,
-    `lastName` VARCHAR(255) NOT NULL,
-    `email` VARCHAR(255) NOT NULL,
-    `password` VARCHAR(255) NOT NULL,
-    `role` ENUM('patient', 'therapist', 'admin') NULL
+CREATE TABLE `Users` (
+    `u_id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    `u_firstName` VARCHAR(255) NOT NULL,
+    `u_lastName` VARCHAR(255) NOT NULL,
+    `u_email` VARCHAR(255) NOT NULL,
+    `u_password` VARCHAR(255) NOT NULL,
+    `u_role` ENUM('patient', 'therapist', 'admin') NULL
 );
 
 
