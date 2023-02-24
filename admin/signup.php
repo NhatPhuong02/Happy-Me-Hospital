@@ -24,7 +24,7 @@
       // note: check again
 
       // Check if the email already exists
-    $stmt = $mysqli->prepare("SELECT * FROM hy_Users WHERE email = ?");
+    $stmt = $mysqli->prepare("SELECT * FROM users WHERE u_email = ?");
     $stmt->bind_param("s", $email);
     $stmt->execute();
     $result = $stmt->get_result();
@@ -45,7 +45,7 @@
           $password = password_hash($password, PASSWORD_DEFAULT);
 
           // Insert the new user into the database
-          $stmt = $mysqli->prepare("INSERT INTO hy_Users (firstname, lastname, email, password) VALUES (?, ?, ?, ?)");
+          $stmt = $mysqli->prepare("INSERT INTO users (u_firstname, u_lastname, u_email, u_password) VALUES (?, ?, ?, ?)");
           $stmt->bind_param("ssss", $firstname, $lastname, $email, $password);
           $stmt->execute();
 

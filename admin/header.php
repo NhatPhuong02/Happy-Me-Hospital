@@ -4,7 +4,7 @@
 <nav class="navbar navbar-expand-lg bg-white">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img src="img/Logo.png" alt="Logo Happp Me Hospital" width="185" height="40">
+                <img src="../img/Logo.png" alt="Logo Happp Me Hospital" width="185" height="40">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -37,16 +37,10 @@
                         <a class="nav-link" href="aboutUs.html">About Us</a>
                     </li>
                     <hr>
-                    <?php if(!isset($_SESSION['cid'])){ ?>
-                        <a class="btn btn-primary rounded-pill border-0" href="signUp.php" role="button" style="background-image: linear-gradient(to right, rgba(89, 186, 184, 1), rgba(19, 132, 131, 1));">Register</a>
-                    <?php} ?>
+                    
                 </ul>
             </div>
-            <?php 
-                if(isset($_SESSION['cid'])){?>
-                <<a href=""></a>
-                <? }?>
-            <div class></div>
+           
         </div>
     </div>
 </nav>
