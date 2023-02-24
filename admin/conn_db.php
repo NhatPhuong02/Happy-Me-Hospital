@@ -1,9 +1,10 @@
 <?php
     session_start();
 
-    // include '../config/config.php';
 
     // path to the config file
+    // same as include '../config/config.php';
+    
     $config_path = __DIR__ . '/../config/config.php';
 
     // include the config file
@@ -16,12 +17,6 @@
         $db_db,
         $db_port
     );
-
-    //     // Set DSN (Data Source Name)
-    // $dsn = 'mysql:host=' . $host . ';dbname=' . $dbname;
-
-    // // Create a PDO instance
-    // $pdo = new PDO($dsn, $user, $password);
 
 
     if ($mysqli->connect_error) {
