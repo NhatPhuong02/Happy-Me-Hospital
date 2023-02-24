@@ -35,7 +35,7 @@
       echo "Login failed. Incorrect email or password.";
     }
   } else {
-    echo "Email or password is blank."; // for testing
+    echo "Email or password is blank."; 
   }
 
   $mysqli->close();
