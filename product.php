@@ -2,66 +2,20 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script src="https://kit.fontawesome.com/c2de6d6bc6.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://kit.fontawesome.com/c2de6d6bc6.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/index.css">
+    <?php
+        include("head.php")
+    ?>
     <title>Medicine Product</title>
 </head>
 
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-white">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="img/Logo.png" alt="Logo Happp Me Hospital" width="185" height="40">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto ">
-                    <hr>
-                    <li class="nav-item d-flex justify-content-center">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <hr>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Services
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="forum.html">Forum</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="booking.html">Booking</a></li>
-
-                        </ul>
-                    </li>
-                    <hr>
-                    <li class="nav-item d-flex justify-content-center">
-                        <a class="nav-link active" aria-current="page" href="product.html">Product</a>
-                    </li>
-                    <hr>
-                    <li class="nav-item d-flex justify-content-center">
-                        <a class="nav-link" href="aboutUs.html">About Us</a>
-                    </li>
-                    <a class="btn btn-primary rounded-pill border-0" href="signUp.html" role="button" style="background-image: linear-gradient(to right, rgba(89, 186, 184, 1), rgba(19, 132, 131, 1));">Register</a>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<?php include("header.php")?>
 
     <div class="container mt-5">
         <div class="navbar bg-body-tertiary">
             <div class="h6">
-                <a href="">Home Page</a>
+                <a href="index.php">Home Page</a>
                 <span>></span>
                 <a href="">Product</a>
             </div>

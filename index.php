@@ -41,7 +41,7 @@
                 <div class="text-center fs-3 mb-5">Out <span style="background: -webkit-linear-gradient(90.29deg, #59BAB8 0.21%, #138483 99.79%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; ">Main Services </span><br> Categories</div>
                 <div class="col column-sm-4 d-flex justify-content-center mb-5">
                     <div class="card " style="width: 18rem; ">
-                        <img src="../img/booking.png" class="card-img-top " alt="... ">
+                        <img src="img/booking.png" class="card-img-top " alt="... ">
                         <div class="card-body ">
                             <h5 class="card-title ">Book Appointment</h5>
                             <p class="card-text ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan pulvinar libero, ac euismod urna pretium eu. Sed accumsan pretium augue consequat ornare. </p>
@@ -50,7 +50,7 @@
                 </div>
                 <div class="col column-sm-4 d-flex justify-content-center mb-5">
                     <div class="card " style="width: 18rem; ">
-                        <img src="../img/health_store.png" class="card-img-top " alt="... ">
+                        <img src="img/health_store.png" class="card-img-top " alt="... ">
                         <div class="card-body ">
                             <h5 class="card-title ">Health Store</h5>
                             <p class="card-text ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan pulvinar libero, ac euismod urna pretium eu. Sed accumsan pretium augue consequat ornare. </p>
@@ -59,7 +59,7 @@
                 </div>
                 <div class="col column-sm-4 d-flex justify-content-center mb-5">
                     <div class="card " style="width: 18rem; ">
-                        <img src="../img/community.png" class="card-img-top " alt="... ">
+                        <img src="img/community.png" class="card-img-top " alt="... ">
                         <div class="card-body ">
                             <h5 class="card-title ">Community</h5>
                             <p class="card-text ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan pulvinar libero, ac euismod urna pretium eu. Sed accumsan pretium augue consequat ornare. </p>
@@ -136,7 +136,7 @@
                 <div class="col col-sm-4 ">
                     <div class="row justify-content-end">
                         <div class=" col-12 card justify-content-center " style="width: 17rem; height:25rem;border: 10.2535px solid #FFF;
-                    border-radius: 117.915px 117.915px 5.12675px 5.12675px;background: linear-gradient(180deg, #BFFCFA 0%, #138483 100%); filter: drop-shadow(0px 5.12675px 41.014px rgba(0, 145, 193, 0.5)); ;"><img class="card-img img-fluid col-12 justify-content-center text-center" src="../img/image 8.png" alt=""></div>
+                    border-radius: 117.915px 117.915px 5.12675px 5.12675px;background: linear-gradient(180deg, #BFFCFA 0%, #138483 100%); filter: drop-shadow(0px 5.12675px 41.014px rgba(0, 145, 193, 0.5)); ;"><img class="card-img img-fluid col-12 justify-content-center text-center" src="img/image 8.png" alt=""></div>
 
                     </div>
                 </div>

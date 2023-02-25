@@ -1,43 +1,100 @@
-<?php
-  include ('conn_db.php');
+<!DOCTYPE html>
+<html lang="en">
 
-  $signin_path = __DIR__ . '/../signIn.html';
+<head>
+    <?php
+        include("head.php")
+    ?>
+    <title>Sign In</title>
 
-  // Check if the user is already logged in
-  if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] == true) {
-  header("Location: admin_index.php");
-    exit();
-  }
+</head>
 
-  // my condition
-  if (isset($_POST['email']) && isset($_POST['password'])) {
-    $email = $_POST['email'];
-    $password = $_POST['password'];
+<body>
+<?php include("header.php")?>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-sm-7 bg-main rounded-start-5 ">
+                <div class="row pt-2 ps-3">
+                    <div class="text-dark">Start For Free</div>
+                </div>
+                <div class="row p-1 ps-3">
+                    <div class="text-white h3">Join With Us</div>
+                </div>
+                <!-- PHP form -------------------------------------------------->
+                <form id="signin-form" action="admin/signin.php" method="POST">
+                    <div class="row p-3">
+                        <div class="col-12 input-group-lg">
+                            <input type="text" class="form-control" placeholder="Email" aria-label="Email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="row p-3 ">
+                        <div class="input-group mb-3 input-group-lg ">
+                            <input type="password" placeholder="Password" class="form-control" aria-label="Text input with checkbox" id="password" name="password" required>
+                            <div class="input-group-text" style="background-color:#59BAB8">
+                                <i class="fa-solid fa-eye" id="eyes_password" onclick="myFunction()"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center p-1">
+                        <div class="col col-6 text-center">
+                            <button class="btn btn-dark btn-lg" type="signin-form" name="logged_in"> Sign In
+                    </button>
+                        </div>
+                    </div>
+                    <!-- END PHP form -------------------------------------------------->
+                    <div class="row justify-content-center p-1">
+                        <div class="text-sm-dark text-center"> Don't have a account?
+                            <a href="signUp.html" class="text-white" style="text-decoration: none;">Sign Up</a>
+                        </div>
+                    </div>
+            </div>
+            <div class="col-sm-5 p-0 bg-main-2">
+                <div class="text-end  align-self-sm-center">
+                    <img src="img/image-from-rawpixel-id-2317451-original.png" class="img-fluid" alt="...">
+                </div>
+            </div>
+        </div>
+    </div>
 
-    // avoid sql injection: https://www.w3schools.com/php/php_mysql_prepared_statements.asp
-    $query = $mysqli->prepare("SELECT u_firstname, u_lastname, u_email, u_password FROM users WHERE u_email = ?");
-    $query->bind_param("s", $email);
-    $query->execute();
-    $result = $query->get_result();
+    <!-- footer -->
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top justify-content-center ">
+        <div class="col mb-4 ">
+            <h5>Follow us in</h5>
+            <ul class="nav flex-row" style="margin-left: -10px">
+                <li class="nav-item mb-2 p-1 ">
+                    <a href="#" class="nav p-3 text-muted bg-main-gray rounded-circle"><i class="fa-brands fa-google"></i></a>
+                </li>
+                <li class="nav-item mb-2 p-1">
+                    <a href="#" class="nav p-3 text-muted bg-main-gray rounded-circle"><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li class="nav-item mb-2 p-1 ">
+                    <a href="#" class="nav p-3 text-muted bg-main-gray rounded-circle"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li class="nav-item mb-2 p-1 ">
+                    <a href="#" class="nav p-3 text-muted bg-main-gray rounded-circle"><i class="fa-brands fa-linkedin"></i></a>
+                </li>
+            </ul>
+        </div>
 
-    if ($result->num_rows == 1) {
-      $row = $result->fetch_assoc();
-      if (password_verify($password, $row['u_password'])) {
-        echo "Login successful!";
-        // Set the session variable to indicate that the user is logged in
-        $_SESSION['logged_in'] = true;
-        header("Location: ../index.html");
-        exit();
-      } else {
-        echo "Login failed. Incorrect email or password.";
-      }
-    } else {
-      echo "Login failed. Incorrect email or password.";
-    }
-  } else {
-    echo "Email or password is blank."; 
-  }
+        <div class="col mb-4 ">
+            <h5>Company</h5>
+            <ul class="nav flex-row" style="margin-left: -15px">
+                <li class="nav-item mb-2 "><a href="# " class="nav-link p-3 text-muted ">About</a></li>
+                <li class="nav-item mb-2 "><a href="# " class="nav-link p-3 text-muted ">Term</a></li>
+                <li class="nav-item mb-2 "><a href="# " class="nav-link p-3 text-muted ">Policy</a></li>
+            </ul>
+        </div>
 
-  $mysqli->close();
+        <div class="col mb-4 ">
+            <h5>More</h5>
+            <ul class="nav flex-column" style="margin-left: -7px">
+                <li class="nav-item mb-2 "><a href="# " class="nav-link p-2 text-muted ">Documentation</a></li>
+                <li class="nav-item mb-2 "><a href="# " class="nav-link p-2 text-muted ">Licence</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js " integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN " crossorigin="anonymous "></script>
+    <script src="js/index.js "></script>
+</body>
 
-?>
+</html>
