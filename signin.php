@@ -3,10 +3,11 @@
 
 <head>
     <?php
-        include("head.php")
+        include('head.php');
     ?>
     <title>Sign In</title>
-
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js " integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN " crossorigin="anonymous "></script>
+    <script src="js/index.js "></script>
 </head>
 
 <body>
@@ -21,7 +22,7 @@
                     <div class="text-white h3">Join With Us</div>
                 </div>
                 <!-- PHP form -------------------------------------------------->
-                <form id="signin-form" action="admin/signin.php" method="POST">
+                <form id="signin-form" action="check_signIn.php" method="POST">
                     <div class="row p-3">
                         <div class="col-12 input-group-lg">
                             <input type="text" class="form-control" placeholder="Email" aria-label="Email" id="email" name="email" required>
@@ -44,7 +45,7 @@
                     <!-- END PHP form -------------------------------------------------->
                     <div class="row justify-content-center p-1">
                         <div class="text-sm-dark text-center"> Don't have a account?
-                            <a href="signUp.html" class="text-white" style="text-decoration: none;">Sign Up</a>
+                            <a href="signUp.php" class="text-white" style="text-decoration: none;">Sign Up</a>
                         </div>
                     </div>
             </div>
@@ -93,8 +94,7 @@
             </ul>
         </div>
     </footer>
-    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js " integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN " crossorigin="anonymous "></script>
-    <script src="js/index.js "></script>
+     
 </body>
 
 </html>

@@ -21,7 +21,7 @@
                 </div>
 
                 <!-- PHP form -------------------------------------------------->
-                <form id="signup-form" action="admin/signup.php" method="POST">
+                <form id="signup-form" action="check_signUp.php" method="POST">
                     <div class="row p-3 ">
                         <div class="col-4 input-group-lg"><input type="text" class="form-control" placeholder="First name" aria-label="First name" id="firstname" name="firstname" required></div>
                         <div class="col-8 input-group-lg"><input type="text" class="form-control" placeholder="Last name" aria-label="Last name" id="lastname" name="lastname" required></div>
@@ -50,7 +50,7 @@
 
                 <div class="row justify-content-center p-1">
                     <div class="text-sm-dark text-center"> Already A Menber?
-                        <a href="signIn.html" class="text-white" style="text-decoration: none;">Login</a>
+                        <a href="signIn.php" class="text-white" style="text-decoration: none;">Login</a>
                     </div>
                 </div>
             </div>

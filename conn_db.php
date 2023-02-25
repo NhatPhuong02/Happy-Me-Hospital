@@ -1,11 +1,10 @@
 <?php
-    session_start();
-
+            session_start();
 
     // path to the config file
     // same as include '../config/config.php';
     
-    $config_path = __DIR__ . '/../config/config.php';
+    $config_path = __DIR__ . '/config/config.php';
 
     // include the config file
     require_once $config_path;
