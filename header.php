@@ -39,8 +39,8 @@
                 </li>
                 <hr>
                 <li class="nav-item d-flex justify-content-center">
-                    <?php if (isset($_SESSION['firstname'])) {?>
-                        <a href="" class="btn btn-primary rounded-pill border-0">Welcome <?=$_SESSION['firstname']?></a>
+                    <?php if (isset($_SESSION['id'])) {?>
+                        <a href="" class="btn btn-primary rounded-pill border-0">Welcome <?php echo $_SESSION['firstname']?></a>
                     <?php }else {?>
                         <a class="btn btn-primary rounded-pill border-0" href="signUp.php" role="button" style="background-image: linear-gradient(to right, rgba(89, 186, 184, 1), rgba(19, 132, 131, 1));">Register</a>
                         <?php }?>

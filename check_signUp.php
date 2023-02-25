@@ -12,7 +12,7 @@
     $lastname = $_POST['lastname'];
     $email = $_POST['email'];
     $password = $_POST['password'];
-    
+    $role = 'patient';
     echo 'good1'; // ok
 
     // Check if the email is valid
@@ -45,8 +45,8 @@
           $password = password_hash($password, PASSWORD_DEFAULT);
 
           // Insert the new user into the database
-          $stmt = $mysqli->prepare("INSERT INTO users (u_firstname, u_lastname, u_email, u_password) VALUES (?, ?, ?, ?)");
-          $stmt->bind_param("ssss", $firstname, $lastname, $email, $password);
+          $stmt = $mysqli->prepare("INSERT INTO users (u_firstname, u_lastname, u_email, u_password, u_role) VALUES (?, ?, ?, ?, ?)");
+          $stmt->bind_param("sssss", $firstname, $lastname, $email, $password, $role);
           $stmt->execute();
 
           echo 'User created successfully';

@@ -15,14 +15,14 @@
     $password = $_POST['password'];
 
     // avoid sql injection: https://www.w3schools.com/php/php_mysql_prepared_statements.asp
-    $query = $mysqli->prepare("SELECT u_firstname, u_lastname, u_email, u_password u_role FROM users WHERE u_email = ?");
+    $query = $mysqli->prepare("SELECT u_id u_firstname, u_lastname, u_email, u_password u_role FROM users WHERE u_email = ?");
     $query->bind_param("s", $email);
     $query->execute();
     $result = $query->get_result();
 
     if ($result->num_rows == 1) {
       $row = $result->fetch_array();
-      $_SESSION["uid"] = $row["u_id"];
+      $_SESSION["id"] = $row["u_id"];
       $_SESSION["firstname"] = $row["u_firstname"];
       $_SESSION["lastname"] = $row["u_lastname"];
       $_SESSION["utype"] = $row["u_role"];
