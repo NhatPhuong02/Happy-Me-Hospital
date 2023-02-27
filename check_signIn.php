@@ -20,7 +20,7 @@
     $query->execute();
     $result = $query->get_result();
 
-    if ($result->num_rows == 1) {
+    if ($result->num_rows > 0) {
       $row = $result->fetch_array();
       $_SESSION["id"] = $row["u_id"];
       $_SESSION["firstname"] = $row["u_firstname"];
