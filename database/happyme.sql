@@ -40,6 +40,9 @@ CREATE TABLE `users` (
 -- Đang đổ dữ liệu cho bảng `users`
 --
 
+-- note: 
+-- cái password hệ thống nó mã hoá bằng thuật toán, mỗi lần nó đổi 1 kiểu á, chuỗi này là ciphertext nó ko choo mình biết public vs private key để giải mã, nên em ko insert kiểu này được được vì có text nhưng ko có 2 đứa kiaa để giải mã thì cũng ko giải mã được
+-- vậy nên muốn test thì tạo acc thui. Hoặc gỡ cái mã hoá password để test cho nhanh. Sau này gắn lại.
 INSERT INTO `users` (`u_id`, `u_firstName`, `u_lastName`, `u_email`, `u_password`, `u_role`) VALUES
 (1, 'admin', 'admin', 'admin@gmail.com', '$2y$10$EgfGdu2lOEr.WsHCdMbpYONISXAnhxCIRXQOF3yPSghiJEaBhFwlO', 'admin'),
 (2, 'Quang', 'Minh', '2059027@gmail.com', '$2y$10$nbGQBSuNH2P1iQ7miMB7d.edjl7TeggULNszReQ6lIKnHvj9YdCtu', 'therapist'),
