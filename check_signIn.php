@@ -1,21 +1,32 @@
 <?php
   include ('conn_db.php');
 
+  // include ('variables_list.php');
+
   $signin_path = __DIR__ . 'signIn.php';
 
+  // khai bao bien de luu su dung sau nay
+  // $u_firstname = '';
+
+  $u_email = $_POST['u_email'];
+  $u_password = $_POST['u_password'];
+  
+  // $u_firstName = "";
+  
+
   // Check if the user is already logged in
-  if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] == true) {
-    header("Location: index.php");
-    exit();
-  }
+  // if (isset($_SESSION['loggin_in']) && isset($_SESSION['loggid_in']) == true) {
+    
+  //   header("Location: test.php");
+    
+  //   exit();
+  // }
 
   // my condition
   if (isset($_POST['u_email']) && isset($_POST['u_password'])) {
-    $u_email = $_POST['u_email'];
-    $u_password = $_POST['u_password'];
 
     // avoid sql injection: https://www.w3schools.com/php/php_mysql_prepared_statements.asp
-    $query = $mysqli->prepare("SELECT u_id, u_firstname, u_lastname, u_email, u_password FROM users WHERE u_email = ?");
+    $query = $mysqli->prepare("SELECT u_id, u_firstName, u_lastName, u_email, u_password FROM users WHERE u_email = ?");
     $query->bind_param("s", $u_email);
     $query->execute();
     $result = $query->get_result();
@@ -23,15 +34,35 @@
     if ($result->num_rows > 0) {
       $row = $result->fetch_array();
 
-
       if (password_verify($u_password, $row['u_password'])) {
-        echo "Login successful!";
+        
+        // Login thanh cong
+        $u_firstname = $row['u_firstName'];
+        echo "Login successful!" . $u_firstName; // ok
+
         // Set the session variable to indicate that the user is logged in
-        $_SESSION['logged_in'] = true;
+        // $_SESSION['logged_in'] = true;
+
+
+        $_SESSION['u_firstName'] = $row['u_firstName'];
+        // echo "Login successful!" . $_SESSION['u_firstName']; // ok
+        
+        // set cookies
+        setcookie('u_id', $row['u_id'], time() + 3600);
+        setcookie('u_firstName', $row['u_firstName'], time() + 3600);
+
+        
+        
+        // echo $_SESSION['id'];
+        // echo $u_firstname;
+
         header("Location: index.php");
+        // header("Location: test.php");
+        session_destroy();
         exit();
       } else {
         echo "Login failed. Incorrect email or password.";
+        
       }
     } else {
       echo "Login failed. Incorrect email or password.";

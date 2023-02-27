@@ -1,6 +1,7 @@
 
 <!--    NAV HEADER FOR CUSTOMER SIDE PAGE
         EXCEPT LOGIN AND REGISTRATION PAGE  -->
+        
 <nav class="navbar navbar-expand-lg bg-white">
     <div class="container">
         <a class="navbar-brand" href="index.html">
@@ -40,8 +41,9 @@
                 </li>
                 <hr>
                 <li class="nav-item d-flex justify-content-center">
-                    <?php if (isset($_SESSION['id'])) {?>
-                        <a href="" class="btn btn-primary rounded-pill border-0">Welcome <?php echo $_SESSION['firstname']?></a>
+                    <?php if ($_COOKIE['u_id'] != NULL) {?>
+                        
+                        <a class="btn btn-primary rounded-pill border-0" href="signUp.php" role="button" style="background-image: linear-gradient(to right, rgba(89, 186, 184, 1), rgba(19, 132, 131, 1));"><?php echo $_COOKIE['u_firstName'];?></a>
                         <?php }else {?>
                             <a class="btn btn-primary rounded-pill border-0" href="signUp.php" role="button" style="background-image: linear-gradient(to right, rgba(89, 186, 184, 1), rgba(19, 132, 131, 1));">Register</a>
                         <?php }?>

@@ -38,7 +38,7 @@
                     </div>
                     <div class="row justify-content-center p-1">
                         <div class="col col-6 text-center">
-                            <button class="btn btn-dark btn-lg" type="signin-form" name="logged_in"> Sign In
+                            <button class="btn btn-dark btn-lg" type="signin-form" id ="logged_in" name="logged_in"> Sign In
                     </button>
                         </div>
                     </div>
