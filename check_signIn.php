@@ -10,24 +10,21 @@
   }
 
   // my condition
-  if (isset($_POST['email']) && isset($_POST['password'])) {
-    $email = $_POST['email'];
-    $password = $_POST['password'];
+  if (isset($_POST['u_email']) && isset($_POST['u_password'])) {
+    $u_email = $_POST['u_email'];
+    $u_password = $_POST['u_password'];
 
     // avoid sql injection: https://www.w3schools.com/php/php_mysql_prepared_statements.asp
-    $query = $mysqli->prepare("SELECT u_id u_firstname, u_lastname, u_email, u_password u_role FROM users WHERE u_email = ?");
-    $query->bind_param("s", $email);
+    $query = $mysqli->prepare("SELECT u_id, u_firstname, u_lastname, u_email, u_password FROM users WHERE u_email = ?");
+    $query->bind_param("s", $u_email);
     $query->execute();
     $result = $query->get_result();
 
     if ($result->num_rows > 0) {
       $row = $result->fetch_array();
-      $_SESSION["id"] = $row["u_id"];
-      $_SESSION["firstname"] = $row["u_firstname"];
-      $_SESSION["lastname"] = $row["u_lastname"];
-      $_SESSION["utype"] = $row["u_role"];
 
-      if (password_verify($password, $row['u_password'])) {
+
+      if (password_verify($u_password, $row['u_password'])) {
         echo "Login successful!";
         // Set the session variable to indicate that the user is logged in
         $_SESSION['logged_in'] = true;

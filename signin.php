@@ -25,12 +25,12 @@
                 <form id="signin-form" action="check_signIn.php" method="POST">
                     <div class="row p-3">
                         <div class="col-12 input-group-lg">
-                            <input type="text" class="form-control" placeholder="Email" aria-label="Email" id="email" name="email" required>
+                            <input type="text" class="form-control" placeholder="Email" aria-label="Email" id="email" name="u_email" required>
                         </div>
                     </div>
                     <div class="row p-3 ">
                         <div class="input-group mb-3 input-group-lg ">
-                            <input type="password" placeholder="Password" class="form-control" aria-label="Text input with checkbox" id="password" name="password" required>
+                            <input type="password" placeholder="Password" class="form-control" aria-label="Text input with checkbox" id="password" name="u_password" required>
                             <div class="input-group-text" style="background-color:#59BAB8">
                                 <i class="fa-solid fa-eye" id="eyes_password" onclick="myFunction()"></i>
                             </div>

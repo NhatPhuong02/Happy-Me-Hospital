@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `users` (
-  `u_id` int(11) NOT NULL,
+  `u_id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `u_firstName` varchar(255) COLLATE utf8_vietnamese_ci NOT NULL,
   `u_lastName` varchar(255) COLLATE utf8_vietnamese_ci NOT NULL,
   `u_email` varchar(255) COLLATE utf8_vietnamese_ci NOT NULL,

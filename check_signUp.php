@@ -8,11 +8,11 @@
   // Check if the form has been submitted
   if (isset($_POST['submit'])) {
     // Get the form data
-    $firstname = $_POST['firstname'];
-    $lastname = $_POST['lastname'];
-    $email = $_POST['email'];
-    $password = $_POST['password'];
-    $role = 'patient';
+    $u_firstname = $_POST['u_firstname'];
+    $u_lastname = $_POST['u_lastname'];
+    $u_email = $_POST['u_email'];
+    $u_password = $_POST['u_password'];
+    $u_role = 'patient';
     echo 'good1'; // ok
 
     // Check if the email is valid
@@ -37,16 +37,16 @@
 
       } else {
         // Check if the password is at least 4 characters long
-        if (strlen($password) < 4) {
+        if (strlen($u_password) < 4) {
           echo 'Password must be at least 4 characters long';
           echo "good4"; // this is for testing
         } else {
           // Hash the password
-          $password = password_hash($password, PASSWORD_DEFAULT);
+          $u_password = password_hash($u_password, PASSWORD_DEFAULT);
 
           // Insert the new user into the database
           $stmt = $mysqli->prepare("INSERT INTO users (u_firstname, u_lastname, u_email, u_password, u_role) VALUES (?, ?, ?, ?, ?)");
-          $stmt->bind_param("sssss", $firstname, $lastname, $email, $password, $role);
+          $stmt->bind_param("sssss", $u_firstname, $u_lastname, $u_email, $u_password, $u_role);
           $stmt->execute();
 
           echo 'User created successfully';
