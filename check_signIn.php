@@ -11,9 +11,6 @@
   $u_email = $_POST['u_email'];
   $u_password = $_POST['u_password'];
   
-  // $u_firstName = "";
-  
-
   // Check if the user is already logged in
   // if (isset($_SESSION['loggin_in']) && isset($_SESSION['loggid_in']) == true) {
     
@@ -36,29 +33,14 @@
 
       if (password_verify($u_password, $row['u_password'])) {
         
-        // Login thanh cong
-        $u_firstname = $row['u_firstName'];
-        echo "Login successful!" . $u_firstName; // ok
-
-        // Set the session variable to indicate that the user is logged in
-        // $_SESSION['logged_in'] = true;
-
-
         $_SESSION['u_firstName'] = $row['u_firstName'];
-        // echo "Login successful!" . $_SESSION['u_firstName']; // ok
         
         // set cookies
         setcookie('u_id', $row['u_id'], time() + 3600);
         setcookie('u_firstName', $row['u_firstName'], time() + 3600);
 
-        
-        
-        // echo $_SESSION['id'];
-        // echo $u_firstname;
-
         header("Location: index.php");
-        // header("Location: test.php");
-        session_destroy();
+
         exit();
       } else {
         echo "Login failed. Incorrect email or password.";
