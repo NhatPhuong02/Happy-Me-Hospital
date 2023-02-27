@@ -3,6 +3,8 @@
 
     // path to the config file
     // same as include '../config/config.php';
+
+    include '../config/config.php';
     
     $config_path = __DIR__ . '/config/config.php';
 
