@@ -44,7 +44,7 @@
                     <?php if ($_COOKIE['u_id'] != NULL) {?>
                         <!-- Update more: khi log in sẽ thay tên xong, user click vào tên thì sẽ navigate qua page cá nhân
                         như vậy là sẽ check if click vào + cookie u_id != null thì sẽ chuyển qa page cá nhân.
-                         thảo luận thêm trên nhóm nhé bro -->
+                        Thảo luận thêm trên nhóm nhé bro -->
                         <a class="btn btn-primary rounded-pill border-0" href="signUp.php" role="button" style="background-image: linear-gradient(to right, rgba(89, 186, 184, 1), rgba(19, 132, 131, 1));"><?php echo  $_COOKIE['u_firstName'];?></a>
                         <?php }else {?>
                             <a class="btn btn-primary rounded-pill border-0" href="signUp.php" role="button" style="background-image: linear-gradient(to right, rgba(89, 186, 184, 1), rgba(19, 132, 131, 1));">Register</a>
