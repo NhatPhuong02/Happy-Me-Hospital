@@ -1,4 +1,5 @@
 <?php
+  session_start();
   include ('conn_db.php');
 
   $signup_path = __DIR__ . 'signUp.php';
@@ -14,6 +15,10 @@
     $u_password = $_POST['u_password'];
     $u_role = 'patient';
     echo 'good1'; // ok
+    $_SESSION['firstName'] = $_POST['u_firstname'];
+    $_SESSION['lastName'] = $_POST['u_lastname'];
+    $_SESSION['email'] = $_POST['u_email'];
+   
 
     // Check if the email is valid
     // if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {

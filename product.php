@@ -3,8 +3,7 @@
 
 <head>
     <?php
-            session_start();
-
+        session_start();
         include("head.php")
     ?>
     <title>Medicine Product</title>

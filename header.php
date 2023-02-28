@@ -40,11 +40,11 @@
                     <a class="nav-link" href="aboutUs.php">About Us</a>
                 </li>
                 <hr>
-                <li class="nav-item dropdown">
-                    <?php if (!isset($_SESSION['id'])) {?>
+                <li class="nav-item dropdown ms-lg-5">
+                    <?php if (!isset($_SESSION['firstName'])) {?>
                         <a class="btn btn-primary rounded-pill border-0" href="signUp.php" role="button" style="background-image: linear-gradient(to right, rgba(89, 186, 184, 1), rgba(19, 132, 131, 1));">Register</a>
                     <?php }?>
-                    <?php if (isset($_SESSION['id'])) {?>
+                    <?php if (isset($_SESSION['firstName'])) {?>
                         <a class="nav-link dropdown-toggle text-sm-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Welcome <?= $_SESSION['lastName']?></a>
                         <ul class="dropdown-menu text-center text-xl-start ">
                             <li><a class="dropdown-item " href="profile.php">Profile</a></li>
