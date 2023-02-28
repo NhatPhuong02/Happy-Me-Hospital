@@ -35,7 +35,7 @@ CREATE TABLE `users` (
   `u_password` varchar(255) COLLATE utf8_vietnamese_ci NOT NULL,
   `u_role` enum('patient','therapist','admin') COLLATE utf8_vietnamese_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_vietnamese_ci;
-
+b 
 --
 -- Đang đổ dữ liệu cho bảng `users`
 --

@@ -3,6 +3,8 @@
 
 <head>
 <?php
+        session_start();
+
         include("head.php")
     ?>
     <title>Our Feedback</title>

@@ -3,6 +3,8 @@
 
 <head>
     <?php
+            session_start();
+
         include("head.php")
     ?>
     <title>Sign Up</title>
