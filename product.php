@@ -29,9 +29,9 @@
         </div>
         <div class="row mt-5 justify-content-center">
             <div class="col col-lg-3 col-xl-3 col-md-4 col-sm-6 col-10 mt-4">
-                <a class="card text-decoration-none text-black">
+                <a class="card text-decoration-none text-black ">
                     <img src="img/drugs/pexeva.png" class="card-img-top" alt="...">
-                    <div class="row card-body">
+                    <div class="row card-body m-0 p-3 bg-main text-white rounded-bottom-1">
                         <div class="col-6">
                             <h5 class="card-title">Card title</h5>
                             <h6 class="card-title money" id="">15.00$</h6>
@@ -45,7 +45,7 @@
             <div class="col col-lg-3 col-xl-3 col-md-4 col-sm-6 col-10 mt-4">
                 <a class="card text-decoration-none text-black">
                     <img src="img/drugs/anafranil.jpeg" class="card-img-top" alt="...">
-                    <div class="row card-body">
+                    <div class="row card-body m-0 p-3 bg-main text-white rounded-bottom-1">
                         <div class="col-6">
                             <h5 class="card-title">Card title</h5>
                             <h6 class="card-title money" id="">15.00$</h6>
@@ -59,7 +59,7 @@
             <div class="col col-lg-3 col-xl-3 col-md-4 col-sm-6 col-10 mt-4">
                 <a class="card text-decoration-none text-black">
                     <img src="img/drugs/clealine-caplyta.jpg" class="card-img-top" alt="...">
-                    <div class="row card-body">
+                    <div class="row card-body m-0 p-3 bg-main text-white rounded-bottom-1">
                         <div class="col-6">
                             <h5 class="card-title">Card title</h5>
                             <h6 class="card-title money" id="">15.00$</h6>
@@ -73,7 +73,7 @@
             <div class="col col-lg-3 col-xl-3 col-md-4 col-sm-6 col-10 mt-4">
                 <a class="card text-decoration-none text-black">
                     <img src="img/drugs/desipramine-norpramin.webp" class="card-img-top" alt="...">
-                    <div class="row card-body">
+                    <div class="row card-body m-0 p-3 bg-main text-white rounded-bottom-1">
                         <div class="col-6">
                             <h5 class="card-title">Card title</h5>
                             <h6 class="card-title money" id="">15.00$</h6>
@@ -87,7 +87,7 @@
             <div class="col col-lg-3 col-xl-3 col-md-4 col-sm-6 col-10 mt-4">
                 <a class="card text-decoration-none text-black">
                     <img src="img/drugs/doxepin-neuraxpharm.jpg" class="card-img-top" alt="...">
-                    <div class="row card-body">
+                    <div class="row card-body m-0 p-3 bg-main text-white rounded-bottom-1">
                         <div class="col-6">
                             <h5 class="card-title">Card title</h5>
                             <h6 class="card-title money" id="">15.00$</h6>
@@ -101,7 +101,7 @@
             <div class="col col-lg-3 col-xl-3 col-md-4 col-sm-6 col-10 mt-4">
                 <a class="card text-decoration-none text-black">
                     <img src="img/drugs/fetzima.jpg" class="card-img-top" alt="...">
-                    <div class="row card-body">
+                    <div class="row card-body m-0 p-3 bg-main text-white rounded-bottom-1">
                         <div class="col-6">
                             <h5 class="card-title">Card title</h5>
                             <h6 class="card-title money" id="">15.00$</h6>
@@ -115,7 +115,7 @@
             <div class="col col-lg-3 col-xl-3 col-md-4 col-sm-6 col-10 mt-4">
                 <a class="card text-decoration-none text-black">
                     <img src="img/drugs/fuxofen-20.jpg" class="card-img-top" alt="...">
-                    <div class="row card-body">
+                    <div class="row card-body m-0 p-3 bg-main text-white rounded-bottom-1">
                         <div class="col-6">
                             <h5 class="card-title">Card title</h5>
                             <h6 class="card-title money" id="">15.00$</h6>
@@ -129,7 +129,7 @@
             <div class="col col-lg-3 col-xl-3 col-md-4 col-sm-6 col-10 mt-4">
                 <a class="card text-decoration-none text-black">
                     <img src="img/drugs/gaba-750mg-now.png" class="card-img-top" alt="...">
-                    <div class="row card-body">
+                    <div class="row card-body m-0 p-3 bg-main text-white rounded-bottom-1">
                         <div class="col-6">
                             <h5 class="card-title">Card title</h5>
                             <h6 class="card-title money" id="">15.00$</h6>
