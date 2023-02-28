@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
    <?php
+        session_start();
         include("head.php");
    ?>
    <title>Welcome Happy Me</title>
