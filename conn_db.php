@@ -1,31 +1,13 @@
 <?php
-            session_start();
+$mysqli = new mysqli("localhost","root","","happyme");
 
-    // path to the config file
-    // same as include '../config/config.php';
+if($mysqli -> connect_errno){
+    header("location: db_error.php");
+    exit(1);
+}
 
-    include '../config/config.php';
-    
-    $config_path = __DIR__ . '/config/config.php';
-
-    // include the config file
-    require_once $config_path;
-
-    $mysqli = new mysqli(
-        $db_host,
-        $db_user,
-        $db_password,
-        $db_db,
-        $db_port
-    );
-
-
-    if ($mysqli->connect_error) {
-        echo 'Errno: '.$mysqli->connect_errno;
-        echo '<br>';
-        echo 'Error: '.$mysqli->connect_error;
-        exit();
-    }
+define('SITE_ROOT',realpath(dirname(__FILE__)));
+date_default_timezone_set('Asia/Ho_Chi_Minh');
 ?>
 
 

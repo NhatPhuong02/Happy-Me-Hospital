@@ -1,5 +1,5 @@
 <?php
-  include ('conn_db.php');
+  session_start(); include ('conn_db.php');
 
   // include ('variables_list.php');
 
@@ -33,7 +33,11 @@
 
       if (password_verify($u_password, $row['u_password'])) {
         
-        $_SESSION['u_firstName'] = $row['u_firstName'];
+        $_SESSION['firstName'] = $row['u_firstName'];
+        $_SESSION['lastName'] = $row['u_lastName'];
+        $_SESSION['email'] = $row['u_email'];
+        $_SESSION['id'] = $row['u_id'];
+
         
         // set cookies
         setcookie('u_id', $row['u_id'], time() + 3600);
