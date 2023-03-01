@@ -38,23 +38,15 @@ CREATE TABLE `users` (
   `u_role` enum('patient','therapist','admin') COLLATE utf8_vietnamese_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_vietnamese_ci;
 
-
-CREATE TABLE `medicine` (
-  `m_id` int(11) NOT NULL,
-  `m_name` varchar(255) COLLATE utf8_vietnamese_ci NOT NULL,
-  `m_quantity` char(10) COLLATE utf8_vietnamese_ci DEFAULT NULL,
-  `m_price` varchar(255) COLLATE utf8_vietnamese_ci NOT NULL,
-  `m_pic` text COLLATE utf8mb4_vietnamese_ci DEFAULT NULL
-)
 --
 -- Đang đổ dữ liệu cho bảng `users`
 --
 
---  
--- (1, 'admin', 'admin', '0906919685', 'admin@gmail.com', '21042002', 'Male', 'admin'),
--- (2, 'Quang', 'Minh', '0906919685', '2059027@gmail.com', '11111111', 'Male', 'therapist'),
--- (3, 'Thai ', 'Linh', '0906919685', '2059025@gmail.com', '22222222', 'Male', 'patient'),
--- (4, 'tuan', 'minh', '0906919685', 'hello@gmail.com', '33333333', 'Male', 'patient');
+INSERT INTO `users` (`u_id`, `u_firstName`, `u_lastName`, `u_phone`, `u_email`, `u_password`, `u_gender`, `u_role`) VALUES
+(1, 'admin', 'admin', '0906919685', 'admin@gmail.com', '21042002', 'Male', 'admin'),
+(2, 'Quang', 'Minh', '0906919685', '2059027@gmail.com', '11111111', 'Male', 'therapist'),
+(3, 'Thai ', 'Linh', '0906919685', '2059025@gmail.com', '22222222', 'Male', 'patient'),
+(4, 'tuan', 'minh', '0906919685', 'hello@gmail.com', '33333333', 'Male', 'patient');
 
 --
 -- Chỉ mục cho các bảng đã đổ
@@ -70,8 +62,7 @@ ALTER TABLE `users`
 --
 -- AUTO_INCREMENT cho các bảng đã đổ
 --
-ALTER TABLE `medicine`
-  ADD PRIMARY KEY (`m_id`);
+
 --
 -- AUTO_INCREMENT cho bảng `users`
 --
@@ -79,9 +70,6 @@ ALTER TABLE `users`
   MODIFY `u_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 COMMIT;
 
-ALTER TABLE `medicine`
-  MODIFY `m_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
-COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
