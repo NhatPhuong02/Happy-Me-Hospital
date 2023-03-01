@@ -2,7 +2,7 @@
 
 // auto destroy session after 3 hour 
 // $session_timeout = 3 * 60 * 60; // 3 hours * 60 minutes/hour * 60 seconds/minute
-$session_timeout = 1; // after 1 minute for testing
+$session_timeout = 15; // after 15 seconds for testing
 
 // Start the session
 session_start();

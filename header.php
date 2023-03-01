@@ -41,6 +41,7 @@
                 </li>
                 <hr>
                 <li class="nav-item dropdown ms-lg-5">
+                    <?php include ("session_timeout.php")?>
                     <?php if (!isset($_SESSION['firstName'])) {?>
                         <a class="btn btn-primary rounded-pill border-0" href="signUp.php" role="button" style="background-image: linear-gradient(to right, rgba(89, 186, 184, 1), rgba(19, 132, 131, 1));">Register</a>
                     <?php }?>
