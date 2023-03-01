@@ -8,12 +8,12 @@ $session_timeout = 15; // after 15 seconds for testing
 session_start();
 
 // Check user logged in?
-if (!isset($_SESSION['u_id'])) {
+// if (!isset($_SESSION['u_id'])) {
 
-    header('Location: signin.php');
+//     header('Location: index.php');
 
-    exit;
-}
+//     exit;
+// }
 
 // Check if session expired
 if (isset($_SESSION['last_activity']) && (time() - $_SESSION['last_activity'] > $session_timeout)) {
