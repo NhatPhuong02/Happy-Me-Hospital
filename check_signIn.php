@@ -33,7 +33,7 @@
 
       if (password_verify($u_password, $row['u_password'])) {
         
-        $_SESSION['u_firstName'] = $row['u_firstName'];
+        $_SESSION['firstName'] = $row['u_firstName'];
         $_SESSION['u_lastName'] = $row['u_lastName'];
         $_SESSION['u_email'] = $row['u_email'];
         $_SESSION['u_id'] = $row['u_id'];
