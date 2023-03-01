@@ -2,8 +2,8 @@
 <!--    NAV HEADER FOR CUSTOMER SIDE PAGE
         EXCEPT LOGIN AND REGISTRATION PAGE  -->
         
-<nav class="navbar navbar-expand-lg bg-white">
-    <div class="container">
+<nav class="navbar navbar-expand-lg bg-white sticky-top border-bottom border-3 shadow-sm" >
+    <div class="container"> 
         <a class="navbar-brand" href="index.html">
             <img src="img/Logo.png" alt="Logo Happp Me Hospital" width="185" height="40">
         </a>
@@ -18,12 +18,12 @@
                     <a class="nav-link active" aria-current="page" href="index.php">Home</a>
                 </li>
                 <hr>
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown ">
                     <a class="nav-link dropdown-toggle text-sm-center" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
                         Services
                     </a>
-                    <ul class="dropdown-menu text-center text-xl-start ">
+                    <ul class="dropdown-menu text-center text-xl-start border-2">
                         <li><a class="dropdown-item " href="forum.php">Forum</a></li>
                         <li>
                             <hr class="dropdown-divider">
@@ -47,7 +47,7 @@
                     <?php }?>
                     <?php if (isset($_SESSION['firstName'])) {?>
                         <a class="nav-link dropdown-toggle text-sm-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Welcome <?= $_SESSION['lastName']?></a>
-                        <ul class="dropdown-menu text-center text-xl-start ">
+                        <ul class="dropdown-menu text-center text-xl-start border-2">
                             <li><a class="dropdown-item " href="profile.php">Profile</a></li>
                             <li>
                                 <hr class="dropdown-divider">
