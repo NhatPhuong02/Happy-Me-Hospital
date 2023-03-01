@@ -34,11 +34,15 @@
       if (password_verify($u_password, $row['u_password'])) {
         
         $_SESSION['firstName'] = $row['u_firstName'];
+
         $_SESSION['lastName'] = $row['u_lastName'];
         $_SESSION['email'] = $row['u_email'];
         $_SESSION['id'] = $row['u_id'];
         $_SESSION['phone']= $row['u_phone'];
         $_SESSION['gender']= $row['u_gender'];
+        $_SESSION['u_lastName'] = $row['u_lastName'];
+        $_SESSION['u_email'] = $row['u_email'];
+        $_SESSION['u_id'] = $row['u_id'];
 
         $_SESSION['last_activity'] = time();
 
@@ -63,3 +67,5 @@
   $mysqli->close();
 
 ?>
+
+
