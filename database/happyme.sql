@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th2 27, 2023 lúc 03:01 AM
+-- Thời gian đã tạo: Th3 01, 2023 lúc 08:23 AM
 -- Phiên bản máy phục vụ: 10.4.24-MariaDB
 -- Phiên bản PHP: 8.1.6
 
@@ -28,25 +28,25 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `users` (
-  `u_id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `u_id` int(11) NOT NULL,
   `u_firstName` varchar(255) COLLATE utf8_vietnamese_ci NOT NULL,
   `u_lastName` varchar(255) COLLATE utf8_vietnamese_ci NOT NULL,
+  `u_phone` char(10) COLLATE utf8_vietnamese_ci DEFAULT NULL,
   `u_email` varchar(255) COLLATE utf8_vietnamese_ci NOT NULL,
   `u_password` varchar(255) COLLATE utf8_vietnamese_ci NOT NULL,
+  `u_gender` enum('Male','Female','Order') COLLATE utf8_vietnamese_ci DEFAULT NULL,
   `u_role` enum('patient','therapist','admin') COLLATE utf8_vietnamese_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_vietnamese_ci;
-b 
+
 --
 -- Đang đổ dữ liệu cho bảng `users`
 --
 
--- note: 
--- cái password hệ thống nó mã hoá bằng thuật toán, mỗi lần nó đổi 1 kiểu á, chuỗi này là ciphertext nó ko choo mình biết public vs private key để giải mã, nên em ko insert kiểu này được được vì có text nhưng ko có 2 đứa kiaa để giải mã thì cũng ko giải mã được
--- vậy nên muốn test thì tạo acc thui. Hoặc gỡ cái mã hoá password để test cho nhanh. Sau này gắn lại.
-INSERT INTO `users` (`u_id`, `u_firstName`, `u_lastName`, `u_email`, `u_password`, `u_role`) VALUES
-(1, 'admin', 'admin', 'admin@gmail.com', '$2y$10$EgfGdu2lOEr.WsHCdMbpYONISXAnhxCIRXQOF3yPSghiJEaBhFwlO', 'admin'),
-(2, 'Quang', 'Minh', '2059027@gmail.com', '$2y$10$nbGQBSuNH2P1iQ7miMB7d.edjl7TeggULNszReQ6lIKnHvj9YdCtu', 'therapist'),
-(3, 'Thai ', 'Linh', '2059025@gmail.com', '$2y$10$ySce6CubpqmpVAzjoYu1XeLQifB81yTCAYDNBLgk0gTGzUNePVgQK', 'patient');
+-- INSERT INTO `users` (`u_id`, `u_firstName`, `u_lastName`, `u_phone`, `u_email`, `u_password`, `u_gender`, `u_role`) VALUES
+-- (1, 'admin', 'admin', '0906919685', 'admin@gmail.com', '21042002', 'Male', 'admin'),
+-- (2, 'Quang', 'Minh', '0906919685', '2059027@gmail.com', '11111111', 'Male', 'therapist'),
+-- (3, 'Thai ', 'Linh', '0906919685', '2059025@gmail.com', '22222222', 'Male', 'patient'),
+-- (4, 'tuan', 'minh', '0906919685', 'hello@gmail.com', '33333333', 'Male', 'patient');
 
 --
 -- Chỉ mục cho các bảng đã đổ
@@ -67,7 +67,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT cho bảng `users`
 --
 ALTER TABLE `users`
-  MODIFY `u_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `u_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
