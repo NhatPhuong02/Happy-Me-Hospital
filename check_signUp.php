@@ -51,6 +51,11 @@
 
           // Insert the new user into the database
           $stmt = $mysqli->prepare("INSERT INTO users (u_firstname, u_lastname, u_email, u_password, u_role) VALUES (?, ?, ?, ?, ?)");
+          
+          // upper name
+          $u_firstname = strtoupper($u_firstname);
+          $u_lastname = strtoupper($u_lastname);
+
           $stmt->bind_param("sssss", $u_firstname, $u_lastname, $u_email, $u_password, $u_role);
           $stmt->execute();
 

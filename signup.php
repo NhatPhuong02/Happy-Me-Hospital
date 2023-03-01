@@ -25,8 +25,8 @@
                 <!-- PHP form -------------------------------------------------->
                 <form id="signup-form" action="check_signUp.php" method="POST">
                     <div class="row p-3 ">
-                        <div class="col-4 input-group-lg"><input type="text" class="form-control" placeholder="First name" aria-label="First name" id="firstname" name="u_firstname" required></div>
-                        <div class="col-8 input-group-lg"><input type="text" class="form-control" placeholder="Last name" aria-label="Last name" id="lastname" name="u_lastname" required></div>
+                        <div class="col-4 input-group-lg"><input type="text" class="form-control" placeholder="First name" aria-label="First name" id="firstname" name="u_firstname" required style="text-transform:uppercase;"></div>
+                        <div class="col-8 input-group-lg"><input type="text" class="form-control" placeholder="Last name" aria-label="Last name" id="lastname" name="u_lastname" required style="text-transform:uppercase;"></div>
                     </div>
                     <div class="row p-3">
                         <div class="col-12 input-group-lg">
