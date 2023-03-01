@@ -66,7 +66,7 @@
           exit();
         }
       }
-      $mysqli->close();
+      $mysqli->close(); // test root
   }
 
 ?>
