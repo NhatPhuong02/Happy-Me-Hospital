@@ -38,7 +38,8 @@
         $_SESSION['email'] = $row['u_email'];
         $_SESSION['id'] = $row['u_id'];
 
-        
+        $_SESSION['last_activity'] = time();
+
         // set cookies
         setcookie('u_id', $row['u_id'], time() + 3600);
         setcookie('u_firstName', $row['u_firstName'], time() + 3600);
