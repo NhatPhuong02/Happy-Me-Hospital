@@ -28,8 +28,7 @@
                     </div>
                     <div class="row ps-0 ms-1 my-2">
                         <div class="col-6 title">Phone:</div>
-                        <div class="col-6 data"><?php if(isset($_SESSION['phone']))
-                        { echo substr($_SESSION['phone'],0,4) . "." . substr($_SESSION['phone'],4,3) . "." . substr($_SESSION['phone'],7,3);} ?></div>
+                        <div class="col-6 data"><?php if (isset($_SESSION['phone'])) {echo substr($_SESSION['phone'],0,4) . "." . substr($_SESSION['phone'],4,3) . "." . substr($_SESSION['phone'],7,3);} ?></div>
                     </div>
                     <div class="row ps-0 ms-1 my-2">
                         <div class="col-6 title">Email:</div>
@@ -37,11 +36,11 @@
                     </div>
                     <div class="row ps-0 ms-1 my-2">
                         <div class="col-6 title">Gender:</div>
-                        <div class="col-6 data"><?php if(isset($_SESSION['gender'])){echo $_SESSION['gender'];}?></div>
+                        <div class="col-6 data"><?php if (isset($_SESSION['gender'])) {echo $_SESSION['gender'];}?></div>
                     </div>
                     <div class="row ps-0 ms-1 my-2">
                         <div class="col-6 title">Address:</div>
-                        <div class="col-6 data"><?php if(isset($_SESSION['gender'])){echo $_SESSION['gender'];}?></div>
+                        <div class="col-6 data"><?php if (isset($_SESSION['gender'])) {echo $_SESSION['gender'];}?></div>
                     </div>
                 </div>
             </div>

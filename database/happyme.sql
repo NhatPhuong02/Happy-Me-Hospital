@@ -38,6 +38,14 @@ CREATE TABLE `users` (
   `u_role` enum('patient','therapist','admin') COLLATE utf8_vietnamese_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_vietnamese_ci;
 
+
+CREATE TABLE `medicine` (
+  `m_id` int(11) NOT NULL,
+  `m_name` varchar(255) COLLATE utf8_vietnamese_ci NOT NULL,
+  `m_quantity` char(10) COLLATE utf8_vietnamese_ci DEFAULT NULL,
+  `m_price` varchar(255) COLLATE utf8_vietnamese_ci NOT NULL,
+  `m_pic` text COLLATE utf8mb4_vietnamese_ci DEFAULT NULL
+)
 --
 -- Đang đổ dữ liệu cho bảng `users`
 --
@@ -62,7 +70,8 @@ ALTER TABLE `users`
 --
 -- AUTO_INCREMENT cho các bảng đã đổ
 --
-
+ALTER TABLE `medicine`
+  ADD PRIMARY KEY (`m_id`);
 --
 -- AUTO_INCREMENT cho bảng `users`
 --
@@ -70,6 +79,9 @@ ALTER TABLE `users`
   MODIFY `u_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 COMMIT;
 
+ALTER TABLE `medicine`
+  MODIFY `m_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
