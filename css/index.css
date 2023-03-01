@@ -31,3 +31,7 @@ a {
     color: black
 }
 
+.border-main-2 {
+    border-color: #59BAB8;
+    border-style: solid;
+}
