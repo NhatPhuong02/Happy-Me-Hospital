@@ -1,5 +1,5 @@
 <?php
-$mysqli = new mysqli("localhost","root","","happyme");
+$mysqli = new mysqli("127.0.0.1","root","root","happyme", 3306);
 
 if($mysqli -> connect_errno){
     header("location: db_error.php");
