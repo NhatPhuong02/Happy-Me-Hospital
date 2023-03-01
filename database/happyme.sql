@@ -50,7 +50,7 @@ CREATE TABLE `medicine` (
 -- Đang đổ dữ liệu cho bảng `users`
 --
 
--- INSERT INTO `users` (`u_id`, `u_firstName`, `u_lastName`, `u_phone`, `u_email`, `u_password`, `u_gender`, `u_role`) VALUES
+--  
 -- (1, 'admin', 'admin', '0906919685', 'admin@gmail.com', '21042002', 'Male', 'admin'),
 -- (2, 'Quang', 'Minh', '0906919685', '2059027@gmail.com', '11111111', 'Male', 'therapist'),
 -- (3, 'Thai ', 'Linh', '0906919685', '2059025@gmail.com', '22222222', 'Male', 'patient'),

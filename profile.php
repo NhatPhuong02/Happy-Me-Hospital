@@ -15,7 +15,7 @@
         <div class="row">
             <div class="col-3 text-center px-4 pb-4">
                 <div class="logo text-center">
-                    <div class="row bg-main-2 p-3 rounded-2"><img src="img/avatar/man (1).png" class="img-thumbnail rounded-circle bg-white" alt="logo"></div>
+                    <div class="row bg-main-2 p-3 rounded-2"><img <?php if(!isset($_SESSION['avatar'])){echo  "src='img/avatar/default.png'";} else{echo "src=\"img/avatar/{$_SESSION['avatar']}\"";}?> class="img-thumbnail rounded-circle bg-white" alt="logo"></div>
                 </div>
                 <div class="btn bg-main-2-hover text-white mt-2 mb-4">Edit Information</div>
             </div>
@@ -40,7 +40,7 @@
                     </div>
                     <div class="row ps-0 ms-1 my-2">
                         <div class="col-6 title">Address:</div>
-                        <div class="col-6 data"><?php if (isset($_SESSION['gender'])) {echo $_SESSION['gender'];}?></div>
+                        <div class="col-6 data"><?php if (isset($_SESSION['address'])) {echo $_SESSION['address'];}?></div>
                     </div>
                 </div>
             </div>

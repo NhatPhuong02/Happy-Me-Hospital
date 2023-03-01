@@ -24,16 +24,17 @@
 
                 <!-- PHP form -------------------------------------------------->
                 <form id="signup-form" action="check_signUp.php" method="POST">
-                    <div class="row p-3 ">
-                        <div class="col-4 input-group-lg"><input type="text" class="form-control" placeholder="First name" aria-label="First name" id="firstname" name="u_firstname" required style="text-transform:uppercase;"></div>
-                        <div class="col-8 input-group-lg"><input type="text" class="form-control" placeholder="Last name" aria-label="Last name" id="lastname" name="u_lastname" required style="text-transform:uppercase;"></div>
+                    <div class="row p-1 ">
+                        <div class="col-4 input-group-lg"><input type="text" class="form-control" placeholder="First name" aria-label="First name" id="firstname" name="u_firstname" ></div>
+                        <div class="col-4 input-group-lg"><input type="text" class="form-control" placeholder="Last name" aria-label="Last name" id="lastname" name="u_lastname" ></div>
+                        <div class="col-4 input-group-lg"><input type="text" class="form-control" placeholder="Phone number" aria-label="Phone number" id="phonenumber" name="u_phone" ></div>
                     </div>
-                    <div class="row p-3">
+                    <div class="row p-1">
                         <div class="col-12 input-group-lg">
                             <input type="text" class="form-control" placeholder="Email" aria-label="Email" id="email" name="u_email" required>
                         </div>
                     </div>
-                    <div class="row p-3 ">
+                    <div class="row p-1 ">
                         <div class="input-group mb-3 input-group-lg ">
                             <input type="password" placeholder="Password" class="form-control" aria-label="Text input with checkbox" id="password" name="u_password" required>
                             <div class="input-group-text" style="background-color:#59BAB8">
@@ -41,9 +42,30 @@
                             </div>
                         </div>
                     </div>
+                    <div class="row p-1 text-white">
+                        <div class="col h5">Your gender</div>
+                        <div class="col form-check">
+                            <input class="form-check-input" type="radio" value="Male" name="u_gender" >
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Male
+                            </label>
+                        </div>
+                        <div class="col form-check">
+                            <input class="form-check-input" type="radio" value="Female" name="u_gender"  >
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                Female
+                            </label>
+                        </div>
+                        <div class="col form-check">
+                            <input class="form-check-input" type="radio" value="Order" name="u_gender"  >
+                            <label class="form-check-label" for="flexRadioDefault3">
+                                Order
+                            </label>
+                        </div>
+                    </div>
                     <div class="row justify-content-center p-1">
                         <div class="col col-6 text-center">
-                            <button class="btn btn-dark btn-lg" type="submit" form="signup-form" name="submit">Create Account
+                            <button class="btn btn-dark btn-md" type="submit" form="signup-form" name="submit">Create Account
                     </button>
                         </div>
                     </div>
@@ -57,7 +79,7 @@
                 </div>
             </div>
             <div class="col-sm-5 p-0 bg-main-2">
-                <div class="text-end  align-self-sm-center">
+                <div class="text-center align-middle">
                     <img src="img/image-from-rawpixel-id-2317451-original.png" class="img-fluid" alt="...">
                 </div>
             </div>
