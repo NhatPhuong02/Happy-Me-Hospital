@@ -3,7 +3,10 @@
 
 <head>
     <?php
-        include("head.php")
+        session_start();
+        include("head.php");
+
+        
     ?>
     <title>Medicine Product</title>
 </head>
@@ -28,9 +31,9 @@
         </div>
         <div class="row mt-5 justify-content-center">
             <div class="col col-lg-3 col-xl-3 col-md-4 col-sm-6 col-10 mt-4">
-                <a class="card text-decoration-none text-black">
+                <a class="card text-decoration-none text-black ">
                     <img src="img/drugs/pexeva.png" class="card-img-top" alt="...">
-                    <div class="row card-body">
+                    <div class="row card-body m-0 p-3 bg-main text-white rounded-bottom-1">
                         <div class="col-6">
                             <h5 class="card-title">Card title</h5>
                             <h6 class="card-title money" id="">15.00$</h6>
@@ -44,7 +47,7 @@
             <div class="col col-lg-3 col-xl-3 col-md-4 col-sm-6 col-10 mt-4">
                 <a class="card text-decoration-none text-black">
                     <img src="img/drugs/anafranil.jpeg" class="card-img-top" alt="...">
-                    <div class="row card-body">
+                    <div class="row card-body m-0 p-3 bg-main text-white rounded-bottom-1">
                         <div class="col-6">
                             <h5 class="card-title">Card title</h5>
                             <h6 class="card-title money" id="">15.00$</h6>
@@ -58,7 +61,7 @@
             <div class="col col-lg-3 col-xl-3 col-md-4 col-sm-6 col-10 mt-4">
                 <a class="card text-decoration-none text-black">
                     <img src="img/drugs/clealine-caplyta.jpg" class="card-img-top" alt="...">
-                    <div class="row card-body">
+                    <div class="row card-body m-0 p-3 bg-main text-white rounded-bottom-1">
                         <div class="col-6">
                             <h5 class="card-title">Card title</h5>
                             <h6 class="card-title money" id="">15.00$</h6>
@@ -72,7 +75,7 @@
             <div class="col col-lg-3 col-xl-3 col-md-4 col-sm-6 col-10 mt-4">
                 <a class="card text-decoration-none text-black">
                     <img src="img/drugs/desipramine-norpramin.webp" class="card-img-top" alt="...">
-                    <div class="row card-body">
+                    <div class="row card-body m-0 p-3 bg-main text-white rounded-bottom-1">
                         <div class="col-6">
                             <h5 class="card-title">Card title</h5>
                             <h6 class="card-title money" id="">15.00$</h6>
@@ -86,7 +89,7 @@
             <div class="col col-lg-3 col-xl-3 col-md-4 col-sm-6 col-10 mt-4">
                 <a class="card text-decoration-none text-black">
                     <img src="img/drugs/doxepin-neuraxpharm.jpg" class="card-img-top" alt="...">
-                    <div class="row card-body">
+                    <div class="row card-body m-0 p-3 bg-main text-white rounded-bottom-1">
                         <div class="col-6">
                             <h5 class="card-title">Card title</h5>
                             <h6 class="card-title money" id="">15.00$</h6>
@@ -100,7 +103,7 @@
             <div class="col col-lg-3 col-xl-3 col-md-4 col-sm-6 col-10 mt-4">
                 <a class="card text-decoration-none text-black">
                     <img src="img/drugs/fetzima.jpg" class="card-img-top" alt="...">
-                    <div class="row card-body">
+                    <div class="row card-body m-0 p-3 bg-main text-white rounded-bottom-1">
                         <div class="col-6">
                             <h5 class="card-title">Card title</h5>
                             <h6 class="card-title money" id="">15.00$</h6>
@@ -114,7 +117,7 @@
             <div class="col col-lg-3 col-xl-3 col-md-4 col-sm-6 col-10 mt-4">
                 <a class="card text-decoration-none text-black">
                     <img src="img/drugs/fuxofen-20.jpg" class="card-img-top" alt="...">
-                    <div class="row card-body">
+                    <div class="row card-body m-0 p-3 bg-main text-white rounded-bottom-1">
                         <div class="col-6">
                             <h5 class="card-title">Card title</h5>
                             <h6 class="card-title money" id="">15.00$</h6>
@@ -128,7 +131,7 @@
             <div class="col col-lg-3 col-xl-3 col-md-4 col-sm-6 col-10 mt-4">
                 <a class="card text-decoration-none text-black">
                     <img src="img/drugs/gaba-750mg-now.png" class="card-img-top" alt="...">
-                    <div class="row card-body">
+                    <div class="row card-body m-0 p-3 bg-main text-white rounded-bottom-1">
                         <div class="col-6">
                             <h5 class="card-title">Card title</h5>
                             <h6 class="card-title money" id="">15.00$</h6>
@@ -148,47 +151,7 @@
 
 
     <!--  -->
-    <!-- footer -->
-    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top justify-content-center">
-        <div class="col mb-4">
-            <h5>Follow us in</h5>
-            <ul class="nav flex-row" style="margin-left: -10px">
-                <li class="nav-item mb-2 p-1 ">
-                    <a href="#" class="nav p-3 text-muted bg-main-gray rounded-circle"><i class="fa-brands fa-google"></i></a>
-                </li>
-                <li class="nav-item mb-2 p-1">
-                    <a href="#" class="nav p-3 text-muted bg-main-gray rounded-circle"><i class="fa-brands fa-twitter"></i></a>
-                </li>
-                <li class="nav-item mb-2 p-1 ">
-                    <a href="#" class="nav p-3 text-muted bg-main-gray rounded-circle"><i class="fa-brands fa-instagram"></i></a>
-                </li>
-                <li class="nav-item mb-2 p-1 ">
-                    <a href="#" class="nav p-3 text-muted bg-main-gray rounded-circle"><i class="fa-brands fa-linkedin"></i></a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="col mb-4">
-            <h5>Company</h5>
-            <ul class="nav flex-row" style="margin-left: -15px">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-3 text-muted">About</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-3 text-muted">Term</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-3 text-muted">Policy</a></li>
-
-            </ul>
-        </div>
-
-        <div class="col mb-4">
-            <h5>More</h5>
-            <ul class="nav flex-column" style="margin-left: -7px">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-2 text-muted">Documentation</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-2 text-muted">Licence</a></li>
-            </ul>
-        </div>
-    </footer>
-    </div>
-
-    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js " integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN " crossorigin="anonymous "></script>
+    <?php include('footer.php');?>
 </body>
 
 </html>
