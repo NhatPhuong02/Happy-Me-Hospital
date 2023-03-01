@@ -2,55 +2,53 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script src="https://kit.fontawesome.com/c2de6d6bc6.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js " integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN " crossorigin="anonymous "></script>
-    <link rel="stylesheet" href="https://kit.fontawesome.com/c2de6d6bc6.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/index.css">
+<?php 
+    session_start();
+    include('head.php');
+?>
     <title>Profile</title>
 </head>
 
-<body>
-    <div class="container mt-5">
+<body class="bg-light">
+    <?php include('header.php');?>
+    <div class="container mt-5 ">
         <div class="row">
             <div class="col-3 text-center px-4 pb-4">
                 <div class="logo text-center">
-                    <div class="row"><img src="img/avatar/man (1).png" class="img-thumbnail" alt="logo"></div>
+                    <div class="row bg-main-2 p-3 rounded-2"><img src="img/avatar/man (1).png" class="img-thumbnail rounded-circle bg-white" alt="logo"></div>
                 </div>
-                <div class="btn bg-main text-white mt-2 mb-4">Edit Information</div>
+                <div class="btn bg-main-2-hover text-white mt-2 mb-4">Edit Information</div>
             </div>
-            <div class="col-9">
-                <div class="card-title h3 mb-3">My Account</div>
-                <div class="card bg-main-2 fs-5">
-                    <div class="row ps-0 ms-2 my-3">
+            <div class="col-9 ">
+                <div class="card-title h3 mb-2" type="link">My Account</div>
+                <div class="card bg-main fs-5 text-white">
+                    <div class="row ps-0 ms-1 my-2">
                         <div class="col-6 title">UserName:</div>
-                        <div class="col-6 data">Nguyễn Trần Nhật Phương</div>
+                        <div class="col-6 data"> <?= $_SESSION['firstName'] . " " . $_SESSION['lastName']?> </div>
                     </div>
-                    <div class="row ps-0 ms-2 my-3">
+                    <div class="row ps-0 ms-1 my-2">
                         <div class="col-6 title">Phone:</div>
-                        <div class="col-6 data">0906919685</div>
+                        <div class="col-6 data"><?php if(isset($_SESSION['phone']))
+                        { echo substr($_SESSION['phone'],0,4) . "." . substr($_SESSION['phone'],4,3) . "." . substr($_SESSION['phone'],7,3);} ?></div>
                     </div>
-                    <div class="row ps-0 ms-2 my-3">
+                    <div class="row ps-0 ms-1 my-2">
                         <div class="col-6 title">Email:</div>
-                        <div class="col-6 data">demo@gmail.com</div>
+                        <div class="col-6 data"><?= $_SESSION['email']?></div>
                     </div>
-                    <div class="row ps-0 ms-2 my-3">
+                    <div class="row ps-0 ms-1 my-2">
                         <div class="col-6 title">Gender:</div>
-                        <div class="col-6 data">Man</div>
+                        <div class="col-6 data"><?php if(isset($_SESSION['gender'])){echo $_SESSION['gender'];}?></div>
+                    </div>
+                    <div class="row ps-0 ms-1 my-2">
+                        <div class="col-6 title">Address:</div>
+                        <div class="col-6 data"><?php if(isset($_SESSION['gender'])){echo $_SESSION['gender'];}?></div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row mt-4">
             <div class="col-3">
-                <div class="link bg-main-2 fs-5">
-                    <ul class="navbar-nav">
-                        <li class="nav-item text-center mb-3">
+                <div class="card link bg-main-2 fs-5">
+                    <ul class="navbar-nav text-white">
+                        <li class="nav-item text-center mb-3 mt-3">
                             <a src="">My Cart</a>
                         </li>
                         <li class="nav-item text-center mb-3">
