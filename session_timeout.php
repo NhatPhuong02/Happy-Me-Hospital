@@ -21,7 +21,7 @@ if (isset($_SESSION['last_activity']) && (time() - $_SESSION['last_activity'] > 
     session_unset();
     session_destroy();
     // Redirect the user to the login page
-    header('Location: login.php');
+    header('Location: signin.php');
     exit;
 }
 
