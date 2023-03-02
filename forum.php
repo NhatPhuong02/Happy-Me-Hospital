@@ -4,7 +4,11 @@
 <head>
     <?php
         session_start();
-        include("head.php")
+        include("head.php");
+        if (!isset($_SESSION['firstName'])) {
+            header("Location: signIn.php");
+            exit(1);
+        } 
     ?>
     <title>Our Feedback</title>
 </head>
