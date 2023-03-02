@@ -2,8 +2,8 @@
 Final ASE Project
 
 ## Project Status
-Status: **OPEN**\
-Completion: **50%**\
+Status: **OPEN**
+Completion: **50%**
 
 ## Project Description
 Happy You is a website for booking calender and buy medicine
