@@ -2,7 +2,7 @@
 Final ASE Project
 
 ## Project Status
-Status: **OPEN**
+Status: **OPEN**  
 Completion: **50%**
 
 ## Project Description
