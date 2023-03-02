@@ -24,10 +24,10 @@ Happy You is a website for booking calender and buy medicine
 
 ## Members
 2059032 - Nguyễn Trần Nhật Phương  
-2059027 - Bùi Quang Minh 
-2059025 - Phạm Thái Linh
-20590** - Trầm Thị Tuyết Thanh
-20590** - Văn Công Gia Hưng
+2059027 - Bùi Quang Minh  
+2059025 - Phạm Thái Linh  
+20590** - Trầm Thị Tuyết Thanh  
+20590** - Văn Công Gia Hưng  
 
 ## How to run
 This project uses PHP to connect to MySQL server, and is simulating school canteen management system. If you do not want to configure too much, just download xampp latest version from: https://www.apachefriends.org/download.html and use 127.0.0.1 to visit index.html. However, if you want to use localhost/ to visit your project, the following configurations are needed:
