@@ -2,7 +2,7 @@
 <!--    NAV HEADER FOR CUSTOMER SIDE PAGE
         EXCEPT LOGIN AND REGISTRATION PAGE  -->
         
-<nav class="navbar navbar-expand-lg bg-white">
+<nav class="navbar navbar-expand-lg bg-white sticky-top">
     <div class="container">
         <a class="navbar-brand" href="index.php">
             <img src="img/Logo.png" alt="Logo Happp Me Hospital" width="185" height="40">
