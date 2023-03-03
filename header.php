@@ -41,6 +41,8 @@
                 </li>
                 <hr>
                 <div class="vr"></div>
+               
+                <hr>
                 <li class="nav-item dropdown ms-lg-5 text-center">
                     <?php include("session_timeout.php"); ?>
                     <?php if (!isset($_SESSION['firstName'])) {?>
@@ -48,6 +50,7 @@
                     <?php }?>
                     <?php if (isset($_SESSION['firstName'])) {?>
                         <a class="nav-link dropdown-toggle text-sm-center" role="button" data-bs-toggle="dropdown" aria-expanded="false">Welcome <?= $_SESSION['firstName']?></a>
+                        
                         <ul class="dropdown-menu text-center text-xl-start border-2">
                             <li><a class="dropdown-item " href="profile.php">Profile</a></li>
                             <li>
@@ -56,7 +59,8 @@
                             <li><a class="dropdown-item" href="logout.php">Logout</a></li>
                         </ul>
                     <?php }?> 
-                </li>                
+                </li>  
+                             
             </ul>
         </div>
     </div>

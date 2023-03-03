@@ -40,7 +40,7 @@
                     </div>
                     <div class="row ps-0 ms-1 my-2">
                         <div class="col-3 title">Address:</div>
-                        <div class="col-9 data text-truncate"><?php if (isset($_SESSION['address'])) {echo $_SESSION['address'];}?></div>
+                        <div class="col-9 data "><?php if (isset($_SESSION['address'])) {echo $_SESSION['address'];}?></div>
                     </div>
                 </div>
             </div>
