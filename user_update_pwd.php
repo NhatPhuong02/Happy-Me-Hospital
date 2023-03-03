@@ -26,7 +26,8 @@
                 $query = "SELECT u_password FROM users  WHERE u_id = {$_SESSION['id']} LIMIT 0,1";
                 $result = $mysqli -> query($query);
                 $row = $result -> fetch_array();
-                if($oldpwd == $row["u_password"]){
+                if(password_verify($oldpwd, $row["u_password"])){
+                    $newpwd = password_hash($newpwd, PASSWORD_DEFAULT);
                     $query = "UPDATE users SET u_password = '{$newpwd}' WHERE u_id = {$_SESSION['id']}";
                     $result = $mysqli -> query($query);
                     if($result){
