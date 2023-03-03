@@ -41,9 +41,17 @@
                 </li>
                 <hr>
                 <div class="vr"></div>
-               
+                <?php if(isset($_SESSION['firstName'])){?>
+                <li class="nav-item d-flex ms-lg-5 justify-content-center ">
+                    <a type="button" class="btn btn-light" href="cust_cart.php"><i class="fa-solid fa-cart-shopping "></i>
+                        <!-- <span class="ms-1 badge bg-success">
+                        </span> -->
+                        <span class="ms-1 badge bg-secondary">0</span>
+                    </a>
+                </li> 
+                <?php }?>
                 <hr>
-                <li class="nav-item dropdown ms-lg-5 text-center">
+                <li class="nav-item dropdown ms-lg-1 text-center">
                     <?php include("session_timeout.php"); ?>
                     <?php if (!isset($_SESSION['firstName'])) {?>
                         <a class="btn btn-primary  rounded-pill border-0" href="signUp.php" role="button" style="background-image: linear-gradient(to right, rgba(89, 186, 184, 1), rgba(19, 132, 131, 1));">Register</a>
@@ -52,7 +60,7 @@
                         <a class="nav-link dropdown-toggle text-sm-center" role="button" data-bs-toggle="dropdown" aria-expanded="false">Welcome <?= $_SESSION['firstName']?></a>
                         
                         <ul class="dropdown-menu text-center text-xl-start border-2">
-                            <li><a class="dropdown-item " href="profile.php">Profile</a></li>
+                            <li><a class="dropdown-item " href="user_profile.php">Profile</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
