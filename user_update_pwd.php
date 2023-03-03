@@ -31,7 +31,7 @@
                     $query = "UPDATE users SET u_password = '{$newpwd}' WHERE u_id = {$_SESSION['id']}";
                     $result = $mysqli -> query($query);
                     if($result){
-                        header("location: user_profile.php");
+                        header("location: user_profile.php?up_pwd=1");
                     }else{
                         header("location: user_profile.php?up_pwd=0");
                     }
