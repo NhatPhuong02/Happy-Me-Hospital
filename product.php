@@ -34,7 +34,7 @@
         </div>
         <div class="row mt-5 justify-content-start">
             <?php 
-                $query = "SELECT * FROM medicine";
+                $query = "SELECT * FROM Medicine";
                 $result = $mysqli->query($query);
 
                 if ($result->num_rows > 0){
