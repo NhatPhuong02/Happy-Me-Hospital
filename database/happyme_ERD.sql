@@ -22,6 +22,7 @@ CREATE TABLE IF NOT EXISTS `happyme`.`Medicine` (
   `m_quantity` VARCHAR(255) NULL,
   `m_price` INT NULL,
   `m_pic` VARCHAR(45) NULL,
+  `m_description` VARCHAR(400) NULL,
   PRIMARY KEY (`m_id`));
 
 CREATE TABLE IF NOT EXISTS `happyme`.`Payment` (
@@ -30,17 +31,6 @@ CREATE TABLE IF NOT EXISTS `happyme`.`Payment` (
   `p_amount` VARCHAR(45) NULL,
   `p_info` VARCHAR(45) NULL,
   PRIMARY KEY (`p_id`));
-
-CREATE TABLE IF NOT EXISTS `happyme`.`ShoppingSession` (
-  `ss_id` INT NOT NULL,
-  `User_u_id` INT NOT NULL,
-  PRIMARY KEY (`ss_id`, `User_u_id`),
-  CONSTRAINT `fk_ShoppingSession_User1`
-    FOREIGN KEY (`User_u_id`)
-    REFERENCES `happyme`.`User` (`u_id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION);
-
 
 CREATE TABLE IF NOT EXISTS `happyme`.`Cart` (
   `c_id` INT NOT NULL,
@@ -96,3 +86,6 @@ CREATE TABLE IF NOT EXISTS `happyme`.`OrderMedicine` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION
 );
+
+
+-- Thanh and Hung adds data here:
