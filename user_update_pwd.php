@@ -23,12 +23,12 @@
                 <?php
                 exit(1);
             }else{
-                $query = "SELECT u_password FROM users  WHERE u_id = {$_SESSION['id']} LIMIT 0,1";
+                $query = "SELECT u_password FROM user  WHERE u_id = {$_SESSION['id']} LIMIT 0,1";
                 $result = $mysqli -> query($query);
                 $row = $result -> fetch_array();
                 if(password_verify($oldpwd, $row["u_password"])){
                     $newpwd = password_hash($newpwd, PASSWORD_DEFAULT);
-                    $query = "UPDATE users SET u_password = '{$newpwd}' WHERE u_id = {$_SESSION['id']}";
+                    $query = "UPDATE user SET u_password = '{$newpwd}' WHERE u_id = {$_SESSION['id']}";
                     $result = $mysqli -> query($query);
                     if($result){
                         header("location: user_profile.php?up_pwd=1");

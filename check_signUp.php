@@ -53,7 +53,7 @@
           $u_password = password_hash($u_password, PASSWORD_DEFAULT);
 
           // Insert the new user into the database
-          $stmt = $mysqli->prepare("INSERT INTO users (u_firstname, u_lastname, u_email, u_password, u_role, u_gender, u_phone) VALUES (?, ?, ?, ?, ?, ?, ?)");
+          $stmt = $mysqli->prepare("INSERT INTO user (u_firstname, u_lastname, u_email, u_password, u_role, u_gender, u_phone) VALUES (?, ?, ?, ?, ?, ?, ?)");
           
           // upper name
           $u_firstname = strtoupper($u_firstname);
