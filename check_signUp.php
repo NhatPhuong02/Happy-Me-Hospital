@@ -32,7 +32,7 @@
       // note: check again
 
       // Check if the email already exists
-    $stmt = $mysqli->prepare("SELECT * FROM user WHERE u_email = ?");
+    $stmt = $mysqli->prepare("SELECT * FROM User WHERE u_email = ?");
     $stmt->bind_param("s", $email);
     $stmt->execute();
     $result = $stmt->get_result();
@@ -53,7 +53,7 @@
           $u_password = password_hash($u_password, PASSWORD_DEFAULT);
 
           // Insert the new user into the database
-          $stmt = $mysqli->prepare("INSERT INTO user (u_firstname, u_lastname, u_email, u_password, u_role, u_gender, u_phone) VALUES (?, ?, ?, ?, ?, ?, ?)");
+          $stmt = $mysqli->prepare("INSERT INTO User (u_firstname, u_lastname, u_email, u_password, u_role, u_gender, u_phone) VALUES (?, ?, ?, ?, ?, ?, ?)");
           
           // upper name
           $u_firstname = strtoupper($u_firstname);
