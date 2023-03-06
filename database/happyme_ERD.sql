@@ -1,6 +1,6 @@
 -- thứ tự tạo bảng (vì có ràng buộc khoá chính khoá phụ)
 
--- User, Medicine, Payment, ShoppingSession, Cart, OrderDetail, OrderMedicine
+-- User, Medicine, Payment, Cart, OrderDetail, OrderMedicine
 
 CREATE TABLE IF NOT EXISTS `happyme`.`User` (
   `u_id` INT NOT NULL,
