@@ -35,11 +35,12 @@ CREATE TABLE IF NOT EXISTS `happyme`.`Payment` (
 CREATE TABLE IF NOT EXISTS `happyme`.`Cart` (
   `c_id` INT NOT NULL,
   `c_quantity` INT NOT NULL,
+  `User_u_id` INT NOT NULL,
   `Medicine_m_id` INT NOT NULL,
-  PRIMARY KEY (`c_id`, `c_quantity`, `Medicine_m_id`),
-  CONSTRAINT `fk_Cart_ShoppingSession1`
-    FOREIGN KEY (`c_quantity`)
-    REFERENCES `happyme`.`ShoppingSession` (`ss_id`)
+  PRIMARY KEY (`c_id`, `c_quantity`, `Medicine_m_id`, `User_u_id`),
+  CONSTRAINT `fk_Cart_User1`
+    FOREIGN KEY (`User_u_id`)
+    REFERENCES `happyme`.`User` (`u_id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_Cart_Medicine1`
@@ -47,8 +48,6 @@ CREATE TABLE IF NOT EXISTS `happyme`.`Cart` (
     REFERENCES `happyme`.`Medicine` (`m_id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
-
-
 
 CREATE TABLE IF NOT EXISTS `happyme`.`OrderDetail` (
   `od_id` INT NOT NULL,
