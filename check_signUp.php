@@ -32,7 +32,7 @@
       // note: check again
 
       // Check if the email already exists
-    $stmt = $mysqli->prepare("SELECT * FROM users WHERE u_email = ?");
+    $stmt = $mysqli->prepare("SELECT * FROM user WHERE u_email = ?");
     $stmt->bind_param("s", $email);
     $stmt->execute();
     $result = $stmt->get_result();
