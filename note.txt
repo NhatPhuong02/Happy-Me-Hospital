@@ -4,10 +4,8 @@
 
 style="text-transform:uppercase;"
 
-<<<<<<< HEAD
 // thêm giới thiệu cho thuốc 
 // bỏ shop session
 
-=======
+
 changes for testing
->>>>>>> 3432687a064bee0b24258d418132973c3855f688
