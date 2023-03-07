@@ -14,14 +14,14 @@
     $u_email = $_POST['u_email'];
     $u_password = $_POST['u_password'];
     $u_gender = $_POST['u_gender'];
-    $u_phone = (int)$_POST['u_phone'];
+    $u_phone = $_POST['u_phone'];
     $u_role = 'patient';
     echo 'good1'; // ok
     $_SESSION['firstName'] = $_POST['u_firstname'];
     $_SESSION['lastName'] = $_POST['u_lastname'];
     $_SESSION['email'] = $_POST['u_email'];
     $_SESSION['gender'] = $_POST['u_gender'];
-    $_SESSION['phone'] = (int)$_POST['u_phone'];
+    $_SESSION['phone'] = $_POST['u_phone'];
 
     // Check if the email is valid
     // if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
