@@ -20,7 +20,7 @@
     <div class="container">
         <div class="row fs-3 bg-main mt-5 p-3 rounded-3">
             <div class="col-6">
-                Prodcut
+                Product
             </div>
             <div class="col-2 text-center">
                 Quatity
