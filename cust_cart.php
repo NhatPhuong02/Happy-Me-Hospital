@@ -47,5 +47,21 @@
             <div class="btn btn-outline-danger w-50 h-25 fs-4 p-0">Delete</div>
            </div>
         </div>
+        <div class="row justify-content-end">
+            <hr class=" my-3 bg-main w-50" size="7px">
+            <div class="w-100"></div>
+              <div class="col-2 p-2 h5">Subtotal</div>
+              <div class="col-2 p-2 h5">$36.00</div>
+              <div class="w-100"></div>
+              <div class="col-2 p-2 h5">Tax (10%)</div>
+              <div class="col-2 p-2 h5">$3.60</div>
+              <div class="w-100"></div>
+              <div class="col-2 p-2 h4">Total</div>
+              <div class="col-2 p-2 h4">$39.60</div>
+              <div class="w-100"></div>
+              <button type="button" class="btn btn-sm btn-light col-4 bg-main me-5 rounded-3" style="color: #FFF "> Proceed to checkout <i class="fa-sharp fa-solid fa-arrow-right"></i> </button>
+            </div>
+          </div>
+          <?php include('footer.php')?>
     </div>
 </body>
