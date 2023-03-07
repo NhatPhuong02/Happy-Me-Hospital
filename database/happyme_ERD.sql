@@ -7,7 +7,7 @@ CREATE TABLE IF NOT EXISTS `happyme`.`User` (
   `u_firstName` VARCHAR(255) NULL,
   `u_lastName` VARCHAR(255) NULL,
   `u_Phone` VARCHAR(10) NULL,
-  `u_email` VARCHAR(255) NULL,
+  `u_email` VARCHAR(255) UNIQUE NULL,
   `u_password` VARCHAR(255) NULL,
   `u_gender` enum('Male','Female','Order') COLLATE utf8_vietnamese_ci NOT NULL,
   `u_role` enum('patient','therapist','admin') COLLATE utf8_vietnamese_ci NOT NULL,

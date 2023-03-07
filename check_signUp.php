@@ -62,6 +62,19 @@
           $stmt->bind_param("sssssss", $u_firstname, $u_lastname, $u_email, $u_password, $u_role, $u_gender, $u_phone);
           $stmt->execute();
 
+          // save id for check-in at user update
+          $query = $mysqli->prepare("SELECT u_id FROM User WHERE u_email = ?");
+          $query->bind_param("s", $u_email);
+          $query->execute();
+          $result = $query->get_result();
+
+          if ($result->num_rows > 0) {
+            $row = $result->fetch_array();
+          }
+          
+          $_SESSION['id'] = $row['u_id'];
+          // ___________________
+
           echo 'User created successfully';
 
           header("Location: index.php");
