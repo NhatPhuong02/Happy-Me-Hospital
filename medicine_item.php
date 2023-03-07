@@ -11,6 +11,8 @@
             exit(1);
         }  
     ?>
+    <script type="text/javascript" src="js/index.js"></script>
+
     <title>Medicine </title>
 </head>
 
