@@ -17,7 +17,7 @@ CREATE TABLE IF NOT EXISTS `happyme`.`User` (
 
 CREATE TABLE IF NOT EXISTS `happyme`.`Medicine` (
   `m_id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  `m_name` VARCHAR(255) NULL,
+  `m_name` VARCHAR(255) UNIQUE NULL,
   `m_quantity` VARCHAR(255) NULL,
   `m_price` INT NULL,
   `m_pic` VARCHAR(45) NULL,
