@@ -20,18 +20,18 @@
     else { // already have item in cart
         $result_arr = $result -> fetch_array(); 
         $incart = $result_arr["Medicine_m_id"]; // gán id m vào $incart
-        // if already have same item in cart 
+        // if already have item in cart 
         $check_amount = "SELECT c_quantity FROM cart WHERE Medicine_m_id = {$m_id} AND User_u_id = {$u_id}";
         $result_check = $mysqli->query($check_amount);
-        if ($result_check->num_rows > 0) {
+        if ($result_check->num_rows > 0) { // if already have same item in cart 
             $sss = $result_check->fetch_array();
             $amount = $sss["c_quantity"];
             $m_amount = $m_amount + $amount;
             $update_query = "UPDATE cart SET c_quantity = {$m_amount} WHERE Medicine_m_id = {$m_id} AND User_u_id = {$u_id}";
             $atc_result = $mysqli -> query($update_query);
         }
-        else {
-            $update_query = "UPDATE cart SET c_quantity = {$m_amount} WHERE Medicine_m_id = {$m_id} AND User_u_id = {$u_id}";
+        else { //not same item
+            $update_query = "INSERT INTO cart (User_u_id, Medicine_m_id, c_quantity) VALUE ({$u_id}, {$m_id}, {$m_amount});";
             $atc_result = $mysqli -> query($update_query);
         }
     }
