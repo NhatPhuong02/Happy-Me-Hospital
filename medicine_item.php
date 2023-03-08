@@ -33,8 +33,8 @@
             <div class="col mb-3 mb-md-0 logo">
                 <img 
                     <?php
-                        if(is_null($medicine_row["m_pic"])){echo "src='img/avatar/admin.png'";}
-                        else{echo "src=\"img/drugs/{$medicine_row['m_pic']}\"";}
+                        if (is_null($medicine_row["m_pic"])){echo "src='img/avatar/admin.png'";}
+                        else {echo "src=\"img/drugs/{$medicine_row['m_pic']}\"";}
                     ?> 
                     class="img-fluid rounded-25 float-start" 
                     alt="<?php echo $medicine_row["m_name"]?>">
@@ -57,8 +57,7 @@
                                 <i class="fa-solid fa-plus"></i>
                             </button>
                         </div>
-                        <input type="hidden" name="s_id" value="<?php echo $s_id?>">
-                        <input type="hidden" name="f_id" value="<?php echo $f_id?>">
+                        <input type="hidden" class="form-control" id="m_id" name="m_id" value="<?php echo $m_id?>">
                         <div class="form-floating mb-3">
                             <input type="text" class="form-control" id="addrequest" name="request" placeholder=" ">
                             <label for="addrequest" class="d-inline-text">Additional Request (Optional)</label>
@@ -67,17 +66,7 @@
                             </div>
                         </div>
                         <button class="btn btn-success w-100" type="submit" title="add to cart" name="addtocart"
-                        <?php
-                            $cartsearch_query1 = "SELECT COUNT(*) AS cnt FROM cart WHERE c_id = {$_SESSION['cid']}";
-                            $cartsearch_row1 = $mysqli -> query($cartsearch_query1) -> fetch_array();
-                            if($cartsearch_row1["cnt"]>0){
-                                $cartsearch_query2 = $cartsearch_query1." AND s_id = {$s_id}";
-                                $cartsearch_row2 = $mysqli -> query($cartsearch_query2) -> fetch_array();
-                                if($cartsearch_row2["cnt"]==0){?>
-                                    onclick="javascript: return changeshopcf();"<?php 
-                                } 
-                            }
-                        ?>
+                        
                         >
                             <svg xmlns='http://www.w3.org/2000/svg\\' width='16' height='16' fill='currentColor'
                                 class='bi bi-cart-plus' viewBox='0 0 16 16'>
