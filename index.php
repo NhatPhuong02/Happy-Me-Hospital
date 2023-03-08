@@ -4,6 +4,7 @@
    <?php
         session_start();
         include("head.php");
+        include("conn_db.php")
    ?>
    <title>Welcome Happy Me</title>
 </head>

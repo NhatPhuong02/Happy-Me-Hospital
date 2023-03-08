@@ -41,12 +41,19 @@
                 </li>
                 <hr>
                 <div class="vr"></div>
-                <?php if(isset($_SESSION['firstName'])){?>
+                <?php if (isset($_SESSION['firstName'])) {?>
                 <li class="nav-item d-flex ms-lg-5 justify-content-center ">
                     <a type="button" class="btn btn-light" href="cust_cart.php"><i class="fa-solid fa-cart-shopping "></i>
-                        <!-- <span class="ms-1 badge bg-success">
-                        </span> -->
-                        <span class="ms-1 badge bg-secondary">0</span>
+                        <?php
+                            $query1 = "SELECT SUM(c_quantity) AS c_count FROM cart WHERE User_u_id = {$_SESSION["id"]}";
+                            $count = $mysqli -> query($query1);
+                            $count_list = $count->fetch_array();
+                            $count_result = $count_list["c_count"];
+                            if ($count_result > 0) { ?>
+                            <span class="ms-1 badge bg-success"><?php echo $count_result?></span>
+                            <?php } else { ?> 
+                            <span class="ms-1 badge bg-secondary">0</span>
+                        <?php }?>
                     </a>
                 </li> 
                 <?php }?>
