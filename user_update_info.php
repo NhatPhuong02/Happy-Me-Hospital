@@ -13,7 +13,7 @@
             $gender = $_POST["gender"];
             $phone = $_POST['phone'];
 
-            $query = "UPDATE user SET u_firstName = '{$firstname}', u_lastName = '{$lastname}', u_address = '{$address}', u_gender = '{$gender}', u_Phone = '{$phone    }' WHERE u_id = {$_SESSION['id']}";
+            $query = "UPDATE user SET u_firstName = '{$firstname}', u_lastName = '{$lastname}', u_address = '{$address}', u_gender = '{$gender}', u_Phone = '{$phone}' WHERE u_id = {$_SESSION['id']}";
             $result = $mysqli -> query($query);
             if($result){
                 $_SESSION["firstName"] = $firstname;
@@ -21,6 +21,23 @@
                 $_SESSION['address'] = $address;
                 $_SESSION['gender'] = $gender;
                 $_SESSION['phone'] = $phone;
+                
+                if(!empty($_FILES["u_pic"]["name"])){
+                    //Image upload
+                    $target_dir = "/img/avatar/";
+                    $temp = explode(".",$_FILES["u_pic"]["name"]);
+                    $target_newfilename = $_SESSION['id'].".".strtolower(end($temp));
+                    $target_file = $target_dir.$target_newfilename;
+                    if(move_uploaded_file($_FILES["u_pic"]["tmp_name"],SITE_ROOT.$target_file)){
+                        $update_query = "UPDATE user SET u_avatar = '{$target_newfilename}' WHERE u_id = {$_SESSION["id"]};";
+                        $update_result = $mysqli -> query($update_query);
+                        $_SESSION['avatar'] = $target_newfilename;
+                    }else{
+                        $update_result = false;
+                        
+                    }
+                }
+
                 header("location: user_profile.php?up_prf=1");
             }else{
                 header("location: user_profile.php?up_prf=0");
@@ -63,13 +80,17 @@
             <label for="address">Address</label>
         </div>
         <div class="form-floating">
-                <select class="form-select mb-2" id="gender" name="gender">
-                    <option value="Male" <?php if($row["u_gender"]=="Male"){echo "selected";}?>>Male</option>
-                    <option value="Female" <?php if($row["u_gender"]=="Female"){echo "selected";}?>>Female</option>
-                    <option value="Other" <?php if($row["u_gender"]=="Other"){echo "selected";}?>>Other</option>
-                </select>
-                <label for="gender">Your Gender</label>
-            </div>
+            <select class="form-select mb-2" id="gender" name="gender">
+                <option value="Male" <?php if($row["u_gender"]=="Male"){echo "selected";}?>>Male</option>
+                <option value="Female" <?php if($row["u_gender"]=="Female"){echo "selected";}?>>Female</option>
+                <option value="Other" <?php if($row["u_gender"]=="Other"){echo "selected";}?>>Other</option>
+            </select>
+            <label for="gender">Your Gender</label>
+        </div>
+        <div class="mb-2">
+            <label for="avatar" class="mb-2">Choose your avatar</label>
+            <input class="form-control" type="file" id="u_pic" name="u_pic" accept="img/avatar/*">
+        </div>
         <button class="w-100 btn btn-success my-3" name="upd_confirm" type="submit" onclick="return confirm('Do you want to update your information?');" >Update Password</button>
     </form>
     </div>

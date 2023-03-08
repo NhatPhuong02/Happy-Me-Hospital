@@ -23,7 +23,7 @@
   if (isset($_POST['u_email']) && isset($_POST['u_password'])) {
 
     // avoid sql injection: https://www.w3schools.com/php/php_mysql_prepared_statements.asp
-    $query = $mysqli->prepare("SELECT u_id, u_firstName, u_lastName, u_email, u_password, u_phone, u_gender, u_address, u_avatar FROM User WHERE u_email = ?");
+    $query = $mysqli->prepare("SELECT u_id, u_firstName, u_lastName, u_email, u_password, u_Phone, u_gender, u_address, u_avatar FROM User WHERE u_email = ?");
     $query->bind_param("s", $u_email);
     $query->execute();
     $result = $query->get_result();
@@ -37,7 +37,7 @@
         $_SESSION['lastName'] = $row['u_lastName'];
         $_SESSION['email'] = $row['u_email'];
         $_SESSION['id'] = $row['u_id'];
-        $_SESSION['phone']= $row['u_phone'];
+        $_SESSION['phone']= $row['u_Phone'];
         $_SESSION['gender']= $row['u_gender'];
         $_SESSION['address']= $row['u_address'];
         $_SESSION['avatar']= $row['u_avatar'];
