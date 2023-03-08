@@ -29,7 +29,7 @@ CREATE TABLE IF NOT EXISTS `happyme`.`Payment` (
   `p_amount` VARCHAR(45) NULL,
   `p_info` VARCHAR(45) NULL);
 
-CREATE TABLE IF NOT EXISTS happyme.Cart (
+CREATE TABLE IF NOT EXISTS `happyme`.`Cart` (
   `c_id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `c_quantity` INT NOT NULL,
   `User_u_id` INT NOT NULL,
@@ -86,6 +86,7 @@ CREATE TABLE IF NOT EXISTS `happyme`.`OrderMedicine` (
 -- Thanh and Hung adds data here:
 -- 123
 
+-----------------------------------
 -- Insert data for 'medicine' table
 
 INSERT INTO `medicine` (`m_id`, `m_name`, `m_quantity`, `m_price`, `m_pic`) VALUES
@@ -109,3 +110,12 @@ INSERT INTO `payment` (`p_id`, `p_type`, `p_amount`, `p_info`) VALUES
 ('4', 'credit card', '2', ''),
 ('5', 'credit card', '3', '');
 
+------------------------------
+--Insert data for 'cart' table 
+
+INSERT INTO `cart` (`c_id`, `c_quantity`, `User_u_id`, `Medicine_m_id`) VALUES 
+('1', '1', '', '1'),
+('2', '1', '', '2'),
+('3', '1', '', '3'),
+('4', '1', '', '4'),
+('5', '1', '', '5');
