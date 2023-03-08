@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS `happyme`.`User` (
   `u_Phone` VARCHAR(10) NULL,
   `u_email` VARCHAR(255) UNIQUE NULL,
   `u_password` VARCHAR(255) NULL,
-  `u_gender` enum('Male','Female','Order') COLLATE utf8_vietnamese_ci NOT NULL,
+  `u_gender` enum('Male','Female','Other') COLLATE utf8_vietnamese_ci NOT NULL,
   `u_role` enum('patient','therapist','admin') COLLATE utf8_vietnamese_ci NOT NULL,
   `u_address` VARCHAR(400) NULL,
   `u_avatar` VARCHAR(45) NULL);
@@ -30,20 +30,20 @@ CREATE TABLE IF NOT EXISTS `happyme`.`Payment` (
   `p_info` VARCHAR(45) NULL);
 
 CREATE TABLE IF NOT EXISTS happyme.Cart (
-c_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-c_quantity INT NOT NULL,
-User_u_id INT NOT NULL,
-Medicine_m_id INT NOT NULL,
-CONSTRAINT fk_Cart_User1
-FOREIGN KEY (User_u_id)
-REFERENCES happyme.User (u_id)
-ON DELETE NO ACTION
-ON UPDATE NO ACTION,
-CONSTRAINT fk_Cart_Medicine1
-FOREIGN KEY (Medicine_m_id)
-REFERENCES happyme.Medicine (m_id)
-ON DELETE NO ACTION
-ON UPDATE NO ACTION
+  `c_id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `c_quantity` INT NOT NULL,
+  `User_u_id` INT NOT NULL,
+  `Medicine_m_id` INT NOT NULL,
+  CONSTRAINT `fk_Cart_User1`
+  FOREIGN KEY (`User_u_id`)
+  REFERENCES `happyme`.`User` (`u_id`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION,
+  CONSTRAINT `fk_Cart_Medicine1`
+  FOREIGN KEY (`Medicine_m_id`)
+  REFERENCES `happyme`.`Medicine` (`m_id`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION
 );
 
 CREATE TABLE IF NOT EXISTS `happyme`.`OrderDetail` (
@@ -86,7 +86,7 @@ CREATE TABLE IF NOT EXISTS `happyme`.`OrderMedicine` (
 -- Thanh and Hung adds data here:
 -- 123
 
--- medicine 
+-- Insert data for 'medicine' table
 
 INSERT INTO `medicine` (`m_id`, `m_name`, `m_quantity`, `m_price`, `m_pic`) VALUES
 (1, 'anafranil', '100', '250.000', 'anafranil.jpeg'),
@@ -99,5 +99,13 @@ INSERT INTO `medicine` (`m_id`, `m_name`, `m_quantity`, `m_price`, `m_pic`) VALU
 (8, 'pexeva', '100', '350.000', 'pexeva.png'),
 (9, 'pristiq', '100', '452.000', 'pristiq.png');
 
--- 
+----------------------------------
+-- Insert data for 'payment' table
+
+INSERT INTO `payment` (`p_id`, `p_type`, `p_amount`, `p_info`) VALUES 
+('1', 'credit card', '3', ''),
+('2', 'credit card', '2', ''),
+('3', 'credit card', '1', ''),
+('4', 'credit card', '2', ''),
+('5', 'credit card', '3', '');
 
