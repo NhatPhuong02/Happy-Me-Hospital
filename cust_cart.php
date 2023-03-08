@@ -59,7 +59,7 @@
               <div class="col-2 p-2 h4">Total</div>
               <div class="col-2 p-2 h4">$39.60</div>
               <div class="w-100"></div>
-              <button type="button" class="btn btn-sm btn-light col-4 bg-main me-5 rounded-3" style="color: #FFF "> Proceed to checkout <i class="fa-sharp fa-solid fa-arrow-right"></i> </button>
+              <button type="button" class="btn btn-lg btn-light col-4 bg-main me-5 rounded-3" style="color: #FFF "> Proceed to checkout <i class="fa-sharp fa-solid fa-arrow-right"></i> </button>
             </div>
           </div>
           <?php include('footer.php')?>
