@@ -8,7 +8,9 @@
         if (!isset($_SESSION['firstName'])) {
             header("Location: signIn.php");
             exit(1);
-        } 
+        }
+        include("conn_db.php");
+ 
     ?>
     <title>Booking</title>
 </head>

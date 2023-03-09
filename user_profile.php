@@ -5,6 +5,8 @@
 <?php 
     session_start();
     include('head.php');
+    include("conn_db.php");
+
 ?>
     <title>Profile</title>
 </head>

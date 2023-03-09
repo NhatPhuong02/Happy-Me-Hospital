@@ -4,8 +4,10 @@
 <head>
     <?php
         session_start();
-        include("head.php")
+        include("head.php");
+        include("conn_db.php");
     ?>
+
     <title>About Us</title>
 </head>
 

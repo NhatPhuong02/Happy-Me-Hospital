@@ -9,6 +9,7 @@
         header("Location: signIn.php");
         exit(1);
     }
+    include("conn_db.php");
     ?>
     <title>Our Feedback</title>
 </head>
