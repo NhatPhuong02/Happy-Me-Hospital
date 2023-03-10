@@ -14,7 +14,7 @@ $result = $mysqli->query($query);
 
 // check if dont have any item in cart 
 if ($result->num_rows == 0) {
-    $update_query = "INSERT INTO cart (User_u_id, Medicine_m_id, c_quantity) VALUE ({$u_id}, {$m_id}, {$m_amount});";
+    $update_query = "INSERT INTO cart (User_u_id, Medicine_m_id, c_quantity) VALUE ({$u_id}, {$m_id}, {$m_amount})";
     $atc_result = $mysqli->query($update_query);
 } else { // already have item in cart
     $result_arr = $result->fetch_array();
