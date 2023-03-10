@@ -17,8 +17,8 @@
     $u_gender = $_POST['u_gender'];
     $u_phone = $_POST['u_phone'];
     $u_role = 'patient';
-    $u_firstname = ucwords($u_firstname);
-    $u_lastname = ucwords($u_lastname);
+    $u_firstname = ucwords(strtolower($u_firstname));
+    $u_lastname = ucwords(strtolower($u_lastname));
     echo 'good1'; // ok
     $_SESSION['firstName'] = $u_firstname;
     $_SESSION['lastName'] = $u_lastname;

@@ -65,14 +65,12 @@
                                 <a href="delete_item.php?m_id=<?php echo $result["m_id"] ?>" type="button" class="btn btn-lg btn-outline-danger col-4 bg-main rounded-3" style="color:#FFF" name="del_btn"> <i class="fa-sharp fa-solid fa-trash-can"></i> </a>
                             </div>
                         </div>
-                <?php }
-                } ?>
+                <?php } 
+                } else { ?>
+                        <div class="row  mt-4 text-center bg-main-2 p-4 rounded-3 text-white"><span>You dont have any item in cart!</span></div>
+                <?php } ?>
             </form>
-
-
-
-
-
+                
             <div class="row justify-content-end ">
                 <?php
                 $sum_price = 0;
@@ -97,7 +95,7 @@
                 <div class="col-2 p-2 h4">Total</div>
                 <div class="col-2 p-2 h4 text-end"><?php echo $total ?></div>
                 <div class="w-100"></div>
-                <button type="button" class="btn btn-lg btn-light col-4 bg-main me-1 rounded-3" style="color: #FFF "> Proceed to checkout <i class="fa-sharp fa-solid fa-arrow-right"></i> </button>
+                <button type="button" class="btn btn-lg btn-light col-4 bg-main me-1 rounded-3" style="color: #FFF " <?php if ($list->num_rows == 0) {echo "disabled";} ?> > Proceed to checkout <i class="fa-sharp fa-solid fa-arrow-right"></i> </button>
             </div>
             <?php include('footer.php') ?>
         </div>

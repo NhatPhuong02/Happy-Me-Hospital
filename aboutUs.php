@@ -16,7 +16,14 @@
     <?php include("header.php") ?>
 
     <div class="container mt-5">
-        <div class="row ">
+        <div class="navbar bg-body-tertiary">
+            <div class="h6">
+                <a href="index.php">Home Page</a>
+                <span>></span>
+                <a href="">About Us</a>
+            </div>
+        </div>
+        <div class="row mt-5">
             <div class="col-4 d-flex justify-content-center">
                 <div class="card" style="width: 20rem;">
                     <div class="card-body bg-main-2">
