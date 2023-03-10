@@ -48,7 +48,7 @@
                         </div>
                         <div class="card w-75 mb-3 rounded-4">
                             <div class="row card-body">
-                            <div class="col-2">
+                                <div class="col-2">
                                     hi
                                 </div>
                                 <div class="col-9">
@@ -58,7 +58,7 @@
                         </div>
                         <div class="card w-75 mb-3 rounded-4">
                             <div class=" row card-body">
-                            <div class="col-2">
+                                <div class="col-2">
                                     hi
                                 </div>
                                 <div class="col-9">
@@ -77,24 +77,28 @@
                                 <img src="./img/avatar/User.png" class="img rounded-start" alt="">
                             </div>
                             <div class="col-6">
-                                <p  class= "fw-semibold" style="color:#138483">Random User</p>
-                                <sup  style="color:darkgrey">Role User
+                                <a href="#">
+                                    <p class="fw-semibold" style="color:#138483">Random User</p>
+                                </a>
+                                <sup style="color:darkgrey">Role User
                             </div>
                             <div class="col-5 text-end" style="color:darkgrey">
-                                10 Followers
+                             10 Followers
                             </div>
                         </div>
                         <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan pulvinar libero, ac euismod urna pretium eu. Sed accumsan pretium augue consequat ornare. </div>
-                        <a href="#">comment<i class="fa-sharp fa-solid fa-comment-middle"></i></a>
+                        <a href="#">comment<FontAwesomeIcon icon="fa-sharp fa-solid fa-comment" /></a>
                     </div>
-                    <div class="p-3 alert alert-secondary " style="border: 3px solid #138483 ; color:black" role="alert">
+                    <div class="p-3 alert alert-secondary mt-4 " style="border: 3px solid #138483 ; color:black" role="alert">
                         <p class="fw-bolder fs-5">Topic title</p>
                         <div class="row mt-3">
                             <div class="col-1">
                                 <img src="./img/avatar/User.png" class="img rounded-start" alt="">
                             </div>
                             <div class="col-6">
-                                <p class="fw-semibold" style="color:#138483">Random User</p>
+                                <a href="#">
+                                    <p class="fw-semibold" style="color:#138483">Random User</p>
+                                </a>
                                 <sup style="color:darkgrey">Role User
                             </div>
                             <div class="col-5 text-end" style="color:darkgrey">
@@ -102,17 +106,19 @@
                             </div>
                         </div>
                         <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan pulvinar libero, ac euismod urna pretium eu. Sed accumsan pretium augue consequat ornare. </div>
-                        <a href="#">comment<i class="fa-sharp fa-solid fa-comment-middle"></i></a>
+                        <a href="#"><i class="fa-sharp fa-solid fa-comment-middle"></i> Comment</a>
                     </div>
 
-                    <div class="p-3 alert alert-secondary " style="border: 3px solid #138483 ; color:black" role="alert">
+                    <div class="p-3 alert alert-secondary mt-4" style="border: 3px solid #138483 ; color:black" role="alert">
                         <p class="fw-bolder fs-5">Topic title</p>
                         <div class="row mt-3">
                             <div class="col-1">
                                 <img src="./img/avatar/User.png" class="img rounded-start" alt="">
                             </div>
                             <div class="col-6">
-                                <p class="fw-semibold" style="color:#138483">Random User</p>
+                                <a href="#">
+                                    <p class="fw-semibold" style="color:#138483">Random User</p>
+                                </a>
                                 <sup style="color:darkgrey">Role User
                             </div>
                             <div class="col-5 text-end" style="color:darkgrey">
