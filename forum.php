@@ -34,59 +34,71 @@
         </div>
         <div class="container">
             <div class="row mt-5">
-                <div class="col-4 h-50 ">
-                    <div class="row bg-main">
-                        <div class="card w-75 mb-3">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                               
+                <div class="col-4 rounded-1">
+                    <div class="row bg-main rounded-5 justify-content-center mx-auto">
+                        <div class="card w-75 my-3 rounded-4">
+                            <div class="row card-body">
+                                <div class="col-2">
+                                    hi
+                                </div>
+                                <div class="col-9">
+                                    hello
+                                </div>
                             </div>
                         </div>
-                        <div class="card w-75 mb-3">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
+                        <div class="card w-75 mb-3 rounded-4">
+                            <div class="row card-body">
+                            <div class="col-2">
+                                    hi
+                                </div>
+                                <div class="col-9">
+                                    hello
+                                </div>
                             </div>
                         </div>
-                        <div class="card w-75 mb-3">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                              
+                        <div class="card w-75 mb-3 rounded-4">
+                            <div class=" row card-body">
+                            <div class="col-2">
+                                    hi
+                                </div>
+                                <div class="col-9">
+                                    hello
+                                </div>
                             </div>
                         </div>
-                       
                     </div>
                     <div class="text-center fw-bold mt-3"> Top Categories</div>
                 </div>
                 <div class="col-8 ps-5">
                     <div class="p-3 alert alert-secondary " style="border: 3px solid #138483 ; color:black" role="alert">
-                        <h5>Topic title</h5>
+                        <p class="fw-bolder fs-5">Topic title</p>
                         <div class="row mt-3">
                             <div class="col-1">
                                 <img src="./img/avatar/User.png" class="img rounded-start" alt="">
                             </div>
                             <div class="col-6">
-                                <h6 style="color:#138483">Random User</h6>
-                                <sup style="color:darkgrey">Role User
+                                <p  class= "fw-semibold" style="color:#138483">Random User</p>
+                                <sup  style="color:darkgrey">Role User
                             </div>
-                            <div class="col-4 text-end">
-                                10 hours ago
+                            <div class="col-5 text-end" style="color:darkgrey">
+                                10 Followers
                             </div>
                         </div>
                         <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan pulvinar libero, ac euismod urna pretium eu. Sed accumsan pretium augue consequat ornare. </div>
                         <a href="#">comment<i class="fa-sharp fa-solid fa-comment-middle"></i></a>
                     </div>
                     <div class="p-3 alert alert-secondary " style="border: 3px solid #138483 ; color:black" role="alert">
-                        <h5>Topic title</h5>
+                        <p class="fw-bolder fs-5">Topic title</p>
                         <div class="row mt-3">
                             <div class="col-1">
                                 <img src="./img/avatar/User.png" class="img rounded-start" alt="">
                             </div>
                             <div class="col-6">
-                                <h6 style="color:#138483">Random User</h6>
+                                <p class="fw-semibold" style="color:#138483">Random User</p>
                                 <sup style="color:darkgrey">Role User
                             </div>
-                            <div class="col-4 text-end">
-                                10 hours ago
+                            <div class="col-5 text-end" style="color:darkgrey">
+                                10 Followers
                             </div>
                         </div>
                         <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan pulvinar libero, ac euismod urna pretium eu. Sed accumsan pretium augue consequat ornare. </div>
@@ -94,17 +106,17 @@
                     </div>
 
                     <div class="p-3 alert alert-secondary " style="border: 3px solid #138483 ; color:black" role="alert">
-                        <h5>Topic title</h5>
+                        <p class="fw-bolder fs-5">Topic title</p>
                         <div class="row mt-3">
                             <div class="col-1">
                                 <img src="./img/avatar/User.png" class="img rounded-start" alt="">
                             </div>
                             <div class="col-6">
-                                <h6 style="color:#138483">Random User</h6>
+                                <p class="fw-semibold" style="color:#138483">Random User</p>
                                 <sup style="color:darkgrey">Role User
                             </div>
-                            <div class="col-4 text-end">
-                                10 hours ago
+                            <div class="col-5 text-end" style="color:darkgrey">
+                                10 Followers
                             </div>
                         </div>
                         <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan pulvinar libero, ac euismod urna pretium eu. Sed accumsan pretium augue consequat ornare. </div>
