@@ -29,19 +29,19 @@ CREATE TABLE IF NOT EXISTS `happyme`.`Payment` (
   `p_amount` VARCHAR(45) NULL,
   `p_info` VARCHAR(45) NULL);
 
-CREATE TABLE IF NOT EXISTS happyme.Cart (
-c_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-c_quantity INT NOT NULL,
-User_u_id INT NOT NULL,
-Medicine_m_id INT NOT NULL,
-CONSTRAINT fk_Cart_User1
-FOREIGN KEY (User_u_id)
-REFERENCES happyme.User (u_id)
+CREATE TABLE IF NOT EXISTS `happyme`.`Cart` (
+`c_id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+`c_quantity` INT NOT NULL,
+`User_u_id` INT NOT NULL,
+`Medicine_m_id` INT NOT NULL,
+CONSTRAINT `fk_Cart_User1`
+FOREIGN KEY (`User_u_id`)
+REFERENCES `happyme`.`User` (`u_id`)
 ON DELETE NO ACTION
 ON UPDATE NO ACTION,
-CONSTRAINT fk_Cart_Medicine1
-FOREIGN KEY (Medicine_m_id)
-REFERENCES happyme.Medicine (m_id)
+CONSTRAINT `fk_Cart_Medicine1`
+FOREIGN KEY (`Medicine_m_id`)
+REFERENCES `happyme`.`Medicine` (`m_id`)
 ON DELETE NO ACTION
 ON UPDATE NO ACTION
 );

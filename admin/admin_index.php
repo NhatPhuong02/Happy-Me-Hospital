@@ -4,7 +4,7 @@
 <head>
     <?php
     include('../head.php');
-
+    
     ?>
     <title>Document</title>
 </head>
