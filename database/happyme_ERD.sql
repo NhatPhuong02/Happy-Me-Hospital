@@ -89,15 +89,15 @@ CREATE TABLE IF NOT EXISTS `happyme`.`OrderMedicine` (
 -- medicine 
 
 INSERT INTO `medicine` (`m_id`, `m_name`, `m_quantity`, `m_price`, `m_pic`) VALUES
-(1, 'anafranil', '100', '250.000', 'anafranil.jpeg'),
-(2, 'clealine-caplyta', '100', '352.000', 'clealine-caplyta.jpg'),
-(3, 'desipramine-norpramin', '100', '221.000', 'desipramine-norpramin.webp'),
-(4, 'doxepin-neuraxpharm', '100', '252.000', 'doxepin-neuraxpharm.jpg'),
-(5, 'fuxofen-20', '100', '265.000', 'fuxofen-20.jpg'),
-(6, 'gaba-750mg-now', '100', '124.000', 'gaba-750mg-now.png'),
-(7, 'mirtazapine', '100', '544.000', 'mirtazapine.jpg'),
-(8, 'pexeva', '100', '350.000', 'pexeva.png'),
-(9, 'pristiq', '100', '452.000', 'pristiq.png');
+(1, 'anafranil', '100', '250000', 'anafranil.jpeg'),
+(2, 'clealine-caplyta', '100', '352000', 'clealine-caplyta.jpg'),
+(3, 'desipramine-norpramin', '100', '221000', 'desipramine-norpramin.webp'),
+(4, 'doxepin-neuraxpharm', '100', '252000', 'doxepin-neuraxpharm.jpg'),
+(5, 'fuxofen-20', '100', '265000', 'fuxofen-20.jpg'),
+(6, 'gaba-750mg-now', '100', '124000', 'gaba-750mg-now.png'),
+(7, 'mirtazapine', '100', '544000', 'mirtazapine.jpg'),
+(8, 'pexeva', '100', '350000', 'pexeva.png'),
+(9, 'pristiq', '100', '452000', 'pristiq.png');
 
 -- 
 INSERT INTO `user` (`u_firstName`, `u_lastName`, `u_phone`, `u_email`, `u_password`, `u_gender`, `u_role`, `u_address`, `u_avatar`) VALUES
