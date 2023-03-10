@@ -3,15 +3,15 @@
 
 <head>
     <?php
-            session_start();
+    session_start();
 
-        include("head.php")
+    include("head.php")
     ?>
     <title>Sign Up</title>
 </head>
 
 <body>
-<?php include("header.php")?>
+    <?php include("header.php") ?>
     <div class="container mt-5">
         <div class="row">
             <div class="col-sm-7 bg-main rounded-start-5 ">
@@ -25,9 +25,9 @@
                 <!-- PHP form -------------------------------------------------->
                 <form id="signup-form" action="check_signUp.php" method="POST">
                     <div class="row p-1 ">
-                        <div class="col-4 input-group-lg"><input type="text" class="form-control" placeholder="First name" aria-label="First name" id="firstname" name="u_firstname" ></div>
-                        <div class="col-4 input-group-lg"><input type="text" class="form-control" placeholder="Last name" aria-label="Last name" id="lastname" name="u_lastname" ></div>
-                        <div class="col-4 input-group-lg"><input type="text" class="form-control" placeholder="Phone number" aria-label="Phone number" id="phonenumber" name="u_phone" ></div>
+                        <div class="col-4 input-group-lg"><input type="text" class="form-control" placeholder="First name" aria-label="First name" id="firstname" name="u_firstname"></div>
+                        <div class="col-4 input-group-lg"><input type="text" class="form-control" placeholder="Last name" aria-label="Last name" id="lastname" name="u_lastname"></div>
+                        <div class="col-4 input-group-lg"><input type="text" class="form-control" placeholder="Phone number" aria-label="Phone number" id="phonenumber" name="u_phone"></div>
                     </div>
                     <div class="row p-1">
                         <div class="col-12 input-group-lg">
@@ -45,19 +45,19 @@
                     <div class="row p-1 text-white">
                         <div class="col h5">Your gender</div>
                         <div class="col form-check">
-                            <input class="form-check-input" type="radio" value="Male" name="u_gender" >
+                            <input class="form-check-input" type="radio" value="Male" name="u_gender">
                             <label class="form-check-label" for="flexRadioDefault1">
                                 Male
                             </label>
                         </div>
                         <div class="col form-check">
-                            <input class="form-check-input" type="radio" value="Female" name="u_gender"  >
+                            <input class="form-check-input" type="radio" value="Female" name="u_gender">
                             <label class="form-check-label" for="flexRadioDefault2">
                                 Female
                             </label>
                         </div>
                         <div class="col form-check">
-                            <input class="form-check-input" type="radio" value="Order" name="u_gender"  >
+                            <input class="form-check-input" type="radio" value="Order" name="u_gender">
                             <label class="form-check-label" for="flexRadioDefault3">
                                 Other
                             </label>
@@ -66,7 +66,7 @@
                     <div class="row justify-content-center p-1">
                         <div class="col col-6 text-center">
                             <button class="btn btn-dark btn-md" type="submit" form="signup-form" name="submit">Create Account
-                    </button>
+                            </button>
                         </div>
                     </div>
                 </form>
@@ -87,8 +87,8 @@
     </div>
 
     <!-- footer -->
-    <?php include('footer.php')?>
-  
+    <?php include('footer.php') ?>
+
 </body>
 
 </html>

@@ -84,6 +84,4 @@
       }
       $mysqli->close(); // test root
   }
-
 ?>
-

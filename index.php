@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-   <?php
-        session_start();
-        include("head.php");
-        include("conn_db.php")
-   ?>
-   <title>Welcome Happy Me</title>
+    <?php
+    session_start();
+    include("head.php");
+    include("conn_db.php")
+    ?>
+    <title>Welcome Happy Me</title>
 </head>
+
 <body>
-    <?php include("header.php")?>
+    <?php include("header.php") ?>
     <div class="container">
         <div class="jumbotron ">
             <div class="row ">
@@ -146,12 +148,12 @@
                 <div class="carousel mt-5">
                     <!-- prev -->
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev" style="left:25%">
-                    <span class="carousel-control-prev-icon"style="background-color: #138483" aria-hidden="true"></span>
-                </button>
+                        <span class="carousel-control-prev-icon" style="background-color: #138483" aria-hidden="true"></span>
+                    </button>
                     <!-- next -->
                     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next" style="right:25%">
-                    <span class="carousel-control-next-icon " style="background-color: #138483" aria-hidden="true"></span>
-                </button>
+                        <span class="carousel-control-next-icon " style="background-color: #138483" aria-hidden="true"></span>
+                    </button>
                 </div>
                 <div class="jumbotron justify-content-center d-flex align-items-center mb-5 mt-5">
                     <div class="card text-center align-middle border-0" style="background: #F6F6F6; border-radius: 46px;;">
@@ -165,9 +167,10 @@
                     </div>
                 </div>
                 <!-- footer -->
-               <?php include('footer.php')?>
+                <?php include('footer.php') ?>
             </div>
         </div>
     </div>
 </body>
+
 </html>

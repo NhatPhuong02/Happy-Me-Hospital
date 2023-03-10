@@ -3,16 +3,16 @@
 
 <head>
     <?php
-            session_start();
+    session_start();
 
-        include('head.php');
+    include('head.php');
     ?>
     <title>Sign In</title>
-   
+
 </head>
 
 <body>
-<?php include("header.php")?>
+    <?php include("header.php") ?>
     <div class="container mt-5">
         <div class="row">
             <div class="col-sm-7 bg-main rounded-start-5 ">
@@ -39,8 +39,8 @@
                     </div>
                     <div class="row justify-content-center p-1">
                         <div class="col col-6 text-center">
-                            <button class="btn btn-dark btn-lg" type="signin-form" id ="logged_in" name="logged_in"> Sign In
-                    </button>
+                            <button class="btn btn-dark btn-lg" type="signin-form" id="logged_in" name="logged_in"> Sign In
+                            </button>
                         </div>
                     </div>
                     <!-- END PHP form -------------------------------------------------->
@@ -59,8 +59,8 @@
     </div>
 
     <!-- footer -->
-    <?php include('footer.php')?>
-     
+    <?php include('footer.php') ?>
+
 </body>
 
 </html>
