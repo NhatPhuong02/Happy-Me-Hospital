@@ -57,7 +57,7 @@
                             </label>
                         </div>
                         <div class="col form-check">
-                            <input class="form-check-input" type="radio" value="Order" name="u_gender">
+                            <input class="form-check-input" type="radio" value="Other" name="u_gender">
                             <label class="form-check-label" for="flexRadioDefault3">
                                 Other
                             </label>

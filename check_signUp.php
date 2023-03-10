@@ -8,6 +8,7 @@
 
   // Check if the form has been submitted
   if (isset($_POST['submit'])) {
+
     // Get the form data
     $u_firstname = $_POST['u_firstname'];
     $u_lastname = $_POST['u_lastname'];
@@ -16,9 +17,11 @@
     $u_gender = $_POST['u_gender'];
     $u_phone = $_POST['u_phone'];
     $u_role = 'patient';
+    $u_firstname = ucwords($u_firstname);
+    $u_lastname = ucwords($u_lastname);
     echo 'good1'; // ok
-    $_SESSION['firstName'] = $_POST['u_firstname'];
-    $_SESSION['lastName'] = $_POST['u_lastname'];
+    $_SESSION['firstName'] = $u_firstname;
+    $_SESSION['lastName'] = $u_lastname;
     $_SESSION['email'] = $_POST['u_email'];
     $_SESSION['gender'] = $_POST['u_gender'];
     $_SESSION['phone'] = $_POST['u_phone'];
@@ -56,8 +59,6 @@
           $stmt = $mysqli->prepare("INSERT INTO User (u_firstname, u_lastname, u_email, u_password, u_role, u_gender, u_phone) VALUES (?, ?, ?, ?, ?, ?, ?)");
           
           // upper name
-          $u_firstname = strtoupper($u_firstname);
-          $u_lastname = strtoupper($u_lastname);
 
           $stmt->bind_param("sssssss", $u_firstname, $u_lastname, $u_email, $u_password, $u_role, $u_gender, $u_phone);
           $stmt->execute();

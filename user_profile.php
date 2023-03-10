@@ -86,11 +86,20 @@
         <div class="row">
             <div class="col-3 text-center px-4 pb-4">
                 <div class="logo text-center">
-                    <div class="row bg-main-2 p-3 rounded-2"><img <?php if (!isset($_SESSION['avatar'])) {
-                                                                        echo  "src='img/avatar/default.png'";
-                                                                    } else {
-                                                                        echo "src=\"img/avatar/{$_SESSION['avatar']}\"";
-                                                                    } ?> class="img-thumbnail rounded-circle bg-white" alt="logo"></div>
+                    <div class="row bg-main-2 p-3 rounded-2"><img <?php 
+                    if (!isset($_SESSION['avatar'])) {
+                            if($_SESSION["gender"] == "Male"){
+                                echo  "src='img/avatar/default_man.png'";
+                            }
+                            if ($_SESSION["gender"] == "Female"){
+                                echo  "src='img/avatar/default_women.png'"; 
+                            } 
+                            if ($_SESSION["gender"] == "Other"){
+                                echo  "src='img/avatar/default_other.png'";
+                            }
+                        } else {
+                            echo "src=\"img/avatar/{$_SESSION['avatar']}\"";
+                        } ?> class="img-thumbnail rounded-circle bg-white" alt="logo"></div>
                 </div>
                 <div class="btn btn-lg bg-main-2-hover text-white mt-4 mb-4 w-100" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Edit</div>
                 <!-- Modal -->
