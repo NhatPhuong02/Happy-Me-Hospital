@@ -1,4 +1,4 @@
-<footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top justify-content-center <?php if ($_SESSION["role"] == "admin") {echo "fixed-bottom";}?>">
+<footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top justify-content-center <?php if (isset($_SESSION["role"])&&$_SESSION["role"] == "admin") {echo "fixed-bottom";} ?>">
     <div class="col mb-4">
         <h5>Follow us in</h5>
         <ul class="nav flex-row" style="margin-left: -10px">
