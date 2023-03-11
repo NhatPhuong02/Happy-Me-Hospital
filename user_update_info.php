@@ -13,8 +13,9 @@
         $address = $_POST["address"];
         $gender = $_POST["gender"];
         $phone = $_POST['phone'];
+        $pic = $_POST["u_pic"];
 
-        $query = "UPDATE user SET u_firstName = '{$firstname}', u_lastName = '{$lastname}', u_address = '{$address}', u_gender = '{$gender}', u_Phone = '{$phone}' WHERE u_id = {$_SESSION['id']}";
+        $query = "UPDATE user SET u_firstName = '{$firstname}', u_lastName = '{$lastname}', u_address = '{$address}', u_gender = '{$gender}', u_Phone = '{$phone}' WHERE u_id = {$_SESSION["id"]}";
         $result = $mysqli->query($query);
         if ($result) {
             $_SESSION["firstName"] = $firstname;
@@ -25,11 +26,11 @@
 
             if (!empty($_FILES["u_pic"]["name"])) {
                 //Image upload
-                $target_dir = "/img/avatar/";
+                $target_dir = "img/avatar/";
                 $temp = explode(".", $_FILES["u_pic"]["name"]);
-                $target_newfilename = $_SESSION['id'] . "." . strtolower(end($temp));
+                $target_newfilename = $_SESSION["id"] . "." . strtolower(end($temp));
                 $target_file = $target_dir . $target_newfilename;
-                if (move_uploaded_file($_FILES["u_pic"]["tmp_name"], SITE_ROOT . $target_file)) {
+                if (move_uploaded_file($_FILES["u_pic"]["tmp_name"], SITE_ROOT . $target_dir)) {
                     $update_query = "UPDATE user SET u_avatar = '{$target_newfilename}' WHERE u_id = {$_SESSION["id"]};";
                     $update_result = $mysqli->query($update_query);
                     $_SESSION['avatar'] = $target_newfilename;
@@ -96,7 +97,7 @@
             </div>
             <div class="mb-2">
                 <label for="avatar" class="mb-2">Choose your avatar</label>
-                <input class="form-control" type="file" id="u_pic" name="u_pic" accept="img/avatar/*">
+                <input class="form-control" type="file" id="u_pic" name="u_pic" accept="image/*">
             </div>
             <button class="w-100 btn btn-success my-3" name="upd_confirm" type="submit" onclick="return confirm('Do you want to update your information?');">Update Password</button>
         </form>
