@@ -1,0 +1,142 @@
+.
+├── Happy-Me-Hospital
+├── README.md
+├── aboutUs.php
+├── add_item.php
+├── admin
+│   ├── admin_edit_medicine.php
+│   ├── admin_edit_user.php
+│   ├── admin_head.php
+│   ├── admin_header.php
+│   └── admin_index.php
+├── booking.php
+├── bootstrap-5.3.0-alpha1-dist
+│   └── bootstrap-5.3.0-alpha1-dist
+│       ├── css
+│       │   ├── bootstrap-grid.css
+│       │   ├── bootstrap-grid.css.map
+│       │   ├── bootstrap-grid.min.css
+│       │   ├── bootstrap-grid.min.css.map
+│       │   ├── bootstrap-grid.rtl.css
+│       │   ├── bootstrap-grid.rtl.css.map
+│       │   ├── bootstrap-grid.rtl.min.css
+│       │   ├── bootstrap-grid.rtl.min.css.map
+│       │   ├── bootstrap-reboot.css
+│       │   ├── bootstrap-reboot.css.map
+│       │   ├── bootstrap-reboot.min.css
+│       │   ├── bootstrap-reboot.min.css.map
+│       │   ├── bootstrap-reboot.rtl.css
+│       │   ├── bootstrap-reboot.rtl.css.map
+│       │   ├── bootstrap-reboot.rtl.min.css
+│       │   ├── bootstrap-reboot.rtl.min.css.map
+│       │   ├── bootstrap-utilities.css
+│       │   ├── bootstrap-utilities.css.map
+│       │   ├── bootstrap-utilities.min.css
+│       │   ├── bootstrap-utilities.min.css.map
+│       │   ├── bootstrap-utilities.rtl.css
+│       │   ├── bootstrap-utilities.rtl.css.map
+│       │   ├── bootstrap-utilities.rtl.min.css
+│       │   ├── bootstrap-utilities.rtl.min.css.map
+│       │   ├── bootstrap.css
+│       │   ├── bootstrap.css.map
+│       │   ├── bootstrap.min.css
+│       │   ├── bootstrap.min.css.map
+│       │   ├── bootstrap.rtl.css
+│       │   ├── bootstrap.rtl.css.map
+│       │   ├── bootstrap.rtl.min.css
+│       │   └── bootstrap.rtl.min.css.map
+│       └── js
+│           ├── bootstrap.bundle.js
+│           ├── bootstrap.bundle.js.map
+│           ├── bootstrap.bundle.min.js
+│           ├── bootstrap.bundle.min.js.map
+│           ├── bootstrap.esm.js
+│           ├── bootstrap.esm.js.map
+│           ├── bootstrap.esm.min.js
+│           ├── bootstrap.esm.min.js.map
+│           ├── bootstrap.js
+│           ├── bootstrap.js.map
+│           ├── bootstrap.min.js
+│           └── bootstrap.min.js.map
+├── check_signIn.php
+├── check_signUp.php
+├── conn_db.php
+├── css
+│   └── index.css
+├── cust_cart.php
+├── database
+│   ├── happyme.sql
+│   ├── happyme1.sql
+│   ├── happyme_ERD.png
+│   ├── happyme_ERD.sql
+│   ├── hy_Users.sql
+│   ├── itec.sql
+│   └── otherTable.sql
+├── delete_item.php
+├── documents-directory-structure.txt
+├── footer.php
+├── forum.php
+├── head.php
+├── header.php
+├── img
+│   ├── Logo.png
+│   ├── avatar
+│   │   ├── User.png
+│   │   ├── admin.png
+│   │   ├── avatar1.png
+│   │   ├── avatar2.png
+│   │   ├── avatar3.png
+│   │   ├── avatar4.png
+│   │   ├── avatar5.png
+│   │   ├── avatar6.png
+│   │   ├── avatar7.png
+│   │   ├── avatar8.png
+│   │   ├── default.png
+│   │   ├── default_boy.png
+│   │   ├── default_other.png
+│   │   ├── default_women.png
+│   │   ├── hung.jpg
+│   │   ├── linh.jpg
+│   │   ├── minh.jpg
+│   │   ├── patient.png
+│   │   ├── thanh.jpg
+│   │   └── therapist.png
+│   ├── booking.png
+│   ├── community.png
+│   ├── drugs
+│   │   ├── anafranil.jpeg
+│   │   ├── clealine-caplyta.jpg
+│   │   ├── desipramine-norpramin.webp
+│   │   ├── doxepin-neuraxpharm.jpg
+│   │   ├── fetzima.jpg
+│   │   ├── fuxofen-20.jpg
+│   │   ├── gaba-750mg-now.png
+│   │   ├── mirtazapine.jpg
+│   │   ├── pexeva.png
+│   │   └── pristiq.png
+│   ├── health_store.png
+│   ├── image 8.png
+│   ├── image 9.png
+│   └── image-from-rawpixel-id-2317451-original.png
+├── index.php
+├── js
+│   └── index.js
+├── logout.php
+├── medicine_item.php
+├── note.txt
+├── product.php
+├── session_timeout.php
+├── signin.php
+├── signup.php
+├── test_feature
+│   ├── test_index.html
+│   ├── upload.php
+│   └── uploads
+│       ├── IMG_3408.jpg
+│       └── tg_image_1536824731.jpeg
+├── test_md.md
+├── user_profile.php
+├── user_update_info.php
+└── user_update_pwd.php
+
+16 directories, 127 files
