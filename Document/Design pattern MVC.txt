@@ -1,64 +1,96 @@
-.
 ├── Happy-Me-Hospital
 ├── README.md
 ├── aboutUs.php
 ├── add_item.php
-├── admin
-│   ├── admin_edit_medicine.php
-│   ├── admin_edit_user.php
-│   ├── admin_head.php
-│   ├── admin_header.php
-│   └── admin_index.php
 ├── booking.php
-├── bootstrap-5.3.0-alpha1-dist
-│   └── bootstrap-5.3.0-alpha1-dist
 ├── check_signIn.php
 ├── check_signUp.php
 ├── conn_db.php
 ├── css
-│   └── index.css
-├── cust_cart.php
-├── database
-│   ├── happyme.sql
-│   ├── happyme1.sql
-│   ├── happyme_ERD.png
-│   ├── happyme_ERD.sql
-│   ├── hy_Users.sql
-│   ├── itec.sql
-│   └── otherTable.sql
+│   └── index.css
 ├── delete_item.php
-├── documents-directory-structure.txt
 ├── footer.php
 ├── forum.php
 ├── head.php
 ├── header.php
 ├── img
-│   ├── Logo.png
-│   ├── avatar
-│   ├── booking.png
-│   ├── community.png
-│   ├── drugs
-│   ├── health_store.png
-│   ├── image 8.png
-│   ├── image 9.png
-│   └── image-from-rawpixel-id-2317451-original.png
+│   ├── Logo.png
+│   ├── avatar
+│   ├── booking.png
+│   ├── community.png
+│   ├── drugs
+│   ├── health_store.png
+│   ├── image 8.png
+│   ├── image 9.png
+│   └── image-from-rawpixel-id-2317451-original.png
 ├── index.php
 ├── js
-│   └── index.js
+│   └── index.js
 ├── logout.php
 ├── medicine_item.php
-├── note.txt
 ├── product.php
 ├── session_timeout.php
 ├── signin.php
 ├── signup.php
-├── test_feature
-│   ├── test_index.html
-│   ├── upload.php
-│   └── uploads
-├── test_md.md
 ├── user_profile.php
 ├── user_update_info.php
 └── user_update_pwd.php
 
-13 directories, 49 files
+├── app/
+│   ├── controllers/
+│   │   ├── AdminController.php
+│   │   ├── AuthController.php
+│   │   ├── CartController.php
+│   │   ├── HomeController.php
+│   │   └── ProductController.php
+│   ├── models/
+│   │   ├── Admin.php
+│   │   ├── Cart.php
+│   │   ├── Product.php
+│   │   └── User.php
+│   └── views/
+│       ├── admin/
+│       │   ├── edit_medicine.php
+│       │   ├── edit_user.php
+│       │   ├── index.php
+│       │   ├── admin_head.php
+│       │   ├── admin_header.php
+│       │   └── admin_index.php
+│       ├── cart/
+│       │   ├── index.php
+│       │   └── cust_cart.php
+│       ├── home/
+│       │   └── index.php
+│       ├── product/
+│       │   ├── add.php
+│       │   ├── delete.php
+│       │   ├── index.php
+│       │   └── medicine_item.php
+│       ├── user/
+│       │   ├── profile.php
+│       │   ├── update_info.php
+│       │   └── update_pwd.php
+│       ├── auth/
+│       │   ├── signin.php
+│       │   └── signup.php
+│       └── partials/
+│           ├── footer.php
+│           ├── forum.php
+│           ├── head.php
+│           └── header.php
+
+├── config/
+│   ├── database.php
+│   └── routes.php
+
+├── public/
+│   ├── bootstrap-5.3.0-alpha1-dist/
+│   │   └── bootstrap-5.3.0-alpha1-dist/
+│   ├── css/
+│   ├── img/
+│   └── js/
+
+└── vendor/
+    ├── autoload.php
+    ├── composer.json
+    └── composer.lock
