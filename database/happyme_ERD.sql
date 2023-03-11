@@ -81,18 +81,32 @@ CREATE TABLE IF NOT EXISTS `happyme`.`OrderMedicine` (
     ON UPDATE NO ACTION
 );
 
-CREATE TABLE IF NOT EXISTS happyme.Forum (
-f_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-f_title VARCHAR(255) NOT NULL,
-f_content TEXT NOT NULL,
-f_createdDate DATETIME NOT NULL,
+CREATE TABLE IF NOT EXISTS `happyme`.`Forum` (
+`f_id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+`f_title` VARCHAR(255) NOT NULL,
+`f_content` TEXT NOT NULL,
+`f_createdDate` DATETIME NOT NULL,
+`User_u_id` INT NOT NULL,
+CONSTRAINT `fk_Forum_User1`
+FOREIGN KEY (`User_u_id`)
+REFERENCES happyme.User (`u_id`)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+);
+
+-- this is for testing first --
+CREATE TABLE IF NOT EXISTS happyme.Image (
+i_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+i_name VARCHAR(50) NOT NULL,
 User_u_id INT NOT NULL,
-CONSTRAINT fk_Forum_User1
+CONSTRAINT fk_Image_User1
 FOREIGN KEY (User_u_id)
 REFERENCES happyme.User (u_id)
 ON DELETE NO ACTION
 ON UPDATE NO ACTION
 );
+
+
 
 
 -- Thanh and Hung adds data here:
