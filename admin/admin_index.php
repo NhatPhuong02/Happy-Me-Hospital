@@ -29,7 +29,7 @@
                         ?>
                     </div>
                     <div class="text-end me-4">
-                        <a href="#" class="btn btn-primary w-25">Edit</a>
+                        <a href="admin_edit_user.php" class="btn btn-primary w-25">Edit</a>
                     </div>
                     
                 </div>
