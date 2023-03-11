@@ -78,16 +78,16 @@
                             </div>
                             <div class="col-6">
                                 <a href="#">
-                                    <p class="fw-semibold" style="color:#138483">Random User</p>
+                                    <h6 class="fw-semibold" style="color:#138483">Random User</h6>
                                 </a>
                                 <sup style="color:darkgrey">Role User
                             </div>
                             <div class="col-5 text-end" style="color:darkgrey">
-                             10 Followers
+                                10 Followers
                             </div>
                         </div>
-                        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan pulvinar libero, ac euismod urna pretium eu. Sed accumsan pretium augue consequat ornare. </div>
-                        <a href="#">comment<FontAwesomeIcon icon="fa-sharp fa-solid fa-comment" /></a>
+                        <div class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan pulvinar libero, ac euismod urna pretium eu. Sed accumsan pretium augue consequat ornare. </div>
+                        <div class="mt-4"><a href="#"><i class="fa-sharp fa-solid fa-comment-dots"></i> Comment</a></div>
                     </div>
                     <div class="p-3 alert alert-secondary mt-4 " style="border: 3px solid #138483 ; color:black" role="alert">
                         <p class="fw-bolder fs-5">Topic title</p>
@@ -97,7 +97,7 @@
                             </div>
                             <div class="col-6">
                                 <a href="#">
-                                    <p class="fw-semibold" style="color:#138483">Random User</p>
+                                    <h6 class="fw-semibold" style="color:#138483">Random User</h6>
                                 </a>
                                 <sup style="color:darkgrey">Role User
                             </div>
@@ -105,8 +105,8 @@
                                 10 Followers
                             </div>
                         </div>
-                        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan pulvinar libero, ac euismod urna pretium eu. Sed accumsan pretium augue consequat ornare. </div>
-                        <a href="#"><i class="fa-sharp fa-solid fa-comment-middle"></i> Comment</a>
+                        <div class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan pulvinar libero, ac euismod urna pretium eu. Sed accumsan pretium augue consequat ornare. </div>
+                        <div class="mt-4"><a href="#"><i class="fa-sharp fa-solid fa-comment-dots"></i> Comment</a></div>
                     </div>
 
                     <div class="p-3 alert alert-secondary mt-4" style="border: 3px solid #138483 ; color:black" role="alert">
@@ -117,7 +117,7 @@
                             </div>
                             <div class="col-6">
                                 <a href="#">
-                                    <p class="fw-semibold" style="color:#138483">Random User</p>
+                                    <h6 class="fw-semibold" style="color:#138483">Random User</h6>
                                 </a>
                                 <sup style="color:darkgrey">Role User
                             </div>
@@ -125,8 +125,8 @@
                                 10 Followers
                             </div>
                         </div>
-                        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan pulvinar libero, ac euismod urna pretium eu. Sed accumsan pretium augue consequat ornare. </div>
-                        <a href="#">comment<i class="fa-sharp fa-solid fa-comment-middle"></i></a>
+                        <div class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan pulvinar libero, ac euismod urna pretium eu. Sed accumsan pretium augue consequat ornare. </div>
+                        <div class="mt-4"><a href="#"><i class="fa-sharp fa-solid fa-comment-dots"></i> Comment</a></div>
                     </div>
                 </div>
 
