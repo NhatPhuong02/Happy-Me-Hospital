@@ -10,11 +10,11 @@
 | VI/ [Project Techstack](#project-techstack) |
 _____
 
-## I/ Project Summary
+## I/ <a id='project-summary'></a>Project Summary
 * The Chill Team development group aims to create a professional and user-friendly web application for mental health treatment under the brand name HappyYou. The application will provide features such as personalized treatment schedules, online medication purchases, and virtual appointments to ensure seamless and convenient access to mental health services for patients.
 * We are using HTML, CSS for front-end and PHP for back-end. To be more specific, feel free navigate to the Project Techstack part.
 
-## II/ Team Member
+## II/ <a id='team-members'></a>Team Member
 We are Chill Team, and here is our members:
 
 2059032 - Nguyễn Trần Nhật Phương  
@@ -23,7 +23,7 @@ We are Chill Team, and here is our members:
 2059054 - Trầm Thị Tuyết Thanh  
 2059017 - Văn Công Gia Hưng
 
-## III/ Description
+## III/ <a id='description'></a>Description
 
 HappyYou is a web application developed by the Chill Team to provide easy access to mental health services. The platform is designed to be user-friendly and provide personalized treatment plans to ensure the best possible care for patients.
 
@@ -35,7 +35,7 @@ To ensure that the app is effective and provides the best possible care, HappyYo
 
 Overall, the Chill Team is committed to developing a reliable, user-friendly, and innovative platform that provides essential mental health support to individuals in need.
 
-## IV/ Installation
+## IV/ <a id='installation'></a>Installation
 #### a/ MAMP/XAMPP Installation
 1. Download MAMP or XAMPP from the official website.
 2. Follow the installation prompts and install the software on your computer.
@@ -60,7 +60,7 @@ This command is for Ubuntu or Debian-based Linux distributions. For other distri
 This should display the version of Git that has been installed on your system.
 4. You are now ready to begin using Git to manage your project's source code.
 
-## V/ Usage
+## V/ <a id='usage'></a>Usage
 1. Clone the HappyYou repository to your local machine using Git: <br>
 `$ git clone https://github.com/NhatPhuong02/Happy-Me-Hospital.git` 
 2. Navigate to the root directory of the project: <br>
@@ -70,7 +70,7 @@ This should display the version of Git that has been installed on your system.
 5. Once you have logged in or registered, you will be redirected to the dashboard page. Here, you can schedule appointments with mental health professionals, purchase medications online, and monitor your progress through the app's interface.
 6. When you're finished using HappyYou, be sure to log out of your account by clicking on the "Logout" button in the top right corner of the screen.
 
-## <a href="#project-techstack">VI/ Project Techstack</a>
+## <a id='project-techstack'></a>VI/ Project Techstack
 Here is the technology using during the development:
 - HTML 5
 - CSS 3
