@@ -1,14 +1,80 @@
-# Happy You
-Final ASE Project
+# Advanced Software Engineering Final Project
 
-## Project Status
-Status: **OPEN**  
-Completion: **50%**
+| Table of Content |
+| --- |
+| I/ [Project Summary](#project-summary) |
+| II/ [Team Members](#team-members) |
+| III/ [Description](#description) |
+| IV/ [Installation](#installation) |
+| V/ [Usage](#usage) |
+| VI/ [Contribution](#contribution) |
+| VII/ [Project Techstack](#project-techstack) |
 
-## Project Description
-Happy You is a website for booking calender and buy medicine
 
-## Tools of Development
+_____
+
+## I/ Project Summary
+* The Chill Team development group aims to create a professional and user-friendly web application for mental health treatment under the brand name HappyYou. The application will provide features such as personalized treatment schedules, online medication purchases, and virtual appointments to ensure seamless and convenient access to mental health services for patients.
+* We are using HTML, CSS for front-end and PHP for back-end. To be more specific, feel free navigate to the Project Techstack part.
+
+## II/ Team Member
+We are Chill Team, and here is our members:
+
+2059032 - Nguyễn Trần Nhật Phương  
+2059027 - Bùi Quang Minh  
+2059025 - Phạm Thái Linh  
+20590** - Trầm Thị Tuyết Thanh  
+20590** - Văn Công Gia Hưng
+
+## III/ Description
+
+HappyYou is a web application developed by the Chill Team to provide easy access to mental health services. The platform is designed to be user-friendly and provide personalized treatment plans to ensure the best possible care for patients.
+
+HappyYou offers various features such as scheduling appointments with mental health professionals, purchasing medications online, and monitoring progress through the app's interface. Users can access the app from their computers or mobile devices, ensuring that mental health support is always accessible.
+
+One of the primary goals of HappyYou is to provide mental health care in a convenient and accessible manner. Through personalized treatment plans, patients can receive care that is tailored to their specific needs. Additionally, the app allows for virtual appointments, which can be especially useful for individuals who may not have the time or resources to travel to appointments in person.
+
+To ensure that the app is effective and provides the best possible care, HappyYou relies on a variety of technologies and platforms. These include secure online payment systems, electronic health record management, and cloud-based data storage solutions.
+
+Overall, the Chill Team is committed to developing a reliable, user-friendly, and innovative platform that provides essential mental health support to individuals in need.
+
+## IV/ Installation
+#### a/ MAMP/XAMPP Installation
+1. Download MAMP or XAMPP from the official website.
+2. Follow the installation prompts and install the software on your computer.
+3. Open the MAMP/XAMPP application and start the Apache and MySQL servers.
+3. Verify that the server is running by accessing http://localhost:8888/ in your web browser.
+4. You are now ready to begin building and testing your PHP web application.
+#### b/ phpMyAdmin Installation
+1. Open your web browser and navigate to the official phpMyAdmin website.
+2. Download the latest version of phpMyAdmin.
+3. Extract the downloaded archive and rename the extracted directory to phpmyadmin.
+4. Move the phpmyadmin directory to your web server's root directory. For example, on MAMP, the root directory is /Applications/MAMP/htdocs/.
+5. Access phpMyAdmin by navigating to http://localhost:8888/phpmyadmin/ in your web browser.
+6. You will be prompted to enter your MySQL username and password. Enter the login credentials you used during MAMP/XAMPP installation to access the MySQL database.
+#### c/ Git Installation
+1. Open your terminal application.
+2. Run the following command to install Git: <br>
+`$ sudo apt-get install git` <br>
+This command is for Ubuntu or Debian-based Linux distributions. For other distributions, consult the official Git documentation.
+
+3. Verify that Git has been installed by running the following command: <br>
+`$ git --version` <br>
+This should display the version of Git that has been installed on your system.
+4. You are now ready to begin using Git to manage your project's source code.
+
+## V/ Usage
+1. Clone the HappyYou repository to your local machine using Git: <br>
+`$ git clone https://github.com/NhatPhuong02/Happy-Me-Hospital.git` 
+2. Navigate to the root directory of the project: <br>
+`$ cd Happy-Me-Hospital`
+3. Start your local development server. If you're using MAMP or XAMPP, make sure the Apache and MySQL servers are running and navigate to http://localhost:8888/happyyou/ in your web browser.
+4. You will be redirected to the HappyYou login page. If you don't have an account yet, you can create one by clicking on the "Register" button.
+5. Once you have logged in or registered, you will be redirected to the dashboard page. Here, you can schedule appointments with mental health professionals, purchase medications online, and monitor your progress through the app's interface.
+6. When you're finished using HappyYou, be sure to log out of your account by clicking on the "Logout" button in the top right corner of the screen.
+
+## VI/ Project Techstack
+Here is the technology using during the development:
 - HTML 5
 - CSS 3
 - JavaScript
@@ -16,31 +82,3 @@ Happy You is a website for booking calender and buy medicine
 - MySQL Database
 - Bootstrap 5.1.3
 - Omise API Version 2020-05-29(not yet)
-
-## Footnote
-- Food images included in the img folder are downloaded from freepik.com and VietNamFood.com page
-- To install the Itec Canteen app, download and install XAMPP, download this repository and put into directory (C:/xampp/htdocs/), import database and name it eaterio in phpMyAdmin (http://localhost/phpmyadmin) using file itec.sql, start Apache and MySQL services, then run and access by using web browser (http://localhost/PHP-Project/) and enjoy.
-- You can register for the customer account and log in. To log in with shop account, press the log in with shop account under login page. Add shop account using the admin mode. Access admin mode by clicking at the first name in the footer at the customer log in page. You can look up
-
-## Members
-2059032 - Nguyễn Trần Nhật Phương  
-2059027 - Bùi Quang Minh  
-2059025 - Phạm Thái Linh  
-20590** - Trầm Thị Tuyết Thanh  
-20590** - Văn Công Gia Hưng  
-
-## How to run
-This project uses PHP to connect to MySQL server, and is simulating school canteen management system. If you do not want to configure too much, just download xampp latest version from: https://www.apachefriends.org/download.html and use 127.0.0.1 to visit index.html. However, if you want to use localhost/ to visit your project, the following configurations are needed:
-
-1.open xampp root directory -> apache -> conf -> httpd.conf, search for "DocumentRoot" and change the address to your project root directory; also, you would find <Directory> tag below, change the address to your project root.
-
-2.Find a file named hosts in your C: drive and add one line "127.0.0.1  localhost" to the last line of the file. (How to find the file? Google it; but if you are using the lastest version of Win10 then the address would be "C:\Windows\WinSxS\amd64_microsoft-windows-w..ucture-other-minwin_31bf3856ad364e35_10.0.16299.15_none_582bc968d636655c\hosts") 
-  
-localhost/index.php (Page for manager)
-
-function:
-manage employees
-
-make orders
-
-Also, thanks for watching
