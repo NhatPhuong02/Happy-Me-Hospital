@@ -65,7 +65,7 @@ This should display the version of Git that has been installed on your system.
 `$ git clone https://github.com/NhatPhuong02/Happy-Me-Hospital.git` 
 2. Navigate to the root directory of the project: <br>
 `$ cd Happy-Me-Hospital`
-3. Start your local development server. If you're using MAMP or XAMPP, make sure the Apache and MySQL servers are running and navigate to http://localhost:8888/happyyou/ in your web browser.
+3. Start your local development server. If you're using MAMP or XAMPP, make sure the Apache and MySQL servers are running and navigate to http://localhost/Happy-Me-Hospital/index.php in your web browser.
 4. You will be redirected to the HappyYou login page. If you don't have an account yet, you can create one by clicking on the "Register" button.
 5. Once you have logged in or registered, you will be redirected to the dashboard page. Here, you can schedule appointments with mental health professionals, purchase medications online, and monitor your progress through the app's interface.
 6. When you're finished using HappyYou, be sure to log out of your account by clicking on the "Logout" button in the top right corner of the screen.
