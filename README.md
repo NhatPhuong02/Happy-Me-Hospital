@@ -7,7 +7,7 @@
 | III/ [Description](#description) |
 | IV/ [Installation](#installation) |
 | V/ [Usage](#usage) |
-| VI/ [Project Techstack](##project-techstack) |
+| VI/ [Project Techstack](#project-techstack) |
 _____
 
 ## I/ Project Summary
@@ -70,7 +70,7 @@ This should display the version of Git that has been installed on your system.
 5. Once you have logged in or registered, you will be redirected to the dashboard page. Here, you can schedule appointments with mental health professionals, purchase medications online, and monitor your progress through the app's interface.
 6. When you're finished using HappyYou, be sure to log out of your account by clicking on the "Logout" button in the top right corner of the screen.
 
-## VI/ Project Techstack
+## <a href="#project-techstack">VI/ Project Techstack</a>
 Here is the technology using during the development:
 - HTML 5
 - CSS 3
