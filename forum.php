@@ -129,9 +129,6 @@
                         <div class="mt-4"><a href="#"><i class="fa-sharp fa-solid fa-comment-dots"></i> Comment</a></div>
                     </div>
                 </div>
-
-
-
             </div>
         </div>
         <?php include('footer.php') ?>
