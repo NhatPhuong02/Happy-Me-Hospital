@@ -7,10 +7,7 @@
 | III/ [Description](#description) |
 | IV/ [Installation](#installation) |
 | V/ [Usage](#usage) |
-| VI/ [Contribution](#contribution) |
-| VII/ [Project Techstack](#project-techstack) |
-
-
+| VI/ [Project Techstack](##project-techstack) |
 _____
 
 ## I/ Project Summary
