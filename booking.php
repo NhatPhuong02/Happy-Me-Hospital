@@ -22,7 +22,9 @@
             <div class="h6">
                 <a href="index.php">Home Page</a>
                 <span>></span>
-                <a href="#">Booking</a>
+                <a href="#">Services</a>
+                <span>></span>
+                <a href="#" >Booking</a>
             </div>
         </div>
     </div>
