@@ -81,18 +81,50 @@ CREATE TABLE IF NOT EXISTS `happyme`.`OrderMedicine` (
     ON UPDATE NO ACTION
 );
 
-CREATE TABLE IF NOT EXISTS `happyme`.`Forum` (
-`f_id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-`f_title` VARCHAR(255) NOT NULL,
-`f_content` TEXT NOT NULL,
-`f_createdDate` DATETIME NOT NULL,
+CREATE TABLE IF NOT EXISTS `happyme`.`Post` (
+`p_id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+`p_title` VARCHAR(255) NOT NULL,
+`p_content` TEXT NOT NULL,
+`p_createdDate` DATETIME NOT NULL,
 `User_u_id` INT NOT NULL,
-CONSTRAINT `fk_Forum_User1`
+CONSTRAINT `fk_Post_User1`
 FOREIGN KEY (`User_u_id`)
 REFERENCES happyme.User (`u_id`)
 ON DELETE NO ACTION
 ON UPDATE NO ACTION
 );
+
+CREATE TABLE IF NOT EXISTS `happyme`.`Replay` (
+`r_id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+`r_content` TEXT NOT NULL,
+`r_createdDate` DATETIME NOT NULL,
+`Post_p_id` INT NOT NULL,
+CONSTRAINT `fk_Replay_Post1`
+FOREIGN KEY (`Post_p_id`)
+REFERENCES happyme.Post (`p_id`)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+);
+
+CREATE TABLE IF NOT EXISTS `happyme`.`ReplyHasUser` (
+  `r_id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `Post_p_id` INT NOT NULL,
+  `User_u_id` INT NOT NULL,
+  CONSTRAINT `fk_ReplyHasUser_Post`
+    FOREIGN KEY (`Post_p_id`)
+    REFERENCES `happyme`.`Post` (`p_id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_ReplyHasUser_User`
+    FOREIGN KEY (`User_u_id`)
+    REFERENCES `happyme`.`User` (`u_id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION
+);
+
+
+
+
 
 -- this is for testing first --
 CREATE TABLE IF NOT EXISTS happyme.Image (
