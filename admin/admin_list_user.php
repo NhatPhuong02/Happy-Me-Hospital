@@ -6,7 +6,7 @@
     include('admin_head.php');
     include("../conn_db.php");
     ?>
-    <title>Edit User</title>
+    <title>List User</title>
 </head>
 <body>
     <?php 
@@ -17,7 +17,7 @@
             <div class="h6">
                 <a href="admin_index.php">Home Page</a>
                 <span>></span>
-                <a href="">Edit User</a>
+                <a href="">List User</a>
             </div>
             <form class="d-flex" role="search">
                 <div class="input-group">
@@ -48,9 +48,31 @@
                         
                         
                         <div class="row card-body m-0 p-3 bg-main text-white rounded-bottom-1 text-start">
-                            <div class="col-10">
+                            <div class="col-12">
                                 <h5 class="card-title name text-truncate"><?= $u_row["u_firstName"] ?></h5>
                                 <h6 class="card-title email text-truncate " id=""><?= $u_row["u_email"] ?></h6>
+                                <select class="form-select" id="s_id" name="s_id"><?= $u_row["u_role"] ?>
+                                    <?php
+                                        $option_query = "SELECT DISTINCT u_role FROM user";
+                                        $option_result = $mysqli -> query($option_query);
+                                        $opt_row = $option_result -> num_rows;
+                                        if($option_result -> num_rows != 0){
+                                         $option_result = $option_result->fetch_array();
+                                    ?>
+                                    
+                                    <option value="admin" <?php if ($option_result["u_role"] == "admin") {
+                                                echo "selected";
+                                            } ?>>Admin</option>
+                                    <option value="patient" <?php if ($option_result["u_role"] == "patient") {
+                                                echo "selected";
+                                            } ?>>Patient</option>
+                                    <option value="therapist" <?php if ($option_result["u_role"] == "therapist") {
+                                                echo "selected";
+                                            } ?>>Therapist</option>
+                                    <?php
+                                        }
+                                    ?>
+                                </select>
                             </div>
                         </div>
                     </div>
