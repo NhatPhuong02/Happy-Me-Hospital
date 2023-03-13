@@ -8,6 +8,7 @@
 | IV/ [Installation](#installation) |
 | V/ [Usage](#usage) |
 | VI/ [Project Techstack](#project-techstack) |
+| VII/ [Project Status](#project-status) |
 _____
 
 ## I/ <a id='project-summary'></a>Project Summary
@@ -79,3 +80,25 @@ Here is the technology using during the development:
 - MySQL Database
 - Bootstrap 5.1.3
 - Omise API Version 2020-05-29(not yet)
+
+## <a id='project-status'></a>VII/ Project Status
+
+
+|Feature | Status | 
+| ----------- | ----------- |
+|Home Page| ✓
+|Services Page| ✓
+|Forum Page| ✓
+| Booking Page| ✓
+| Product Page | ✓
+| Register & Login Page	| ✓
+|User Profile & Edit Profile | ✓
+|Product Search	| ✍️ Later
+|Product Filters |	✍️ Later
+|Product Sorting |	✍️ Later
+|Product Reviews |	✍️ Later
+|Shopping Cart	| ✓
+|Checkout & Payment |	✍️
+|Order History	| ✍️ Later
+|Contact Us Form |	✍️ Later
+|About Us Page	| ✓
