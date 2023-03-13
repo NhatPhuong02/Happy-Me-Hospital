@@ -54,8 +54,11 @@
     // get _SESSION[id, User_id]
 
 
-      $query = $mysqli->prepare("INSERT u_avatar INTO User WHERE u_id = ?");
-      $query->bind_param("s", $u_id);
+      $u_avatar = $_FILES["fileToUpload"]["name"];
+
+      $query = $mysqli->prepare("UPDATE User SET u_avatar = ? WHERE u_id = ?");
+      // UPDATE User SET u_avatar = "test" WHERE u_id = 6
+      $query->bind_param("ss", $u_avatar, $u_id);
       $query->execute();
       $result = $query->get_result();
 
