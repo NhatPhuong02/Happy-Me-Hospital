@@ -94,12 +94,12 @@ ON DELETE NO ACTION
 ON UPDATE NO ACTION
 );
 
-CREATE TABLE IF NOT EXISTS `happyme`.`Replay` (
+CREATE TABLE IF NOT EXISTS `happyme`.`Reply` (
 `r_id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 `r_content` TEXT NOT NULL,
 `r_createdDate` DATETIME NOT NULL,
 `Post_p_id` INT NOT NULL,
-CONSTRAINT `fk_Replay_Post1`
+CONSTRAINT `fk_Reply_Post1`
 FOREIGN KEY (`Post_p_id`)
 REFERENCES happyme.Post (`p_id`)
 ON DELETE NO ACTION
@@ -166,3 +166,18 @@ INSERT INTO `user` (`u_firstName`, `u_lastName`, `u_phone`, `u_email`, `u_passwo
 ('TUAN', 'HưNG', '0906919685', 'baemin@gmail.com', '$2y$10$lNg3q6Lex0T3khWwVGbDl.tl56vpj2XMOQEjlf8p/s2EO4x3nCgm2', 'Male', 'patient', '258 Đ. Nguyễn Trãi, Phường Nguyễn Cư Trinh, Quận 1, Thành phố Hồ Chí Minh', NULL),
 ('MINH', 'BUII', '0906919685', 'buii@gmail.com', '$2y$10$FCWcU.IalkeVhEmg9gHDgekSHvEqg5Ezosalr6DKB4dINiFr9.h5m', 'Male', 'patient', '258 Đ. Nguyễn Trãi, Phường Nguyễn Cư Trinh, Quận 1, Thành phố Hồ Chí Minh', NULL);
 
+
+
+-- luu y moi lan add record thi theo thu tu Post, Reply, va ReplyHasUser roi moi toi record tiep theo
+-- boi vi nhung table nay co rang buoc voi nhau
+INSERT INTO happyme.Post (`p_id`, `p_title`, `p_content`, `p_createdDate`, `User_u_id`)
+VALUES (1, 'First post', 'This is the content of the first post.', '2022-01-01 12:12:12', 1),
+(2, 'Second post', 'This is the content of the Second post.', '2022-01-01 13:13:13', 2);
+
+INSERT INTO happyme.Reply (`r_id`, `r_content`, `r_createdDate`, `Post_p_id`)
+VALUES (1, 'This is the reply to the first post.', '2022-01-02 14:15:00', 1),
+(2, 'This is the reply to the Second post.', '2022-01-02 13:27:55', 2);
+
+INSERT INTO happyme.ReplyHasUser (`r_id`, `Post_p_id`, `User_u_id`)
+VALUES (1, 1, 1),
+(2, 2, 1);
