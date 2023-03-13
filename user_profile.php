@@ -31,7 +31,7 @@
                                         <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
                                         <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
                                     </svg>
-                                    <span class="ms-2 mt-2">Successfully updated your password!</span>
+                                    <span class="ms-2 mt-2">Successfully updated your password! </span>
                                     <span class="me-2 float-end"><a class="text-decoration-none link-light" href="user_profile.php">X</a></span>
                                 </div>
                             </div>
@@ -60,7 +60,12 @@
                                         <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
                                         <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
                                     </svg>
-                                    <span class="ms-2 mt-2">Successfully updated your profile!</span>
+                                    <span class="ms-2 mt-2">Successfully updated your profile! 
+                                        <!-- for testing / delete if test done-->
+                                        <?php
+    echo $_SESSION['test1'] . " ~ " . $_SESSION['test2'] . " ~ " .  $_SESSION['test3'] . " ~ " . $_SESSION['test4'] . " ~ " . $_SESSION['avatar'] . " ~ " . $_SESSION['test5'];
+?></span>
+<!-- end testing -->
                                     <span class="me-2 float-end"><a class="text-decoration-none link-light" href="user_profile.php">X</a></span>
                                 </div>
                             </div>
