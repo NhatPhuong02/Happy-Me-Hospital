@@ -44,27 +44,27 @@
             <div class="row">
                 <div class="text-center fs-3 mb-5">Out <span style="background: -webkit-linear-gradient(90.29deg, #59BAB8 0.21%, #138483 99.79%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; ">Main Services </span><br> Categories</div>
                 <div class="col column-sm-4 d-flex justify-content-center mb-5">
-                    <div class="card " style="width: 18rem; ">
+                    <div class="card " style="width: 18rem; border-radius:0 0 25px 25px">
                         <img src="img/booking.png" class="card-img-top " alt="... ">
-                        <div class="card-body ">
+                        <div class="card-body " style="background-image:linear-gradient(150deg, #59BAB8, #138483); border-radius:0 0 25px 25px">
                             <h5 class="card-title ">Book Appointment</h5>
-                            <p class="card-text ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan pulvinar libero, ac euismod urna pretium eu. Sed accumsan pretium augue consequat ornare. </p>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan pulvinar libero, ac euismod urna pretium eu. Sed accumsan pretium augue consequat ornare. </p>
                         </div>
                     </div>
                 </div>
                 <div class="col column-sm-4 d-flex justify-content-center mb-5">
-                    <div class="card " style="width: 18rem; ">
+                    <div class="card " style="width: 18rem; border-radius:0 0 25px 25px">
                         <img src="img/health_store.png" class="card-img-top " alt="... ">
-                        <div class="card-body ">
+                        <div class="card-body " style="background-image:linear-gradient(210deg, #59BAB8, #138483); border-radius:0 0 25px 25px">
                             <h5 class="card-title ">Health Store</h5>
                             <p class="card-text ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan pulvinar libero, ac euismod urna pretium eu. Sed accumsan pretium augue consequat ornare. </p>
                         </div>
                     </div>
                 </div>
                 <div class="col column-sm-4 d-flex justify-content-center mb-5">
-                    <div class="card " style="width: 18rem; ">
+                    <div class="card " style="width: 18rem; border-radius:0 0 25px 25px">
                         <img src="img/community.png" class="card-img-top " alt="... ">
-                        <div class="card-body ">
+                        <div class="card-body " style="background-image:linear-gradient(150deg, #59BAB8, #138483); border-radius:0 0 25px 25px">
                             <h5 class="card-title ">Community</h5>
                             <p class="card-text ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan pulvinar libero, ac euismod urna pretium eu. Sed accumsan pretium augue consequat ornare. </p>
                         </div>
