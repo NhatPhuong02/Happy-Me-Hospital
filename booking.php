@@ -53,8 +53,8 @@
                 
             </div>
             <div class="col-6 ">
-                <div class="card bg-main rounded-5 rounded-top-0 w-50 " style="margin-left: 23.5%;" >
-                    <div class="card-body text-center ">
+                <div class="card bg-main w-50 " style="margin-left: 23.5%; border-radius: 20px 0px 20px 20px;" >
+                    <div class="card-body text-center" style="color: #FFF;">
                         Dr. Bui Quang Minh
                     </div>
                 </div>
