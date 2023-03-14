@@ -80,7 +80,7 @@
                 <?php $i=1; while ($row = $search_result -> fetch_array()){ ?>
                 <tr>
                     <th><?php echo $i++;?></th>
-                    <td><?php echo $row["m_pic"];?></td>
+                    <td class="w-25"><img <?php echo "src=\"../img/drugs/{$row["m_pic"]}\"";?> class ="img-thumbnail w-25" src="img/avatar/" alt25"></td>
                     <td><?php echo $row["m_name"];?></td>
                     <td class = "text-center"><?php echo $row["m_quantity"];?></td>
                     <td class = "text-center"><?php echo $row["m_price"];?></td>
