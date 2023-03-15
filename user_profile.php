@@ -113,7 +113,7 @@
                         }
                     } else {
                         echo "src=\"img/avatar/{$_SESSION['avatar']}\"";
-                    } ?>       class="img-thumbnail rounded-circle bg-white" alt="logo"></div>
+                    } ?>class="img-thumbnail rounded-circle bg-white" alt="logo"></div>
                 </div>
                 <!-- Modal_img -->
                 <div class="modal" id="static-img" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
