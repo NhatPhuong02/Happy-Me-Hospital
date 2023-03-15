@@ -38,7 +38,7 @@
                     <div class="card text-center">
                         <?php if ($u_row["u_avatar"] == null) {
                                 if ($u_row["u_gender"] == "Male") { ?> 
-                                    <img src="../img/avatar/default_boy.png" class="card-img-top pt-2 m-auto"  style="width: 15rem" alt="..."><?php } else { 
+                                    <img src="../img/avatar/default_man.png" class="card-img-top pt-2 m-auto"  style="width: 15rem" alt="..."><?php } else { 
                                     if ($u_row["u_gender"] == "Female") {?><img src="../img/avatar/default_women.png" class="card-img-top pt-2 m-auto"  style="width: 15rem" alt="..."><?php } else { 
                                         if ($u_row["u_gender"] == "Other") {?> <img src="../img/avatar/default_other.png" class="card-img-top pt-2 m-auto"  style="width: 15rem" alt="..."> <?php } 
                                         } 

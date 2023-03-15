@@ -80,17 +80,21 @@
                 <?php $i=1; while ($row = $search_result -> fetch_array()){ ?>
                 <tr>
                     <th><?php echo $i++;?></th>
-                    <td class="w-25"><img <?php echo "src=\"../img/drugs/{$row["m_pic"]}\"";?> class ="img-thumbnail w-25" src="img/avatar/" alt25"></td>
+                    <td class="w-25"><img <?php if (is_null($row["m_pic"])) {
+                            echo "src='../img/drugs/default.png'";
+                        } else {
+                            echo "src=\"../img/drugs/{$row['m_pic']}\"";
+                        }?> class ="img-thumbnail w-25" src="img/avatar/"></td>
                     <td><?php echo $row["m_name"];?></td>
                     <td class = "text-center"><?php echo $row["m_quantity"];?></td>
-                    <td class = "text-center"><?php echo $row["m_price"];?></td>
+                    <td class = "text-center"><?php echo number_format($row["m_price"],"0",",",".");?></td>
                     <td>
                         <a href="admin_medicine_detail.php?m_id=<?php echo $row["m_id"]?>"
                             class="btn btn-sm btn-primary">View</a>
-                        <a href="admin_medicine_list.php?m_id=<?php echo $row["m_id"];?>&u_id=<?php echo $row["m_id"]?>"
+                        <a href="admin_edit_medicine.php?m_id=<?php echo $row["m_id"];?>&u_id=<?php echo $row["m_id"]?>"
                             class="btn btn-sm btn-outline-success">Edit</a>
-                        <a href="admin_medicine_delete.php?m_id=<?php echo $row["m_id"]?>"
-                            class="btn btn-sm btn-outline-danger">Delete</a>
+                        <a href="admin_delete_medicine.php?m_id=<?php echo  $row["m_id"]?>"
+                            class="btn btn-sm btn-outline-danger">Delete</a> <!-- can't delete item already isset user's cart -->
                     </td>
                 </tr>
                 <?php } ?>

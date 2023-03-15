@@ -60,7 +60,7 @@
                             </div>
                             <input type="hidden" class="form-control" id="m_id" name="m_id" value="<?php echo $result["m_id"] ?>">
                             <div class="col-2 my-4 text-center fs-4"><span><?php echo $result["c_quantity"] ?></span></div>
-                            <div class="col-2 my-4 text-center h-50 fs-4"><?php echo $result["m_price"] ?></div>
+                            <div class="col-2 my-4 text-center h-50 fs-4"><?php echo number_format($result["m_price"], 0, ',', '.');?></div>
                             <div class="col-2 my-4 text-center ">
                                 <a href="delete_item.php?m_id=<?php echo $result["m_id"] ?>" type="button" class="btn btn-lg btn-outline-danger col-4 bg-main rounded-3" style="color:#FFF" name="del_btn"> <i class="fa-sharp fa-solid fa-trash-can"></i> </a>
                             </div>
@@ -87,13 +87,13 @@
                 <hr class=" my-3 w-50 bg-main" size="7px">
                 <div class="w-100"></div>
                 <div class="col-2 p-2 h5">Subtotal</div>
-                <div class="col-2 p-2 h5 text-end"><?php echo $sum_price ?></div>
+                <div class="col-2 p-2 h5 text-end"><?php echo number_format($sum_price, 0, ',', '.');?></div>
                 <div class="w-100"></div>
                 <div class="col-2 p-2 h5">Tax (10%)</div>
-                <div class="col-2 p-2 h5 text-end"><?php echo $tax ?></div>
+                <div class="col-2 p-2 h5 text-end"><?php echo number_format($tax, 0, ',', '.') ?></div>
                 <div class="w-100"></div>
                 <div class="col-2 p-2 h4">Total</div>
-                <div class="col-2 p-2 h4 text-end"><?php echo $total ?></div>
+                <div class="col-2 p-2 h4 text-end"><?php echo number_format($total, 0, ',', '.') ?></div>
                 <div class="w-100"></div>
                 <button type="button" class="btn btn-lg btn-light col-4 bg-main me-1 rounded-3" style="color: #FFF " <?php if ($list->num_rows == 0) {echo "disabled";} ?> > Proceed to checkout <i class="fa-sharp fa-solid fa-arrow-right"></i> </button>
             </div>

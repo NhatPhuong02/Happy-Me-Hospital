@@ -33,7 +33,7 @@
             <div class="col mb-3 mb-md-0 logo">
                 <img <?php
                         if (is_null($medicine_row["m_pic"])) {
-                            echo "src='img/avatar/admin.png'";
+                            echo "src='img/drugs/default.png'";
                         } else {
                             echo "src=\"img/drugs/{$medicine_row['m_pic']}\"";
                         }
@@ -41,7 +41,7 @@
             </div>
             <div class="col text-wrap">
                 <h1 class="fw-light"><?php echo $medicine_row["m_name"] ?></h1>
-                <h3 class="fw-light"><?php echo $medicine_row["m_price"] ?> VND</h3>
+                <h3 class="fw-light"><?php echo number_format($medicine_row["m_price"], 0, ',', '.');?> VND</h3>
                 <ul class="list-unstyled mb-3 mb-md-0">
 
                 </ul>

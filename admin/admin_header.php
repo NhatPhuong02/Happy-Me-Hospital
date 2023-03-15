@@ -17,26 +17,16 @@
                     <a class="nav-link active" aria-current="page" href="admin_index.php">Home</a>
                 </li>
                 <hr>
-                <li class="nav-item dropdown text-center">
-                    <a class="nav-link dropdown-toggle text-sm-center" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Services
-                    </a>
-                    <ul class="dropdown-menu text-center text-xl-start border-2">
-                        <li><a class="dropdown-item " href="forum.php">Forum</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="booking.php">Booking</a></li>
-                    </ul>
+                <li class="nav-item text-center">
+                    <a class="nav-link" aria-current="page" href="admin_list_user.php">User</a>
                 </li>
                 <hr>
                 <li class="nav-item d-flex justify-content-center">
-                    <a class="nav-link" href="product.php">Product</a>
+                    <a class="nav-link" href="admin_list_medicine.php">Product</a>
                 </li>
                 <hr>
                 <li class="nav-item d-flex justify-content-center">
-                    <a class="nav-link" href="aboutUs.php">About Us</a>
+                    <a class="nav-link" href="../aboutUs.php">About Us</a>
                 </li>
                 <hr>
                 <div class="vr"></div>
