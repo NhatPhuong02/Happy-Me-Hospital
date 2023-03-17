@@ -12,20 +12,29 @@
     <?php 
         include("admin_header.php");
     ?>
-   <div class="container mt-5">
-        <div class="navbar bg-body-tertiary">
-            <div class="h6">
-                <a href="admin_index.php">Home Page</a>
-                <span>></span>
-                <a href="">List User</a>
-            </div>
-            <form class="d-flex" role="search">
-                <div class="input-group">
-                    <span class="input-group-text"><i class="fa-solid fa-magnifying-glass"></i></span>
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+    <div class="container">
+    <div class="mt-4 border-bottom">
+            <a class="nav nav-item text-decoration-none text-muted mb-2" href="#" onclick="history.back();">
+                <i class="bi bi-arrow-left-square me-2"></i>Go back
+            </a>
+            <h2 class="pt-3 display-6">User List</h2>
+            <form class="form-floating mb-3" method="GET" action="admin_list_user.php">
+                <div class="row g-2">
+                    <div class="col">
+                        <input type="text" class="form-control" id="m_name" name="m_name" placeholder="User name"
+                            <?php if(isset($_GET["search"])){?>value="<?php echo $_GET["m_name"];?>" <?php } ?>>
+                    </div>
+                    <div class="col-auto">
+                        <button type="submit" name="search" value="1" class="btn btn-success">Search</button>
+                        <button type="reset" class="btn btn-danger"
+                            onclick="javascript: window.location='admin_list_user.php'">Clear</button>
+                        <a href="admin_user_add.php" class="btn btn-primary">Add new User</a>
+                    </div>
                 </div>
             </form>
         </div>
+    </div>
+   <div class="container mt-5">
         <div class="row mt-5 justify-content-start">
             <?php
             $query = "SELECT * FROM User";
@@ -49,30 +58,18 @@
                         
                         <div class="row card-body m-0 p-3 bg-main text-white rounded-bottom-1 text-start">
                             <div class="col-12">
-                                <h5 class="card-title name text-truncate"><?= $u_row["u_firstName"] ?></h5>
-                                <h6 class="card-title email text-truncate " id=""><?= $u_row["u_email"] ?></h6>
-                                <select class="form-select" id="s_id" name="s_id"><?= $u_row["u_role"] ?>
-                                    <?php
-                                        $option_query = "SELECT DISTINCT u_role FROM user";
-                                        $option_result = $mysqli -> query($option_query);
-                                        $opt_row = $option_result -> num_rows;
-                                        if($option_result -> num_rows != 0){
-                                         $option_result = $option_result->fetch_array();
-                                    ?>
-                                    
-                                    <option value="admin" <?php if ($option_result["u_role"] == "admin") {
-                                                echo "selected";
-                                            } ?>>Admin</option>
-                                    <option value="patient" <?php if ($option_result["u_role"] == "patient") {
-                                                echo "selected";
-                                            } ?>>Patient</option>
-                                    <option value="therapist" <?php if ($option_result["u_role"] == "therapist") {
-                                                echo "selected";
-                                            } ?>>Therapist</option>
-                                    <?php
-                                        }
-                                    ?>
+                                <h5 class="card-title name text-truncate"><?= $u_row["u_firstName"]?></h5>
+                                <h6 class="card-title email text-truncate"><?= $u_row["u_email"]?></h6>
+                            </div>
+                            <div class="form my-3 col-8">
+                                <select class="form-select "name="gender" id="gender">
+                                    <option value="male" <?php if($u_row["u_gender"]=="Male"){echo "selected";}?>>Male</option>
+                                    <option value="female" <?php if($u_row["u_gender"]=="Female"){echo "selected";}?>>Female</option>
+                                    <option value="other" <?php if($u_row["u_gender"]=="Other"){echo "selected";}?>>Other</option>
                                 </select>
+                            </div>
+                            <div class="col-4 my-3 text-center">
+                                <a href="admin_delete_user.php?u_id=<?php echo $u_row["u_id"]?>" type="button" class="btn btn-danger">DELETE</a>
                             </div>
                         </div>
                     </div>
