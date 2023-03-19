@@ -87,7 +87,26 @@
                             </div>
                         </div>
                         <div class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan pulvinar libero, ac euismod urna pretium eu. Sed accumsan pretium augue consequat ornare. </div>
-                        <div class="mt-4"><a href="#"><i class="fa-sharp fa-solid fa-comment-dots"></i> Comment</a></div>
+                        <ul class="list-inline d-flex  mt-3">
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <i class="fa fa-thumbs-up "></i>
+                                    178
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <i class="fa fa-thumbs-down "></i>
+                                    34
+                                </a>
+                            </li>
+                            <li class="list-inline-item ms-auto">
+                                <a href="#">
+                                    <i class="fa fa-reply "></i>
+                                    Reply
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                     <div class="p-3 alert alert-secondary mt-4 " style="border: 3px solid #138483 ; color:black" role="alert">
                         <p class="fw-bolder fs-5">Topic title</p>
@@ -106,7 +125,26 @@
                             </div>
                         </div>
                         <div class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan pulvinar libero, ac euismod urna pretium eu. Sed accumsan pretium augue consequat ornare. </div>
-                        <div class="mt-4"><a href="#"><i class="fa-sharp fa-solid fa-comment-dots"></i> Comment</a></div>
+                        <ul class="list-inline d-flex mt-3">
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <i class="fa fa-thumbs-up "></i>
+                                    178
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <i class="fa fa-thumbs-down "></i>
+                                    34
+                                </a>
+                            </li>
+                            <li class="list-inline-item ms-auto">
+                                <a href="#">
+                                    <i class="fa fa-reply "></i>
+                                    Reply
+                                </a>
+                            </li>
+                        </ul>
                     </div>
 
                     <div class="p-3 alert alert-secondary mt-4" style="border: 3px solid #138483 ; color:black" role="alert">
@@ -126,7 +164,26 @@
                             </div>
                         </div>
                         <div class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan pulvinar libero, ac euismod urna pretium eu. Sed accumsan pretium augue consequat ornare. </div>
-                        <div class="mt-4"><a href="#"><i class="fa-sharp fa-solid fa-comment-dots"></i> Comment</a></div>
+                        <ul class="list-inline d-flex mt-3">
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <i class="fa fa-thumbs-up "></i>
+                                    178
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <i class="fa fa-thumbs-down "></i>
+                                    34
+                                </a>
+                            </li>
+                            <li class="list-inline-item ms-auto">
+                                <a href="#">
+                                    <i class="fa fa-reply "></i>
+                                    Reply
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>

@@ -22,15 +22,13 @@
             <div class="h6">
                 <a href="index.php">Home Page</a>
                 <span>></span>
-                <a href="#">Services</a>
-                <span>></span>
                 <a href="#" >Booking</a>
             </div>
         </div>
     </div>
     <div class="container">
         <div class="row mt-5">
-            <div class="col-6">
+            <div class="col-6 text-center">
                 <p class="h4 fw-semibold">Booking an Appointment</p>
                 <p class="h5 mt-5 fw-semibold" style="color: #138483;"> 12/03/2023 </p>
                 <div class="grid gap-3 ms-3 mt-4">
@@ -49,7 +47,7 @@
                     <button type="button" class="btn btn-outline-secondary p-2 g-col-6 mt-3 " style="width: 130px; color: black;">9:30</button>
                 </div>
                 <br>
-                <div class="mt-5" style="margin-left: 91px"><button type="button" class="btn btn-outline-dark btn-lg"  >Book now</button></div>
+                <div class="mt-5" style="margin-left: 20px"><button type="button" class="btn btn-outline-dark btn-lg"  >Book now</button></div>
                 
             </div>
             <div class="col-6 ">
