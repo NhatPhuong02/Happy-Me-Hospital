@@ -6,6 +6,10 @@
     session_start();
     include('head.php');
     include('conn_db.php');
+    if (!isset($_SESSION['firstName'])) {
+        header("Location: signIn.php");
+        exit(1);
+    }
 
 
 

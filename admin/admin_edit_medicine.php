@@ -5,6 +5,10 @@
     <?php
     session_start();
     include("../conn_db.php");
+    if (!isset($_SESSION['id'])) {
+        header("Location: ../signIn.php");
+        exit(1);
+    }
 
     include('admin_head.php');
     ?>

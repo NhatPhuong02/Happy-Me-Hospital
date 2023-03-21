@@ -5,6 +5,7 @@
     <?php
     Session_start();
     include("conn_db.php");
+    
 
     if (!isset($_SESSION["id"])) {
         header("location: signUp.php");
