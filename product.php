@@ -40,15 +40,24 @@
             if ($result->num_rows > 0) {
                 while ($m_row = $result->fetch_array()) {
 
-            ?>
+                    ?>
 
                     <div class="col col-lg-3 col-xl-3 col-md-4 col-sm-6 col-10 mt-4">
-                        <a href="medicine_item.php?<?php echo "m_id=" . $m_row["m_id"] ?>" class="card text-decoration-none text-black ">
-                            <img <?php echo "src=\"img/drugs/{$m_row["m_pic"]}\"" ?> class="card-img-top" alt="...">
+                        <a href="medicine_item.php?<?php echo "m_id=" . $m_row["m_id"] ?>"
+                            class="card text-decoration-none text-black ">
+                            <img <?php if ($m_row["m_pic"]) {
+                                echo "src=\"./img/drugs/{$m_row["m_pic"]}\"";
+                            } else {
+                                echo "src=./img/drugs/default.png";
+                            } ?> class="card-img-top" alt="...">
                             <div class="row card-body m-0 p-3 bg-main text-white rounded-bottom-1">
                                 <div class="col-10">
-                                    <h5 class="card-title text-truncate"><?= $m_row["m_name"] ?></h5>
-                                    <h6 class="card-title money" id=""><?php echo number_format($m_row["m_price"], 0, ',', '.');?> VND</h6>
+                                    <h5 class="card-title text-truncate">
+                                        <?= $m_row["m_name"] ?>
+                                    </h5>
+                                    <h6 class="card-title money" id="">
+                                        <?php echo number_format($m_row["m_price"], 0, ',', '.'); ?> VND
+                                    </h6>
                                 </div>
                                 <!-- <div class="col-2 text-end">
                             <div class="btn-primary rounded-circle h2"><i class="fa-solid fa-circle-plus"></i></div>
@@ -56,7 +65,7 @@
                             </div>
                         </a>
                     </div>
-            <?php }
+                <?php }
             } ?>
         </div>
     </div>

@@ -6,6 +6,10 @@
     session_start();
     include('head.php');
     include('conn_db.php');
+    if (!isset($_SESSION['firstName'])) {
+        header("Location: signIn.php");
+        exit(1);
+    }
     ?>
     <title>Welcome Happy Me</title>
 </head>
@@ -30,7 +34,7 @@
         </div>
         <div class="container">
             <div class="row fs-4 bg-main mt-5 p-3 rounded-3">
-                <div class="col-6">
+                <div class="col-6"> 
                     Product
                 </div>
                 <div class="col-2 text-center">
@@ -51,7 +55,7 @@
                             <div class="col-6 p-0">
                                 <div class="row">
                                     <div class="col-2 logo">
-                                        <img <?php echo "src=\"./img/drugs/{$result["m_pic"]}\"" ?> class="img-thumbnail bg-white" alt="logo">
+                                        <img <?php if ($result["m_pic"]) {echo "src=\"./img/drugs/{$result["m_pic"]}\"";} else {echo "src=./img/drugs/default.png";} ?> class="img-thumbnail bg-white" alt="logo">
                                     </div>
                                     <div class="col-10">
                                         <div class="title fs-4"><?php echo $result["m_name"] ?></div>

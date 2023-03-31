@@ -5,6 +5,10 @@
     session_start();
     include('admin_head.php');
     include("../conn_db.php");
+    if (!isset($_SESSION['id'])) {
+        header("Location: ../signIn.php");
+        exit(1);
+    }
     ?>
     <title>List User</title>
 </head>
