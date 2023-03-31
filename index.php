@@ -47,8 +47,8 @@
                     <div class="card " style="width: 18rem; border-radius:0 0 25px 25px">
                         <img src="img/booking.png" class="card-img-top " alt="... ">
                         <div class="card-body " style="background-image:linear-gradient(150deg, #59BAB8, #138483); border-radius:0 0 25px 25px">
-                            <h5 class="card-title ">Book Appointment</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan pulvinar libero, ac euismod urna pretium eu. Sed accumsan pretium augue consequat ornare. </p>
+                            <h5 class="card-title text-white">Book Appointment</h5>
+                            <p class="card-text"style="color:#4f4f4ede">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan pulvinar libero, ac euismod urna pretium eu. Sed accumsan pretium augue consequat ornare. </p>
                         </div>
                     </div>
                 </div>
@@ -56,8 +56,8 @@
                     <div class="card " style="width: 18rem; border-radius:0 0 25px 25px">
                         <img src="img/health_store.png" class="card-img-top " alt="... ">
                         <div class="card-body " style="background-image:linear-gradient(210deg, #59BAB8, #138483); border-radius:0 0 25px 25px">
-                            <h5 class="card-title ">Health Store</h5>
-                            <p class="card-text ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan pulvinar libero, ac euismod urna pretium eu. Sed accumsan pretium augue consequat ornare. </p>
+                            <h5 class="card-title text-white">Health Store</h5>
+                            <p class=" card-text " style="color:#4f4f4ede">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan pulvinar libero, ac euismod urna pretium eu. Sed accumsan pretium augue consequat ornare. </p>
                         </div>
                     </div>
                 </div>
@@ -65,8 +65,8 @@
                     <div class="card " style="width: 18rem; border-radius:0 0 25px 25px">
                         <img src="img/community.png" class="card-img-top " alt="... ">
                         <div class="card-body " style="background-image:linear-gradient(150deg, #59BAB8, #138483); border-radius:0 0 25px 25px">
-                            <h5 class="card-title ">Community</h5>
-                            <p class="card-text ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan pulvinar libero, ac euismod urna pretium eu. Sed accumsan pretium augue consequat ornare. </p>
+                            <h5 class="card-title text-white">Community</h5>
+                            <p class="card-text " style="color:#4f4f4ede">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan pulvinar libero, ac euismod urna pretium eu. Sed accumsan pretium augue consequat ornare. </p>
                         </div>
                     </div>
                 </div>

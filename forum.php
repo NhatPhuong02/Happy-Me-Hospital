@@ -35,38 +35,6 @@
         <div class="container">
             <div class="row mt-5">
                 <div class="col-4 rounded-1">
-                    <div class="row bg-main rounded-5 justify-content-center mx-auto">
-                        <div class="card w-75 my-3 rounded-4">
-                            <div class="row card-body">
-                                <div class="col-2">
-                                    hi
-                                </div>
-                                <div class="col-9">
-                                    hello
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card w-75 mb-3 rounded-4">
-                            <div class="row card-body">
-                                <div class="col-2">
-                                    hi
-                                </div>
-                                <div class="col-9">
-                                    hello
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card w-75 mb-3 rounded-4">
-                            <div class=" row card-body">
-                                <div class="col-2">
-                                    hi
-                                </div>
-                                <div class="col-9">
-                                    hello
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <div class="text-center fw-bold mt-3"> Top Categories</div>
                 </div>
                 <div class="col-8 ps-5">

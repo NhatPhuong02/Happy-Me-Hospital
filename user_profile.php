@@ -161,7 +161,7 @@
                 </div>
             </div>
             <div class="col-9 ">
-                <div class="card bg-main fs-4 text-white w-auto">
+                <div class="card bg-main fs-4 text-white w-auto" style=" border-radius: 25px">
                     <div class="row ps-0 ms-2 my-3">
                         <div class="col-3 title">UserName:</div>
                         <div class="col-9 data">
