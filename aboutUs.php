@@ -57,9 +57,9 @@
             <div class="col-6 d-flex justify-content-center mt-4">
                 <div class="card" style="width: 20rem;">
                     <div class="card-body bg-main-2">
-                        <img src="img/avatar/linh.jpg" class="card-img-top rounded-top-4" alt="...">
+                        <img src="img/avatar/phuong.jpg" class="card-img-top rounded-top-4" alt="...">
                         <h5 class="card-title mt-3">Nguyễn Trần Nhật Phương</h5>
-                        <p class="card-text m-0">Student ID: 20590**</p>
+                        <p class="card-text m-0">Student ID: 2059032</p>
                         <p class="card_text">I am Fullstack Developer</p>
                     </div>
                 </div>
@@ -69,7 +69,7 @@
                     <div class="card-body bg-main-2">
                         <img src="img/avatar/minh.jpg" class="card-img-top rounded-top-4" alt="...">
                         <h5 class="card-title mt-3">Bùi Quang Minh</h5>
-                        <p class="card-text m-0">Student ID: 20590**</p>
+                        <p class="card-text m-0">Student ID: 2059027</p>
                         <p class="card_text">I am Frontend Developer</p>
                     </div>
                 </div>
