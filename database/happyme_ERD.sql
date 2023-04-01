@@ -127,13 +127,13 @@ CREATE TABLE IF NOT EXISTS `happyme`.`ReplyHasUser` (
 
 
 -- this is for testing first --
-CREATE TABLE IF NOT EXISTS happyme.Image (
-i_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-i_name VARCHAR(50) NOT NULL,
-User_u_id INT NOT NULL,
-CONSTRAINT fk_Image_User1
-FOREIGN KEY (User_u_id)
-REFERENCES happyme.User (u_id)
+CREATE TABLE IF NOT EXISTS `happyme`.`Image` (
+`i_id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+`i_name` VARCHAR(50) NOT NULL,
+`User_u_id` INT NOT NULL,
+CONSTRAINT `fk_Image_User1`
+FOREIGN KEY (`User_u_id`)
+REFERENCES `happyme`.`User` (`u_id`)
 ON DELETE NO ACTION
 ON UPDATE NO ACTION
 );
