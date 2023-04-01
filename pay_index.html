@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .product-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .product-info span {
+            font-size: 1.2rem;
+        }
+
+        .omise-payment {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #fff;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+    <!-- Include Omise.js library -->
+    <script src="https://cdn.omise.co/omise.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Medicine Payment</h1>
+        <div class="product-info">
+            <span>Medicine Name</span>
+            <span>$10.00</span>
+        </div>
+        <form class="omise-payment" action="pay_payment.php" method="post">
+            <script type="text/javascript" src="https://cdn.omise.co/card.js"
+                    data-key="YOUR_PUBLIC_KEY"
+                    data-image="YOUR_LOGO_URL"
+                    data-frame-label="Happy You company"
+                    data-button-label="Pay with Omise"
+                    data-submit-label="Submit"
+                    data-location="yes"
+                    data-amount="1000"
+                    data-currency="usd">
+            </script>
+            <!-- Used to display errors returned by Omise.js -->
+            <input type="hidden" name="omiseToken">
+            <input type="hidden" name="omiseSource">
+            <button type="submit">Pay $10.00</button>
+        </form>
+    </div>
+</body>
+</html>
