@@ -13,20 +13,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto ">
                 <hr>
-                <li class="nav-item text-center">
+                <li class="nav-item text-center mx-4">
                     <a class="nav-link active" aria-current="page" href="admin_index.php">Home</a>
                 </li>
                 <hr>
-                <li class="nav-item text-center">
+                <li class="nav-item text-center mx-4">
                     <a class="nav-link" aria-current="page" href="admin_list_user.php">User</a>
                 </li>
                 <hr>
-                <li class="nav-item d-flex justify-content-center">
+                <li class="nav-item text-center mx-4">
                     <a class="nav-link" href="admin_list_medicine.php">Product</a>
-                </li>
-                <hr>
-                <li class="nav-item d-flex justify-content-center">
-                    <a class="nav-link" href="../aboutUs.php">About Us</a>
                 </li>
                 <hr>
                 <div class="vr"></div>

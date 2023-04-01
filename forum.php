@@ -16,7 +16,7 @@
 
 
 <body>
-    <?php if($_SESSION['role']== "admin"){include("admin/admin_header.php");}else{include("header.php");}  ?>
+    <?php include("header.php"); ?>
     <div class="container mt-5">
         <div class="navbar bg-body-tertiary">
             <div class="h6">

@@ -95,7 +95,7 @@
                     <td>
                         <a href="admin_medicine_detail.php?m_id=<?php echo $row["m_id"]?>"
                             class="btn btn-sm btn-primary">View</a>
-                        <a href="admin_edit_medicine.php?m_id=<?php echo $row["m_id"];?>&u_id=<?php echo $row["m_id"]?>"
+                        <a href="admin_edit_medicine.php?m_id=<?php echo $row["m_id"];?>"
                             class="btn btn-sm btn-outline-success">Edit</a>
                         <a href="admin_delete_medicine.php?m_id=<?php echo  $row["m_id"]?>"
                             class="btn btn-sm btn-outline-danger">Delete</a> <!-- can't delete item already isset user's cart -->
