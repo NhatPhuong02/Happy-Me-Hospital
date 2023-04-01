@@ -122,6 +122,18 @@ CREATE TABLE IF NOT EXISTS `happyme`.`ReplyHasUser` (
     ON UPDATE NO ACTION
 );
 
+CREATE TABLE IF NOT EXISTS `happyme`.`Schedule` (
+  `s_id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `User_u_id` INT NOT NULL,
+  `s_date` VARCHAR(10) NOT NULL,
+  `s_time` VARCHAR(5) NOT NULL,
+  CONSTRAINT `fk_Schedule_User`
+    FOREIGN KEY (`User_u_id`)
+    REFERENCES `happyme`.`User` (`u_id`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE
+);
+
 
 
 
