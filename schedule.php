@@ -15,8 +15,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $User_u_id = $_SESSION['id'];
 
     // check if schedule is assigned before
-    $check_schedule = $mysqli->prepare("SELECT * FROM Schedule WHERE User_u_id = ? AND s_date = ? AND s_time = ?");
-    $check_schedule->bind_param("iss", $User_u_id, $date, $time);
+    $check_schedule = $mysqli->prepare("SELECT * FROM Schedule WHERE s_date = ? AND s_time = ?");
+    $check_schedule->bind_param("ss", $date, $time);
     $check_schedule->execute();
     $result = $check_schedule->get_result();
 
