@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <?php include("header.php") ?>
+    
     <script>
         function setCookie(cname, cvalue, exdays) {
             var d = new Date();
@@ -56,6 +56,7 @@
         window.addEventListener('load', checkBackNavigation);
         window.addEventListener('beforeunload', updateLastVisit);
     </script>
+    <?php include("header.php") ?>
     <div class="container mt-5">
         <div class="row">
             <div class="col-sm-7 bg-main rounded-start-5 ">
