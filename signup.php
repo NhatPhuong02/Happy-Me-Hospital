@@ -12,6 +12,50 @@
 
 <body>
     <?php include("header.php") ?>
+    <script>
+        function setCookie(cname, cvalue, exdays) {
+            var d = new Date();
+            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+            var expires = "expires="+d.toUTCString();
+            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        }
+
+        function getCookie(cname) {
+            var name = cname + "=";
+            var decodedCookie = decodeURIComponent(document.cookie);
+            var ca = decodedCookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) === ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) === 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+
+        function checkBackNavigation() {
+            var lastVisit = getCookie("lastVisit");
+            if (lastVisit !== "") {
+                var currentTime = new Date().getTime();
+                var elapsedTime = currentTime - lastVisit;
+
+                if (elapsedTime < 30000) { // 30 seconds
+                    window.location.replace("index.php");
+                }
+            }
+        }
+
+        function updateLastVisit() {
+            var currentTime = new Date().getTime();
+            setCookie("lastVisit", currentTime, 1);
+        }
+
+        window.addEventListener('load', checkBackNavigation);
+        window.addEventListener('beforeunload', updateLastVisit);
+    </script>
     <div class="container mt-5">
         <div class="row">
             <div class="col-sm-7 bg-main rounded-start-5 ">
