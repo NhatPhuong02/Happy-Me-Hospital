@@ -1,9 +1,9 @@
 <?php
 // Phuong's config
-$mysqli = new mysqli("localhost","root","","happyme", 3306);
+// $mysqli = new mysqli("localhost","root","","happyme", 3306);
 
 // Linh's config, un-comment to run
-// $mysqli = new mysqli("127.0.0.1","root","root","happyme", 8889);
+$mysqli = new mysqli("127.0.0.1","root","root","happyme", 8889);
 
 if($mysqli -> connect_errno){
     header("location: db_error.php");
