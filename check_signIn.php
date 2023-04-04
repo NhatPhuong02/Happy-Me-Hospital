@@ -10,6 +10,8 @@
 
   $u_email = $_POST['u_email'];
   $u_password = $_POST['u_password'];
+  $_SESSION['id'] = 0;
+  $u_id = 0;
   
   // Check if the user is already logged in
   // if (isset($_SESSION['loggin_in']) && isset($_SESSION['loggid_in']) == true) {
@@ -49,8 +51,10 @@
         setcookie('u_id', $row['u_id'], time() + 3600);
         setcookie('u_firstName', $row['u_firstName'], time() + 3600);
         if ($_SESSION['role'] == "admin") {
+            $u_id = $_SESSION['id'];
             header("Location: ./admin/admin_index.php");
           }else {
+            $u_id = $_SESSION['id'];
             header("Location: index.php");
           }
         exit();
