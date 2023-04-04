@@ -55,7 +55,7 @@
 
 <body>
     <?php include("header.php") ?>
-    <div class="container form-signin mt-auto w-50">
+    <div class="container form-signin mt-auto w-25">
         <a class="nav nav-item text-decoration-none text-muted" href="#" onclick="history.back();">
             <i class="bi bi-arrow-left-square me-2"></i>Go back
         </a>
