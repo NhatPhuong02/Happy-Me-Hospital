@@ -24,6 +24,16 @@
     background-color: #138483;
 }
 
+.bg-main-hover {
+    background-color: #138483;
+} 
+
+.bg-main-hover:hover {
+    background-color: #59bab8;
+}
+    
+
+
 input[type="text"],
 input[type="password"],
 input [type="checkbox"] {
