@@ -92,7 +92,7 @@
         <div class="row">
             <div class="col-3 text-center px-4 pb-4">
                 <div class="btn logo text-center" data-bs-toggle="modal" data-bs-target="#static-img">
-                    <div class="row bg-main-2 p-3 rounded-4"><img <?php
+                    <div class="row bg-main p-3 rounded-4"><img <?php
                                                                     if (!isset($_SESSION['avatar'])) {
                                                                         if ($_SESSION["gender"] == "Male") {
                                                                             echo "src='img/avatar/default_man.png'";
@@ -126,7 +126,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="btn btn-lg bg-main-2-hover text-white mt-4 mb-4 w-100" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Edit</div>
+                <div class="btn btn-lg bg-main-hover text-white mt-4 mb-4 w-100" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Edit</div>
                 <!-- Modal -->
                 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                     <div class="modal-dialog">
@@ -207,21 +207,21 @@
                                     <td>10 items</td>
                                     <td>$100.00</td>
                                     <td>Complete</td>
-                                    <td><button type="button" class="btn btn-lg bg-main-2">View</button></td>
+                                    <td><button type="button" class="btn btn-lg bg-main-2-hover" style="color: white">View</button></td>
                                 </tr>
                                 <tr>
                                     <td>02/01/2022</td>
                                     <td>5 items</td>
                                     <td>$50.00</td>
                                     <td>Pending</td>
-                                    <td><button type="button" class="btn btn-lg bg-main-2">View</button></td>
+                                    <td><button type="button" class="btn btn-lg bg-main-2-hover" style="color: white">View</button></td>
                                 </tr>
                                 <tr>
                                     <td>03/01/2022</td>
                                     <td>3 items</td>
                                     <td>$30.00</td>
                                     <td>Cancelled</td>
-                                    <td><button type="button" class="btn btn-lg bg-main-2">View</button></td>
+                                    <td><button type="button" class="btn btn-lg bg-main-2-hover" style="color: white">View</button></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -229,7 +229,7 @@
                 </div>
                 <div class="row">
                     <div class="col-12">
-                        <button class="btn btn-lg bg-main-hover d-grid col-2 mx-auto mt-4" title="View more order history">Show More</button>
+                        <button class="btn btn-lg bg-main-2-hover d-grid col-2 mx-auto mt-4" title="View more order history" style="color:white">Show More</button>
                     </div>
                 </div>
             </div>
