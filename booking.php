@@ -34,7 +34,7 @@
                             ?>
                             <!-- START SUCCESSFULLY UPDATE PASSWORD -->
                             <div class="row row-cols-1 notibar">
-                                <div class="col mt-2 ms-2 p-2 bg-success text-white rounded text-start w-50">
+                                <div class="col mt-2 ms-2 p-2 bg-success text-white rounded text-start w-100">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                         class="bi bi-check-circle ms-2" viewBox="0 0 16 16">
                                         <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
@@ -43,14 +43,14 @@
                                     </svg>
                                     <span class="ms-2 mt-2">Successfully! Meeting has been scheduled successfully!  </span>
                                     <span class="me-2 float-end"><a class="text-decoration-none link-light"
-                                            href="user_profile.php">X</a></span>
+                                            href="booking.php">X</a></span>
                                 </div>
                             </div>
                             <!-- END SUCCESSFULLY UPDATE PASSWORD -->
                         <?php } else { ?>
                             <!-- START FAILED UPDATE PASSWORD -->
                             <div class="row row-cols-1 notibar">
-                                <div class="col mt-2 ms-2 p-2 bg-danger text-white rounded text-start w-50">
+                                <div class="col mt-2 ms-2 p-2 bg-danger text-white rounded text-start w-100">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                         class="bi bi-x-circle ms-2" viewBox="0 0 16 16">
                                         <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
@@ -58,7 +58,7 @@
                                             d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
                                     </svg><span class="ms-2 mt-2">Failed! This schedule has already been assigned.</span>
                                     <span class="me-2 float-end"><a class="text-decoration-none link-light"
-                                            href="user_profile.php">X</a></span>
+                                            href="booking.php">X</a></span>
                                 </div>
                             </div>
                             <!-- END FAILED UPDATE PASSWORD -->
