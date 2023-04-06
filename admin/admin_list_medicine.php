@@ -93,12 +93,12 @@
                     <td class = "text-center"><?php echo $row["m_quantity"];?></td>
                     <td class = "text-center"><?php echo number_format($row["m_price"],"0",",",".");?></td>
                     <td>
-                        <a href="admin_medicine_detail.php?m_id=<?php echo $row["m_id"]?>"
+                        <a href="admin_detail_medicine.php?m_id=<?php echo $row["m_id"]?>"
                             class="btn btn-sm btn-primary">View</a>
                         <a href="admin_edit_medicine.php?m_id=<?php echo $row["m_id"];?>"
                             class="btn btn-sm btn-outline-success">Edit</a>
                         <a href="admin_delete_medicine.php?m_id=<?php echo  $row["m_id"]?>"
-                            class="btn btn-sm btn-outline-danger">Delete</a> <!-- can't delete item already isset user's cart -->
+                            class="btn btn-sm btn-outline-danger">Delete</a> 
                     </td>
                 </tr>
                 <?php } ?>

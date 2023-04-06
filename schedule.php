@@ -21,14 +21,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $result = $check_schedule->get_result();
 
     if ($result->num_rows > 0) {
-        echo "This schedule has already been assigned.";
+        header("location: booking.php?up_prf=0");
     } else {
         // update to db
         $stmt = $mysqli->prepare("INSERT INTO Schedule (User_u_id, s_date, s_time) VALUES (?, ?, ?)");
         $stmt->bind_param("iss", $User_u_id, $date, $time);
         $stmt->execute();
 
-        echo "Meeting has been scheduled successfully!";
+        header("location: booking.php?up_prf=1");
+
     }
 
 } else {

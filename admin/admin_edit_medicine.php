@@ -59,12 +59,12 @@
                     <div class="form-floating mb-2">
                         <input type="text" class="form-control" id="m_name" placeholder="m_name" name="m_name"
                             value="<?php echo $row["m_name"]; ?>" required>
-                        <label for="f_name">Menu Name</label>
+                        <label for="f_name">Name: </label>
                     </div>
                     <div class="form-floating mb-2">
                         <input type="number" step=".25" min="1.000" max="1.000.000" class="form-control" id="m_price"
                             placeholder="Price (THB)" value="<?php echo $row["m_price"]; ?>" name="m_price" required>
-                        <label for="m_price">Price (VND)</label>
+                        <label for="m_price">Price: </label>
                     </div>
                     <input type="hidden" name="m_id" value="<?php echo $m_id; ?>">
                     <button class="w-100 btn btn-success mb-3" name="upd_confirm" type="submit">Update Medicine Detail</button>

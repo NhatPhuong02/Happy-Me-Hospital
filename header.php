@@ -58,7 +58,7 @@
                 <li class="nav-item dropdown ms-lg-1 text-center">
                     <?php include("session_timeout.php"); ?>
                     <?php if (!isset($_SESSION['firstName'])) { ?>
-                        <a class="btn btn-primary  rounded-pill border-0" href="signIn.php" role="button" style="background-image: linear-gradient(to right, rgba(89, 186, 184, 1), rgba(19, 132, 131, 1));">Register</a>
+                        <a class="btn btn-primary  rounded-pill border-0" href="signIn.php" role="button" style="background-image: linear-gradient(to right, rgba(89, 186, 184, 1), rgba(19, 132, 131, 1));">SignIn</a>
                     <?php } ?>
                     <?php if (isset($_SESSION['firstName'])) { ?>
                         <a class="nav-link dropdown-toggle text-sm-center" role="button" data-bs-toggle="dropdown" aria-expanded="false">Welcome <?= $_SESSION['firstName'] ?></a>

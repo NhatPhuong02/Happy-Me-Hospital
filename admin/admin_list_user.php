@@ -9,6 +9,14 @@
         header("Location: ../signIn.php");
         exit(1);
     }
+
+    if(isset($_POST["edit_confirm"])){
+        $u_id_edit_role = $_POST["m_id_edit_role"];
+        $u_role = $_POST["role"];
+
+        $query = "UPDATE user SET u_role = '{$u_role}' WHERE u_id = {$u_id_edit_role}";
+        $result = $mysqli->query($query);
+    }
     ?>
     <title>List User</title>
 </head>
@@ -32,7 +40,7 @@
                         <button type="submit" name="search" value="1" class="btn btn-success">Search</button>
                         <button type="reset" class="btn btn-danger"
                             onclick="javascript: window.location='admin_list_user.php'">Clear</button>
-                        <a href="admin_user_add.php" class="btn btn-primary">Add new User</a>
+                        <a href="admin_add_user.php" class="btn btn-primary">Add new User</a>
                     </div>
                 </div>
             </form>
@@ -46,7 +54,8 @@
 
             if ($result->num_rows > 0) {
                 while ($u_row = $result->fetch_array()) {
-            ?>
+            ?> 
+            
                 <div class="col col-xl-3 col-lg-3 col-md-4 col-sm-6 col-10 mt-4">
                     <div class="card text-center">
                         <?php if ($u_row["u_avatar"] == null) {
@@ -58,24 +67,28 @@
                                         } ?><?php ?>
                                   
                         <?php } else {?><img <?php echo "src=\"../img/avatar/{$u_row["u_avatar"]}\"";?> class="card-img-top pt-2 m-auto"  style="width: 15rem" alt="..."><?php } ?>
-                        
-                        
-                        <div class="row card-body m-0 p-3 bg-main text-white rounded-bottom-1 text-start">
-                            <div class="col-12">
-                                <h5 class="card-title name text-truncate"><?= $u_row["u_firstName"]?></h5>
-                                <h6 class="card-title email text-truncate"><?= $u_row["u_email"]?></h6>
+                        <form method="POST" action="admin_list_user.php" class="form-floating" enctype="multipart/form-data">
+                            <div class="row card-body m-0 p-3 bg-main text-white rounded-bottom-1 text-start">
+                                <div class="col-12">
+                                    <h5 class="card-title name text-truncate"><?= $u_row["u_firstName"]?></h5>
+                                    <h6 class="card-title email text-truncate"><?= $u_row["u_email"]?></h6>
+                                </div>
+                                <div class="form my-3 col-8">
+                                        <select class="form-select "name="role" id="role">
+                                            <option value="admin" <?php if($u_row["u_role"]=="admin"){echo "selected";}?>>Admin</option>
+                                            <option value="therapist" <?php if($u_row["u_role"]=="therapist"){echo "selected";}?>>Therapist</option>
+                                            <option value="patient" <?php if($u_row["u_role"]=="patient"){echo "selected";}?>>Patient</option>
+                                        </select>
+                                        <input type="hidden" class="form-control" name="m_id_edit_role" value="<?= $u_row["u_id"] ?>">
+                                </div>
+                                <div class="col-4 my-3 text-center">
+                                    <a href="admin_delete_user.php?u_id=<?php echo $u_row["u_id"]?>" type="button" class="btn btn-danger">DELETE</a>
+                                </div>
                             </div>
-                            <div class="form my-3 col-8">
-                                <select class="form-select "name="gender" id="gender">
-                                    <option value="male" <?php if($u_row["u_gender"]=="Male"){echo "selected";}?>>Male</option>
-                                    <option value="female" <?php if($u_row["u_gender"]=="Female"){echo "selected";}?>>Female</option>
-                                    <option value="other" <?php if($u_row["u_gender"]=="Other"){echo "selected";}?>>Other</option>
-                                </select>
+                            <div class="text-center">
+                                <button class="w-50 btn btn-success mt-1" name="edit_confirm" type="submit">Edit</button>
                             </div>
-                            <div class="col-4 my-3 text-center">
-                                <a href="admin_delete_user.php?u_id=<?php echo $u_row["u_id"]?>" type="button" class="btn btn-danger">DELETE</a>
-                            </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             <?php }
