@@ -11,9 +11,9 @@ $m_id = $_GET["m_id"];
 $cartdelete_query = "DELETE FROM cart WHERE Medicine_m_id = {$m_id} AND User_u_id = {$_SESSION["id"]}";
 $cartdelete_result = $mysqli->query($cartdelete_query);
 if ($cartdelete_result) {
-    header("location: cust_cart.php?rs_del=1");
+    header("location: user_cart.php?rs_del=1");
 } else {
-    header("location: cust_cart.php?rs_del=0");
+    header("location: user_cart.php?rs_del=0");
 }
 
 ?>

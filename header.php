@@ -40,7 +40,7 @@
                 <div class="vr"></div>
                 <?php if (isset($_SESSION['firstName'])) { ?>
                     <li class="nav-item d-flex ms-lg-5 justify-content-center ">
-                        <a type="button" class="btn btn-light" href="cust_cart.php"><i class="fa-solid fa-cart-shopping "></i>
+                        <a type="button" class="btn btn-light" href="user_cart.php"><i class="fa-solid fa-cart-shopping "></i>
                             <?php
                             $query1 = "SELECT SUM(c_quantity) AS c_count FROM cart WHERE User_u_id = {$_SESSION["id"]}";
                             $count = $mysqli->query($query1);

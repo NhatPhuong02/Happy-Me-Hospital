@@ -58,7 +58,7 @@
 │       │   └── admin_index.php
 │       ├── cart/
 │       │   ├── index.php
-│       │   └── cust_cart.php
+│       │   └── .php
 │       ├── home/
 │       │   └── index.php
 │       ├── product/
