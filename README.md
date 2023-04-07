@@ -93,12 +93,12 @@ Here is the technology using during the development:
 | Product Page | ✓
 | Register & Login Page	| ✓
 |User Profile & Edit Profile | ✓
-|Product Search	| ✍️ Later
+|Product Search	| ✓
 |Product Filters |	✍️ Later
 |Product Sorting |	✍️ Later
 |Product Reviews |	✍️ Later
 |Shopping Cart	| ✓
 |Checkout & Payment |	✍️
-|Order History	| ✍️ Later
-|Contact Us Form |	✍️ Later
+|Order History	| ✓
+|Contact Us Form |	✓
 |About Us Page	| ✓
