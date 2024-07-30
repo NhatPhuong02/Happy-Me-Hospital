@@ -20,9 +20,6 @@ We are Chill Team, and here is our members:
 
 2059032 - Nguyễn Trần Nhật Phương  
 2059027 - Bùi Quang Minh  
-2059025 - Phạm Thái Linh  
-2059054 - Trầm Thị Tuyết Thanh  
-2059017 - Văn Công Gia Hưng
 
 ## III/ <a id='description'></a>Description
 
